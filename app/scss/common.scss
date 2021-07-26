@@ -85,7 +85,19 @@ $red: #F46251;
 
 .blue{color: $blue;}
 .navy{color: $navy;}
-.white{color: $white !important;}
+.white{color: $white !important;
+    &::-webkit-input-placeholder { /* Edge */
+        color: $white ;
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $white ;
+    }
+
+    &::placeholder {
+        color: $white ;
+    }
+}
 .black{color: $black;}
 .grey{color: $grey;}
 
@@ -231,10 +243,10 @@ Styles
     object-fit: contain;
 }
 .cubicTransition{
-    transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
-    -webkit-transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
-    -moz-transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
-    -o-transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+    -webkit-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
 }
 .rect{
     &.s6{
@@ -246,12 +258,20 @@ Styles
         height: $s8;
     }
     &.s12{
+        width: $s12;
+        height: $s12;
+    }
+    &.s16{
+        width: $s16;
+        height: $s16;
+    }
+    &.s20{
         width: $s20;
         height: $s20;
     }
-    &.s20{
-        width: $s12;
-        height: $s12;
+    &.s28{
+        width: $s28;
+        height: $s28;
     }
     &.s30{
         width: $s30;
@@ -264,6 +284,10 @@ Styles
     &.s48{
         width: $s48;
         height: $s48;
+    }
+    &.s60{
+        width: $s60;
+        height: $s60;
     }
     &.s80{
         width: $s80;
@@ -297,7 +321,10 @@ Styles
 .py-160{
     padding: 160px 0;
 }
-.no-bg{background-color: transparent}
+.px-15{
+    padding: 0 12px;
+}
+.no-bg{background-color: transparent !important}
 a, button{
     opacity: 1;
     @extend.cubicTransition;
@@ -378,5 +405,28 @@ ul{
         width: 2px;
         height: 100%;
         background-color: $blue;
+    }
+}
+.grey-patern{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 60%;
+    transform: translateX(-50%);
+    z-index: -1;
+    &::after{
+        display: none;
+    }
+}
+.tooltip-inner{
+    border: none;
+    border-radius: 0;
+    background-color: $white;
+    color: $black;
+    padding: 5px;
+}
+.tooltip-arrow{
+    &:before{
+        border-top-color: $white !important;
     }
 }

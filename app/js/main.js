@@ -3,6 +3,13 @@ jQuery(function($){
     ///////////////////////////////////////////////////////////////   START DOCUMENT READY  ///////////////////////////////////////////////////////////////
     
     $(document).ready(function() {
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="tooltip"]').tooltip({
+              customClass: 'tooltip-custom'
+            });
+        })
         $(".mySwiper .swiper-slide").click(function(){
             $(".mySwiper2").addClass("translate-x");
         })
@@ -18,6 +25,11 @@ jQuery(function($){
             $(".more-tags .more").toggleClass("d-none");
             $(".more-tags .less").toggleClass("d-none");
         })
+        $("header").addClass("loaded");
+        $(".initial-state .img-wrapper").addClass("loaded");
+        $(".initial-state .state-content").addClass("loaded");
+        $(".initial-state .state-content").addClass("loaded");
+        $(".accordion").addClass("loaded");
     });
     
     ///////////////////////////////////////////////////////////////   END DOCUMENT READY  ///////////////////////////////////////////////////////////////
@@ -95,7 +107,7 @@ jQuery(function($){
         list.eq(randoNumo(list.length)).addClass('t');
         setTimeout(function() {
           go();
-        }, 50);
+        }, 180);
         
     })();
 

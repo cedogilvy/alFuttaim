@@ -5,13 +5,19 @@ body{
 }
 ///////////////////////////// HEADER /////////////////////////////
 header{
+    transform: translateY(-100%);
+    @extend.cubicTransition;
+    &.loaded{
+        transform: translateY(0);
+        transition-delay: 1s;
+    }
 }
 
 
 main{
-    height: 100vh;
+    height: 120vh;
     .state{
-        height: 100vh;
+        height: 120vh;
     }
     .state-content{
         left: 10%;
@@ -26,23 +32,60 @@ main{
     .mySwiper{
         .swiper-slide{
             opacity: 0;
+            transform: translateY(200px) rotateY(180deg);
             &.t {
                 animation: fade 1s forwards;
             }
             @keyframes fade {
-                0%   { opacity: 0; }
-                100% { opacity: 1; }
+                0%   { opacity: 0; transform: translateY(200px) rotateY(180deg); }
+                100% { opacity: 1; transform: translateY(200px) rotateY(0); }
+            }
+        }
+    }
+    .initial-state{
+        .img-wrapper{
+            transform: translateX(-100%);
+            @extend.cubicTransition;
+            &.loaded{
+                transform: translateX(0);
+            }
+        }
+        .state-content{
+            top: 30%;
+            transform: translateY(-30%) translateX(-150%);
+            @extend.cubicTransition;
+            &.loaded{
+                transform: translateY(-30%) translateX(0);
+                transition-delay: 1s;
             }
         }
     }
 }
-
-$rectRatio: 150px;
+.v-swiper-wrapper{
+    max-height: 632px;
+    overflow: hidden;
+    .swiper-container, .swiper-wrapper, .swiper-slide{
+        width: 100%;
+        height: 100%;
+    }
+}
+.accordion{
+    opacity: 0;
+    @extend.cubicTransition;
+    &.loaded{
+        opacity: 1;
+        transition-delay: 1s;
+    }
+}
+/* $rectRatio: 150px;
 $rectRatioMax: 210px; // $rectRatio + 25px on each side
-$rectRatioMin: 105px; // $rectRatioMax / 2
+$rectRatioMin: 105px; */ // $rectRatioMax / 2
+$rectRatio: 120px;
+$rectRatioMax: 170px;
+$rectRatioMin: 85px;
 .mySwiper {
     height: 90vh;
-    width: 55vw;
+    width: 60vw;
     .swiper-slide{
         width: $rectRatio !important;
         height: $rectRatio !important;
@@ -161,6 +204,13 @@ $rectRatioMin: 105px; // $rectRatioMax / 2
     }
       
 }
+.tab-pane{
+    max-height: 632px;
+    .swiper-container{
+        width: 100%;
+        height: 100%;
+    }
+}
 
 ///////////////////////////// ACCORDION FIXED /////////////////////////////
 .accordion-button{
@@ -190,8 +240,118 @@ $rectRatioMin: 105px; // $rectRatioMax / 2
         transform: rotate(180deg);
     }
 }
-
-
+.partners-tabs{
+    .nav-tabs {
+        .nav-link{
+            border-bottom: 3px solid transparent;
+            &.active{
+                border: 0;
+                border-bottom: 3px solid grey;
+                opacity: 1;
+                @extend.fontBold;
+            }
+        }
+    }
+}
+.partners-logo{
+    &.active{
+        box-shadow: 0px 0px 24px 8px rgba($color: $blue, $alpha: .16);
+    }
+}
+.mySwiper4{
+    height: 838px !important;
+    overflow: hidden;
+    .swiper-pagination-bullet {
+        width: 4px;
+        height: 50px;
+        border-radius: 0;
+        background: $navy;
+    }
+}
+.map-pins-list{
+    a{
+        background-color: rgba($color: $navy, $alpha: .1);
+        &:first-child(){
+            top: 39%;
+            left: 49%;
+        }
+    }
+}
+.logo-shape{
+    /* left: 53.9%;
+    position: absolute;
+    top: 61.5%;
+    transform: translate(-50%, -50%);
+    width: 44.2%;
+    height: 73.5%; */
+    left: 53.9%;
+    position: absolute;
+    top: 46%;
+    transform: translate(-50%, -50%);
+    width: 680px;
+    height: 595px;
+    img, svg{
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain;
+    }
+}
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 10s linear alternate infinite;
+  }
+  
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 822;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
 ///////////////////////////// FOOTER /////////////////////////////
 footer{
+    clip-path: polygon(0% 45px, calc(50% - 45px) 45px, 50% 0, calc(50% + 45px) 45px, 100% 45px, 100% 100%, 0% 100%);
 }
+
+
+
+
+
+@media (min-width: 1441px){
+}
+// commun Styles between Large and Extra Large devices
+@media (min-width: 992px) and (max-width: 1440px){
+    $rectRatio: 120px;
+    $rectRatioMax: 170px; // $rectRatio + 25px on each side
+    $rectRatioMin: 85px;
+    .mySwiper {
+        height: 120vh;
+    }
+    .mySwiper4{
+        height: 440px !important;
+    }
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1440px){}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px){
+}
+
+
+// Comon mobile & Tablet
+@media (min-width: 100px) and (max-width: 1000px){
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px){}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px){}

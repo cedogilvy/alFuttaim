@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="44px" viewBox="0 0 49 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Combined Shape</title>
+    <defs>
+        <path d="M960.371439,33.8111832 L980.742877,54.4597875 L975.758774,59.6307992 L970.639,54.7001832 L966.164,59.1751832 L971.467633,64.4784451 L965.810779,70.1352993 L960.507,64.8321832 L955.204177,70.1352993 L949.547323,64.4784451 L954.85,59.1741832 L950.242,54.5661832 L944.984104,59.6307992 L940,54.4597875 L960.371439,33.8111832 Z M960.371439,44.8111832 L956.005,49.0151832 L960.507,53.5171832 L964.875,49.1491832 L960.371439,44.8111832 Z" id="path-1"></path>
+        <filter x="-17.2%" y="-13.8%" width="134.4%" height="138.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Organisms-/-Footer" transform="translate(-936.000000, -569.000000)">
+            <g id="Combined-Shape" transform="translate(0.000000, 537.188817)">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

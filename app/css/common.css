@@ -104,6 +104,14 @@ Colors
 
 .white {
   color: #FFFFFF !important; }
+  .white::-webkit-input-placeholder {
+    /* Edge */
+    color: #FFFFFF; }
+  .white:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #FFFFFF; }
+  .white::placeholder {
+    color: #FFFFFF; }
 
 .black {
   color: #000000; }
@@ -262,10 +270,10 @@ Styles
   object-fit: contain; }
 
 .cubicTransition, a, button, .listing .listing-anchor .listing-hover {
-  transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
-  -webkit-transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
-  -moz-transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
-  -o-transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1); }
+  transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1); }
 
 .rect.s6 {
   width: 0.375rem;
@@ -276,12 +284,20 @@ Styles
   height: 0.5rem; }
 
 .rect.s12 {
+  width: 0.75rem;
+  height: 0.75rem; }
+
+.rect.s16 {
+  width: 1rem;
+  height: 1rem; }
+
+.rect.s20 {
   width: 1.25rem;
   height: 1.25rem; }
 
-.rect.s20 {
-  width: 0.75rem;
-  height: 0.75rem; }
+.rect.s28 {
+  width: 1.75rem;
+  height: 1.75rem; }
 
 .rect.s30 {
   width: 1.875rem;
@@ -294,6 +310,10 @@ Styles
 .rect.s48 {
   width: 3rem;
   height: 3rem; }
+
+.rect.s60 {
+  width: 3.75rem;
+  height: 3.75rem; }
 
 .rect.s80 {
   width: 5rem;
@@ -326,8 +346,11 @@ Styles
 .py-160 {
   padding: 160px 0; }
 
+.px-15 {
+  padding: 0 12px; }
+
 .no-bg {
-  background-color: transparent; }
+  background-color: transparent !important; }
 
 a, button {
   opacity: 1; }
@@ -396,3 +419,23 @@ ul {
   width: 2px;
   height: 100%;
   background-color: #00A3DA; }
+
+.grey-patern {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 60%;
+  transform: translateX(-50%);
+  z-index: -1; }
+  .grey-patern::after {
+    display: none; }
+
+.tooltip-inner {
+  border: none;
+  border-radius: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 5px; }
+
+.tooltip-arrow:before {
+  border-top-color: #FFFFFF !important; }
