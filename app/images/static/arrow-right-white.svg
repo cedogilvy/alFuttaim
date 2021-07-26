@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="13px" viewBox="0 0 9 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Molecules / Icons / Arrow</title>
+    <defs>
+        <polygon id="path-1" points="1.45444444 0 1.29318778e-13 1.3475 4.77888889 5.775 1.29318778e-13 10.2025 1.45444444 11.55 7.68777778 5.775"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Molecules-/-Button-/-Contained-/-Gradient" transform="translate(-284.000000, -25.000000)">
+            <g id="Molecules-/-Icons-/-Arrow" transform="translate(284.650000, 25.487903)">
+                <g id="Atoms-/-Colors-/-Accent" transform="translate(0.000000, 0.062097)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)" fill="#FFFFFF">
+                        <g id="Atoms-/-Colors-/-Accent">
+                            <rect id="Atoms-/-Colors-/-Black" x="0" y="0" width="7.74074074" height="11.55"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="23px" viewBox="0 0 34 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>flaticon1566679521-svg</title>
+    <defs>
+        <polygon id="path-1" points="4.15555556 0 3.69482223e-13 3.85 13.6539683 16.5 3.69482223e-13 29.15 4.15555556 33 21.9650794 16.5"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Atoms--/-Icons-/-Arrow-/-Up" transform="translate(-33.000000, -38.000000)">
+            <g id="flaticon1566679521-svg" transform="translate(50.000000, 49.822581) rotate(-90.000000) translate(-50.000000, -49.822581) translate(39.000000, 32.822581)">
+                <g id="Atoms-/-Colors-/-Accent" transform="translate(0.000000, 0.177419)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)" fill="#00A3DA">
+                        <g id="Atoms-/-Colors-/-Accent">
+                            <rect id="Rectangle-5" x="0" y="0" width="22.1164021" height="33"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

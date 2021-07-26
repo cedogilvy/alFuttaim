@@ -1,0 +1,26 @@
+@media (min-width: 1441px){
+}
+// commun Styles between Large and Extra Large devices
+@media (min-width: 992px) and (max-width: 1440px){}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1440px){}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px){
+}
+
+
+// Comon mobile & Tablet
+@media (min-width: 100px) and (max-width: 1000px){
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px){}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px){}

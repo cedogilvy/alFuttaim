@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="18px" viewBox="0 0 17 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Molecules / Icons / Arrow</title>
+    <defs>
+        <path d="M14.5727933,0.329092801 L16.252185,2.00848453 L9.87881497,8.3810928 L16.252185,14.7540711 L14.5727933,16.4334629 L8.19981497,10.0600928 L1.82720669,16.4334629 L0.147814969,14.7540711 L6.51981497,8.3810928 L0.147814969,2.00848453 L1.82720669,0.329092801 L8.19981497,6.7010928 L14.5727933,0.329092801 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1,3-LP-HELP" transform="translate(-1550.000000, -139.000000)">
+            <g id="Quick-Help" transform="translate(325.000000, 116.000000)">
+                <g id="Atoms-/-Colors-/-Accent" transform="translate(1225.000000, 23.600000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(-2.000000, 0.343750)" id="Atoms-/-Colors-/-Accent">
+                            <rect id="Rectangle-5" fill="#FFFFFF" x="0" y="0" width="20.4" height="16"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
