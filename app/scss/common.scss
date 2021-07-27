@@ -83,8 +83,8 @@ $grey: #F2F5F7;
 $green: #00AF77;
 $red: #F46251;
 
-.blue{color: $blue;}
-.navy{color: $navy;}
+.blue{color: $blue !important;}
+.navy{color: $navy !important;}
 .white{color: $white !important;
     &::-webkit-input-placeholder { /* Edge */
         color: $white ;
@@ -98,8 +98,8 @@ $red: #F46251;
         color: $white ;
     }
 }
-.black{color: $black;}
-.grey{color: $grey;}
+.black{color: $black !important;}
+.grey{color: $grey !important;}
 
 .bgBlue{background-color: $blue;}
 .bgNavy{background-color: $navy;}
@@ -120,7 +120,7 @@ $red: #F46251;
     border-top-right-radius: 0 !important;
 }
 
-.automotive, .innovation{
+.automotive, .innovation, .healthcare, .financial{
     color: $green;
     &.active{
         color: $white;
@@ -139,6 +139,13 @@ $red: #F46251;
     &.active{
         color: $white;
         background: $blue;
+    }
+}
+.estate{
+    color: #B863C6;
+    &.active{
+        color: $white;
+        background: #B863C6;
     }
 }
 .tag{
@@ -358,7 +365,7 @@ ul{
     padding-top: 100%;
 }
 .rectangle{
-    padding-top: 50%;
+    padding-top: 48.5%;
 }
 .between-sizes{
     padding-top: 65%;
@@ -428,5 +435,42 @@ ul{
 .tooltip-arrow{
     &:before{
         border-top-color: $white !important;
+    }
+}
+.hide { /* You can play with the seconds to change the "animation" */
+    animation: hide .5s ease 0s 1 normal forwards;
+    transform-origin: center;
+    display: none;
+}
+.show { /* You can play with the seconds to change the "animation" */
+    animation: show .5s ease 0s 1 normal forwards;    
+    transform-origin: center;
+    display: block;
+}
+
+@keyframes hide {
+    0%{
+        transform: scale(1);
+        display: block;     
+    }
+    100% {
+        transform: scale(0);        
+        width: 0;
+        height: 0;
+        margin: 0;
+        display: none;
+    }
+}
+@keyframes show {
+    0%{
+        transform: scale(0);     
+        width: 0;
+        height: 0;
+        margin: 0; 
+        display: none;  
+    }
+    100% {
+        transform: scale(1);  
+        display: block;   
     }
 }

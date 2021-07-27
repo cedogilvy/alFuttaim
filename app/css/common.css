@@ -97,10 +97,10 @@ Sizes
 Colors
 ----------------------------------------------------- */
 .blue {
-  color: #00A3DA; }
+  color: #00A3DA !important; }
 
 .navy {
-  color: #005093; }
+  color: #005093 !important; }
 
 .white {
   color: #FFFFFF !important; }
@@ -114,10 +114,10 @@ Colors
     color: #FFFFFF; }
 
 .black {
-  color: #000000; }
+  color: #000000 !important; }
 
 .grey {
-  color: #F2F5F7; }
+  color: #F2F5F7 !important; }
 
 .bgBlue {
   background-color: #00A3DA; }
@@ -156,9 +156,9 @@ Colors
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important; }
 
-.automotive, .innovation {
+.automotive, .innovation, .healthcare, .financial {
   color: #00AF77; }
-  .automotive.active, .innovation.active {
+  .automotive.active, .innovation.active, .healthcare.active, .financial.active {
     color: #FFFFFF;
     background: #00AF77; }
 
@@ -173,6 +173,12 @@ Colors
   .education.active {
     color: #FFFFFF;
     background: #00A3DA; }
+
+.estate {
+  color: #B863C6; }
+  .estate.active {
+    color: #FFFFFF;
+    background: #B863C6; }
 
 .tag {
   padding: 8px 16px;
@@ -381,7 +387,7 @@ ul {
   padding-top: 100%; }
 
 .rectangle {
-  padding-top: 50%; }
+  padding-top: 48.5%; }
 
 .between-sizes {
   padding-top: 65%; }
@@ -439,3 +445,37 @@ ul {
 
 .tooltip-arrow:before {
   border-top-color: #FFFFFF !important; }
+
+.hide {
+  /* You can play with the seconds to change the "animation" */
+  animation: hide .5s ease 0s 1 normal forwards;
+  transform-origin: center;
+  display: none; }
+
+.show {
+  /* You can play with the seconds to change the "animation" */
+  animation: show .5s ease 0s 1 normal forwards;
+  transform-origin: center;
+  display: block; }
+
+@keyframes hide {
+  0% {
+    transform: scale(1);
+    display: block; }
+  100% {
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    margin: 0;
+    display: none; } }
+
+@keyframes show {
+  0% {
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    margin: 0;
+    display: none; }
+  100% {
+    transform: scale(1);
+    display: block; } }

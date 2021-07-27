@@ -97,10 +97,10 @@ Sizes
 Colors
 ----------------------------------------------------- */
 .blue {
-  color: #00A3DA; }
+  color: #00A3DA !important; }
 
 .navy {
-  color: #005093; }
+  color: #005093 !important; }
 
 .white {
   color: #FFFFFF !important; }
@@ -114,10 +114,10 @@ Colors
     color: #FFFFFF; }
 
 .black {
-  color: #000000; }
+  color: #000000 !important; }
 
 .grey {
-  color: #F2F5F7; }
+  color: #F2F5F7 !important; }
 
 .bgBlue {
   background-color: #00A3DA; }
@@ -156,9 +156,9 @@ Colors
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important; }
 
-.automotive, .innovation {
+.automotive, .innovation, .healthcare, .financial {
   color: #00AF77; }
-  .automotive.active, .innovation.active {
+  .automotive.active, .innovation.active, .healthcare.active, .financial.active {
     color: #FFFFFF;
     background: #00AF77; }
 
@@ -173,6 +173,12 @@ Colors
   .education.active {
     color: #FFFFFF;
     background: #00A3DA; }
+
+.estate {
+  color: #B863C6; }
+  .estate.active {
+    color: #FFFFFF;
+    background: #B863C6; }
 
 .tag {
   padding: 8px 16px;
@@ -269,7 +275,7 @@ Styles
 .object-fit-contain {
   object-fit: contain; }
 
-.cubicTransition, a, button, .listing .listing-anchor .listing-hover, header, main .mySwiper2, main .initial-state .img-wrapper, main .initial-state .state-content, .accordion, .mySwiper .swiper-slide .slide-hover-content {
+.cubicTransition, a, button, .listing .listing-anchor .listing-hover, .home-page header, .home-page .initial-state .img-wrapper, .home-page .initial-state .state-content, .home-page .accordion, main .mySwiper2, .mySwiper .swiper-slide .slide-hover-content {
   transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
   -moz-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
@@ -381,7 +387,7 @@ ul {
   padding-top: 100%; }
 
 .rectangle {
-  padding-top: 50%; }
+  padding-top: 48.5%; }
 
 .between-sizes {
   padding-top: 65%; }
@@ -440,14 +446,69 @@ ul {
 .tooltip-arrow:before {
   border-top-color: #FFFFFF !important; }
 
+.hide {
+  /* You can play with the seconds to change the "animation" */
+  animation: hide .5s ease 0s 1 normal forwards;
+  transform-origin: center;
+  display: none; }
+
+.show {
+  /* You can play with the seconds to change the "animation" */
+  animation: show .5s ease 0s 1 normal forwards;
+  transform-origin: center;
+  display: block; }
+
+@keyframes hide {
+  0% {
+    transform: scale(1);
+    display: block; }
+  100% {
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    margin: 0;
+    display: none; } }
+
+@keyframes show {
+  0% {
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    margin: 0;
+    display: none; }
+  100% {
+    transform: scale(1);
+    display: block; } }
+
 body {
   min-height: 100%; }
 
-header {
+.home-page header {
   transform: translateY(-100%); }
-  header.loaded {
+  .home-page header.loaded {
     transform: translateY(0);
     transition-delay: 1s; }
+
+.home-page .initial-state .img-wrapper {
+  transform: translateX(-100%); }
+  .home-page .initial-state .img-wrapper.loaded {
+    transform: translateX(0); }
+
+.home-page .initial-state .state-content {
+  top: 30%;
+  transform: translateY(-30%) translateX(-150%); }
+  .home-page .initial-state .state-content.loaded {
+    transform: translateY(-30%) translateX(0);
+    transition-delay: 1s; }
+
+.home-page .accordion {
+  opacity: 0; }
+  .home-page .accordion.loaded {
+    opacity: 1;
+    transition-delay: 1s; }
+
+header {
+  transform: translateY(0); }
 
 main {
   height: 120vh; }
@@ -473,15 +534,10 @@ main {
     opacity: 1;
     transform: translateY(200px) rotateY(0); } }
   main .initial-state .img-wrapper {
-    transform: translateX(-100%); }
-    main .initial-state .img-wrapper.loaded {
-      transform: translateX(0); }
+    transform: translateX(0); }
   main .initial-state .state-content {
     top: 30%;
-    transform: translateY(-30%) translateX(-150%); }
-    main .initial-state .state-content.loaded {
-      transform: translateY(-30%) translateX(0);
-      transition-delay: 1s; }
+    transform: translateY(-30%); }
 
 .v-swiper-wrapper {
   max-height: 632px;
@@ -491,10 +547,7 @@ main {
     height: 100%; }
 
 .accordion {
-  opacity: 0; }
-  .accordion.loaded {
-    opacity: 1;
-    transition-delay: 1s; }
+  opacity: 1; }
 
 /* $rectRatio: 150px;
 $rectRatioMax: 210px; // $rectRatio + 25px on each side

@@ -3,14 +3,46 @@
 body{
     min-height: 100%;
 }
+
+.home-page {
+    header{
+        transform: translateY(-100%);
+        @extend.cubicTransition;
+        &.loaded{
+            transform: translateY(0);
+            transition-delay: 1s;
+        }
+    }
+    .initial-state{
+        .img-wrapper{
+            transform: translateX(-100%);
+            @extend.cubicTransition;
+            &.loaded{
+                transform: translateX(0);
+            }
+        }
+        .state-content{
+            top: 30%;
+            transform: translateY(-30%) translateX(-150%);
+            @extend.cubicTransition;
+            &.loaded{
+                transform: translateY(-30%) translateX(0);
+                transition-delay: 1s;
+            }
+        }
+    }
+    .accordion{
+        opacity: 0;
+        @extend.cubicTransition;
+        &.loaded{
+            opacity: 1;
+            transition-delay: 1s;
+        }
+    }
+}
 ///////////////////////////// HEADER /////////////////////////////
 header{
-    transform: translateY(-100%);
-    @extend.cubicTransition;
-    &.loaded{
-        transform: translateY(0);
-        transition-delay: 1s;
-    }
+    transform: translateY(0);
 }
 
 
@@ -44,20 +76,11 @@ main{
     }
     .initial-state{
         .img-wrapper{
-            transform: translateX(-100%);
-            @extend.cubicTransition;
-            &.loaded{
-                transform: translateX(0);
-            }
+            transform: translateX(0);
         }
         .state-content{
             top: 30%;
-            transform: translateY(-30%) translateX(-150%);
-            @extend.cubicTransition;
-            &.loaded{
-                transform: translateY(-30%) translateX(0);
-                transition-delay: 1s;
-            }
+            transform: translateY(-30%);
         }
     }
 }
@@ -70,12 +93,7 @@ main{
     }
 }
 .accordion{
-    opacity: 0;
-    @extend.cubicTransition;
-    &.loaded{
-        opacity: 1;
-        transition-delay: 1s;
-    }
+    opacity: 1;
 }
 /* $rectRatio: 150px;
 $rectRatioMax: 210px; // $rectRatio + 25px on each side
@@ -302,14 +320,16 @@ $rectRatioMin: 85px;
     animation: dash 10s linear alternate infinite;
   }
   
-  @keyframes dash {
+@keyframes dash {
     from {
-      stroke-dashoffset: 822;
+        stroke-dashoffset: 822;
     }
     to {
-      stroke-dashoffset: 0;
+        stroke-dashoffset: 0;
     }
-  }
+}
+
+
 ///////////////////////////// FOOTER /////////////////////////////
 footer{
     clip-path: polygon(0% 45px, calc(50% - 45px) 45px, 50% 0, calc(50% + 45px) 45px, 100% 45px, 100% 100%, 0% 100%);
