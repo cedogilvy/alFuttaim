@@ -253,6 +253,9 @@ Styles
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3); }
 
+.img-wrapper.no-dark-overlay::after {
+  display: none; }
+
 .p-relative {
   position: relative; }
 
@@ -369,8 +372,11 @@ Styles
 .py-200 {
   padding: 200px 0; }
 
-.py-160 {
+.py-80 {
   padding: 160px 0; }
+
+.py-80 {
+  padding: 80px 0; }
 
 .px-15 {
   padding: 0 12px; }
@@ -449,7 +455,7 @@ ul {
 .grey-patern {
   position: absolute;
   top: 60%;
-  width: 60%;
+  width: 100%;
   transform: translateY(-50%);
   z-index: -1; }
   .grey-patern::after {
@@ -566,9 +572,11 @@ main {
   main .state-content {
     left: 10%; }
   main .mySwiper2 {
-    transform: translateX(-100%); }
+    opacity: 0;
+    visibility: hidden; }
     main .mySwiper2.translate-x {
-      transform: translateX(0); }
+      opacity: 1;
+      visibility: visible; }
   main .mySwiper .swiper-slide {
     opacity: 0;
     transform: translateY(200px) rotateY(180deg); }
@@ -594,6 +602,13 @@ main {
   .v-swiper-wrapper .swiper-container, .v-swiper-wrapper .swiper-wrapper, .v-swiper-wrapper .swiper-slide {
     width: 100%;
     height: 100%; }
+
+.fixed-bar {
+  position: absolute;
+  top: calc(100vh - 52px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; }
 
 .accordion {
   opacity: 1; }
@@ -724,7 +739,8 @@ $rectRatioMin: 105px; */
   transform: rotate(180deg); }
 
 .partners-tabs .nav-tabs .nav-link {
-  border-bottom: 3px solid transparent; }
+  border-bottom: 3px solid transparent;
+  letter-spacing: 1px; }
   .partners-tabs .nav-tabs .nav-link.active {
     border: 0;
     border-bottom: 3px solid grey;
@@ -743,10 +759,19 @@ $rectRatioMin: 105px; */
     background: #005093; }
 
 .map-pins-list a {
-  background-color: rgba(0, 80, 147, 0.1); }
+  background-color: rgba(0, 80, 147, 0.1);
+  display: none; }
+  .map-pins-list a.active {
+    display: block; }
   .map-pins-list a:first-child {
     top: 39%;
     left: 49%; }
+  .map-pins-list a:nth-child(2) {
+    top: 33%;
+    left: 40%; }
+  .map-pins-list a:nth-child(3) {
+    top: 30%;
+    left: 34%; }
 
 .logo-shape {
   /* left: 53.9%;
@@ -784,6 +809,7 @@ $rectRatioMin: 105px; */
   width: 100%; }
 
 footer {
+  z-index: 1031;
   clip-path: polygon(0% 45px, calc(50% - 45px) 45px, 50% 0, calc(50% + 45px) 45px, 100% 45px, 100% 100%, 0% 100%); }
 
 @media (min-width: 992px) and (max-width: 1440px) {

@@ -35,13 +35,18 @@ jQuery(function($){
         
         var thisTag = [];
         $('.partners-logo a').click(function(){
+            $('.partners-logo').removeClass("active");
+            $(this).parent().addClass("active");
             thisTag = $(this).attr('data-tag');
             var arrayInterTags = thisTag.split(",");
             $('.map-pins-list a').each(function(){
                 $(this).removeClass("active");
                 interTags = $(this).attr('data-tag');
-                var intersectingColors = getArraysIntersection(thisTag, arrayInterTags);
-                if (intersectingColors.length !== 0){
+                intersectingColors = arrayInterTags.includes(interTags);
+                //var intersectingColors = getArraysIntersection(thisTag, arrayInterTags);
+                console.log(intersectingColors);
+
+                if (intersectingColors){
                     $(this).addClass("active");
                 }
             });
@@ -158,7 +163,7 @@ jQuery(function($){
         list.eq(randoNumo(list.length)).addClass('t');
         setTimeout(function() {
           go();
-        }, 180);
+        }, 100);
         
     })();
 

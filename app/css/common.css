@@ -253,6 +253,9 @@ Styles
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3); }
 
+.img-wrapper.no-dark-overlay::after {
+  display: none; }
+
 .p-relative {
   position: relative; }
 
@@ -369,8 +372,11 @@ Styles
 .py-200 {
   padding: 200px 0; }
 
-.py-160 {
+.py-80 {
   padding: 160px 0; }
+
+.py-80 {
+  padding: 80px 0; }
 
 .px-15 {
   padding: 0 12px; }
@@ -449,7 +455,7 @@ ul {
 .grey-patern {
   position: absolute;
   top: 60%;
-  width: 60%;
+  width: 100%;
   transform: translateY(-50%);
   z-index: -1; }
   .grey-patern::after {
