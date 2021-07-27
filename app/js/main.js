@@ -32,62 +32,23 @@ jQuery(function($){
         $(".home-page .accordion").addClass("loaded");
 
 
+        
         var thisTag = [];
-        
-        /* $('.marker-all').each(function(){
-            var partTags = $(this).attr("data-tag");
-            var tagList = [];
-            if(partTags.indexOf(',') >= 0){
-                tagList = partTags.split(',');
-            }
-            else{
-                tagList = partTags;
-            }
-        }); */
-
-        // if(thisTag.length <= 0) {
-            /* $('.interactive-tags li a.active').each(function(){
-                thisTag.push($(this).attr('data-tag'));
-            }); */
-        // }
-          
-                /* if(thisTag.length > 0)
-                {
-                  $('.marker-all').each(function(){
-                    $(this).removeClass("active");
-                    interTags = $(this).attr('data-tag');
-                    var arrayInterTags = [];
-                    if(interTags && interTags.indexOf(',') >= 0)
-                    {
-                    arrayInterTags = interTags.split(",");
-                    }
-                    else
-                    {
-                    arrayInterTags = interTags;
-                    }
-                    
-                    var intersectingColors = getArraysIntersection(thisTag, arrayInterTags);
-                    if (intersectingColors && intersectingColors.length !== 0){
-                      $(this).addClass("active");
-                    }
-                  });
-                } else {
-                  $('.marker-all').each(function(){
-                    $(this).removeClass("active");
+        $('.partners-logo a').click(function(){
+            thisTag = $(this).attr('data-tag');
+            var arrayInterTags = thisTag.split(",");
+            $('.map-pins-list a').each(function(){
+                $(this).removeClass("active");
+                interTags = $(this).attr('data-tag');
+                var intersectingColors = getArraysIntersection(thisTag, arrayInterTags);
+                if (intersectingColors.length !== 0){
                     $(this).addClass("active");
-                  });
                 }
-        
-                  $('.panel-heading a').click();
-                  $(".marker-all.active").each(function(){
-                    $(this).find(".pulse").removeClass("d-none");
-                });
-            }); */
+            });
+        });
 
         function getArraysIntersection(a1,a2){
-            if(a1 && a2){
-              return  a1.filter(function(n) { return a2.indexOf(n) !== -1;});
-            }
+            return  a1.filter(function(n) { return a2.indexOf(n) !== -1;});
         }
 
 

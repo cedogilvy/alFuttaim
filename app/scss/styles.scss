@@ -313,9 +313,21 @@ $rectRatioMin: 85px;
 .map-pins-list{
     a{
         background-color: rgba($color: $navy, $alpha: .1);
+        display: none;
+        &.active{
+            display: block;
+        }
         &:first-child(){
             top: 39%;
             left: 49%;
+        }
+        &:nth-child(2){
+            top: 33%;
+            left: 40%;
+        }
+        &:nth-child(3){
+            top: 30%;
+            left: 34%;
         }
     }
 }
