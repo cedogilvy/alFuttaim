@@ -39,17 +39,41 @@ body{
             transition-delay: 1s;
         }
     }
+    main{
+        height: 120vh;
+        .state{
+            height: 120vh;
+        }
+    }
 }
 ///////////////////////////// HEADER /////////////////////////////
 header{
     transform: translateY(0);
+    .navbar-nav {
+        .nav-link{
+            position: relative;
+            &.active{
+                @extend.fontBold;
+                &:after{
+                    content:'';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%) rotate(45deg);
+                    width: 8px;
+                    height: 8px;
+                    background-color: $navy;
+                }
+            }
+        }
+    }
 }
 
 
 main{
-    height: 120vh;
+    height: 100vh;
     .state{
-        height: 120vh;
+        height: 100vh;
     }
     .state-content{
         left: 10%;
@@ -79,8 +103,8 @@ main{
             transform: translateX(0);
         }
         .state-content{
-            top: 30%;
-            transform: translateY(-30%);
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 }
@@ -302,9 +326,9 @@ $rectRatioMin: 85px;
     transform: translate(-50%, -50%);
     width: 44.2%;
     height: 73.5%; */
-    left: 53.9%;
+    left: 54%;
     position: absolute;
-    top: 46%;
+    top: 45.7%;
     transform: translate(-50%, -50%);
     width: 680px;
     height: 595px;
@@ -330,6 +354,17 @@ $rectRatioMin: 85px;
 }
 
 
+
+
+///////////////////////////// ARTICLE PAGE /////////////////////////////
+.mySwiper5{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
 ///////////////////////////// FOOTER /////////////////////////////
 footer{
     clip-path: polygon(0% 45px, calc(50% - 45px) 45px, 50% 0, calc(50% + 45px) 45px, 100% 45px, 100% 100%, 0% 100%);
@@ -351,6 +386,9 @@ footer{
     }
     .mySwiper4{
         height: 440px !important;
+    }
+    .logo-shape{
+        left: 57.3%;top: 54.5%;
     }
 }
 

@@ -94,33 +94,29 @@ jQuery(function($){
 
 
         /////////////////// FILTERS ///////////////////
-        const filters = document.querySelectorAll('.filter');
-
-        filters.forEach(filter => { 
-
-        filter.addEventListener('click', function() {
-
-            let selectedFilter = filter.getAttribute('data-filter');
-            let itemsToHide = document.querySelectorAll(`.listing .listing-item:not([data-filter='${selectedFilter}'])`);
-            let itemsToShow = document.querySelectorAll(`.listing [data-filter='${selectedFilter}']`);
-
-            if (selectedFilter == 'all') {
-            itemsToHide = [];
-            itemsToShow = document.querySelectorAll('.listing [data-filter]');
-            }
-
-            itemsToHide.forEach(el => {
-            el.classList.add('hide');
-            el.classList.remove('show');
-            });
-
-            itemsToShow.forEach(el => {
-            el.classList.remove('hide');
-            el.classList.add('show'); 
-            });
-
-        });
-        });
+        
+        var filters = $('.filter');
+        var selectedFilter, itemsToHide, itemsToShow;
+        $('.filter').each(function(){
+            $(this).click(function(){
+                selectedFilter = $(this).attr('data-filter');
+                itemsToHide = $(`.listing .listing-item:not([data-filter='${selectedFilter}'])`);
+                itemsToShow = $(`.listing .listing-item[data-filter='${selectedFilter}']`);
+                $(`.listing .listing-item:not([data-filter='${selectedFilter}'])`).each(function(){
+                    $(this).addClass("hideItem");
+                    $(this).removeClass("showItem");
+                })
+                $(`.listing [data-filter='${selectedFilter}']`).each(function(){
+                    $(this).addClass("showItem");
+                    $(this).removeClass("hideItem");
+                })
+                if (selectedFilter == 'all') {
+                    $('.listing .listing-item').each(function(){
+                        $(this).removeClass("hideItem");
+                    })
+                }
+            })
+        })
 
 
 

@@ -154,6 +154,26 @@ $red: #F46251;
     color: $black;
     border-radius: 19px;
     line-height: 100%;
+    &.automotive, &.innovation, &.healthcare, &.financial{
+        color: $white;
+        background: $green;
+        border: 1px solid $green;
+    }
+    &.retail{
+        color: $white;
+        background: $red;
+        border: 1px solid $red;
+    }
+    &.education{
+        color: $white;
+        background: $blue;
+        border: 1px solid $blue;
+    }
+    &.estate{
+        color: $white;
+        background: #B863C6;
+        border: 1px solid #B863C6;
+    }
 }
 
 
@@ -177,6 +197,10 @@ Styles
 }
 .w-30{
     width: calc( 30% - 3px) !important;
+    display: inline-block;
+}
+.w-60{
+    width: calc( 60% - 3px) !important;
     display: inline-block;
 }
 .w-70{
@@ -417,12 +441,24 @@ ul{
 .grey-patern{
     position: absolute;
     top: 60%;
-    left: 50%;
     width: 60%;
-    transform: translateX(-50%);
+    transform: translateY(-50%);
     z-index: -1;
     &::after{
         display: none;
+    }
+    &.home-patern{
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &.article-patern{
+        top: 36%;
+        right: 0;
+        overflow: hidden;
+        img{
+            transform: translateX(30%);
+        }
     }
 }
 .tooltip-inner{
@@ -437,18 +473,18 @@ ul{
         border-top-color: $white !important;
     }
 }
-.hide { /* You can play with the seconds to change the "animation" */
-    animation: hide .5s ease 0s 1 normal forwards;
+.hideItem { /* You can play with the seconds to change the "animation" */
+    animation: hideItem .5s ease 0s 1 normal forwards;
     transform-origin: center;
     display: none;
 }
-.show { /* You can play with the seconds to change the "animation" */
-    animation: show .5s ease 0s 1 normal forwards;    
+.showItem { /* You can play with the seconds to change the "animation" */
+    animation: showItem .5s ease 0s 1 normal forwards;    
     transform-origin: center;
     display: block;
 }
 
-@keyframes hide {
+@keyframes hideItem {
     0%{
         transform: scale(1);
         display: block;     
@@ -461,7 +497,7 @@ ul{
         display: none;
     }
 }
-@keyframes show {
+@keyframes showItem {
     0%{
         transform: scale(0);     
         width: 0;
@@ -474,3 +510,33 @@ ul{
         display: block;   
     }
 }
+
+
+@media (min-width: 1441px){
+}
+// commun Styles between Large and Extra Large devices
+@media (min-width: 992px) and (max-width: 1440px){
+    .font-80{font-size: $s64;}
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1440px){}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px){
+}
+
+
+// Comon mobile & Tablet
+@media (min-width: 100px) and (max-width: 1000px){
+}
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px){}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px){}

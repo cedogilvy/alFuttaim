@@ -14,7 +14,7 @@ Fonts
   font-family: 'Graphik', sans-serif;
   font-weight: 500; }
 
-.fontBold, .partners-tabs .nav-tabs .nav-link.active {
+.fontBold, header .navbar-nav .nav-link.active, .partners-tabs .nav-tabs .nav-link.active {
   font-family: 'Graphik', sans-serif;
   font-weight: 700; }
 
@@ -186,6 +186,22 @@ Colors
   color: #000000;
   border-radius: 19px;
   line-height: 100%; }
+  .tag.automotive, .tag.innovation, .tag.healthcare, .tag.financial {
+    color: #FFFFFF;
+    background: #00AF77;
+    border: 1px solid #00AF77; }
+  .tag.retail {
+    color: #FFFFFF;
+    background: #F46251;
+    border: 1px solid #F46251; }
+  .tag.education {
+    color: #FFFFFF;
+    background: #00A3DA;
+    border: 1px solid #00A3DA; }
+  .tag.estate {
+    color: #FFFFFF;
+    background: #B863C6;
+    border: 1px solid #B863C6; }
 
 /* -----------------------------------------------------
 Styles
@@ -210,6 +226,10 @@ Styles
 
 .w-30 {
   width: calc( 30% - 3px) !important;
+  display: inline-block; }
+
+.w-60 {
+  width: calc( 60% - 3px) !important;
   display: inline-block; }
 
 .w-70 {
@@ -429,12 +449,21 @@ ul {
 .grey-patern {
   position: absolute;
   top: 60%;
-  left: 50%;
   width: 60%;
-  transform: translateX(-50%);
+  transform: translateY(-50%);
   z-index: -1; }
   .grey-patern::after {
     display: none; }
+  .grey-patern.home-patern {
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%); }
+  .grey-patern.article-patern {
+    top: 36%;
+    right: 0;
+    overflow: hidden; }
+    .grey-patern.article-patern img {
+      transform: translateX(30%); }
 
 .tooltip-inner {
   border: none;
@@ -446,19 +475,19 @@ ul {
 .tooltip-arrow:before {
   border-top-color: #FFFFFF !important; }
 
-.hide {
+.hideItem {
   /* You can play with the seconds to change the "animation" */
-  animation: hide .5s ease 0s 1 normal forwards;
+  animation: hideItem .5s ease 0s 1 normal forwards;
   transform-origin: center;
   display: none; }
 
-.show {
+.showItem {
   /* You can play with the seconds to change the "animation" */
-  animation: show .5s ease 0s 1 normal forwards;
+  animation: showItem .5s ease 0s 1 normal forwards;
   transform-origin: center;
   display: block; }
 
-@keyframes hide {
+@keyframes hideItem {
   0% {
     transform: scale(1);
     display: block; }
@@ -469,7 +498,7 @@ ul {
     margin: 0;
     display: none; } }
 
-@keyframes show {
+@keyframes showItem {
   0% {
     transform: scale(0);
     width: 0;
@@ -479,6 +508,10 @@ ul {
   100% {
     transform: scale(1);
     display: block; } }
+
+@media (min-width: 992px) and (max-width: 1440px) {
+  .font-80 {
+    font-size: 4rem; } }
 
 body {
   min-height: 100%; }
@@ -507,13 +540,29 @@ body {
     opacity: 1;
     transition-delay: 1s; }
 
+.home-page main {
+  height: 120vh; }
+  .home-page main .state {
+    height: 120vh; }
+
 header {
   transform: translateY(0); }
+  header .navbar-nav .nav-link {
+    position: relative; }
+    header .navbar-nav .nav-link.active:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+      width: 8px;
+      height: 8px;
+      background-color: #005093; }
 
 main {
-  height: 120vh; }
+  height: 100vh; }
   main .state {
-    height: 120vh; }
+    height: 100vh; }
   main .state-content {
     left: 10%; }
   main .mySwiper2 {
@@ -536,8 +585,8 @@ main {
   main .initial-state .img-wrapper {
     transform: translateX(0); }
   main .initial-state .state-content {
-    top: 30%;
-    transform: translateY(-30%); }
+    top: 50%;
+    transform: translateY(-50%); }
 
 .v-swiper-wrapper {
   max-height: 632px;
@@ -706,9 +755,9 @@ $rectRatioMin: 105px; */
     transform: translate(-50%, -50%);
     width: 44.2%;
     height: 73.5%; */
-  left: 53.9%;
+  left: 54%;
   position: absolute;
-  top: 46%;
+  top: 45.7%;
   transform: translate(-50%, -50%);
   width: 680px;
   height: 595px; }
@@ -728,6 +777,12 @@ $rectRatioMin: 105px; */
   to {
     stroke-dashoffset: 0; } }
 
+.mySwiper5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+
 footer {
   clip-path: polygon(0% 45px, calc(50% - 45px) 45px, 50% 0, calc(50% + 45px) 45px, 100% 45px, 100% 100%, 0% 100%); }
 
@@ -735,4 +790,7 @@ footer {
   .mySwiper {
     height: 120vh; }
   .mySwiper4 {
-    height: 440px !important; } }
+    height: 440px !important; }
+  .logo-shape {
+    left: 57.3%;
+    top: 54.5%; } }
