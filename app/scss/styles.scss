@@ -82,6 +82,7 @@ main{
         opacity: 0;
         visibility: hidden;
         @extend.cubicTransition;
+        height: 120vh;
         &.translate-x{
             opacity: 1;
             visibility: visible;

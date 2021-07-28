@@ -573,7 +573,8 @@ main {
     left: 10%; }
   main .mySwiper2 {
     opacity: 0;
-    visibility: hidden; }
+    visibility: hidden;
+    height: 120vh; }
     main .mySwiper2.translate-x {
       opacity: 1;
       visibility: visible; }

@@ -38,16 +38,24 @@ jQuery(function($){
             $('.partners-logo').removeClass("active");
             $(this).parent().addClass("active");
             thisTag = $(this).attr('data-tag');
+            thispartner = $(this).attr('data-partner');
+            console.log(thispartner);
             var arrayInterTags = thisTag.split(",");
             $('.map-pins-list a').each(function(){
                 $(this).removeClass("active");
                 interTags = $(this).attr('data-tag');
                 intersectingColors = arrayInterTags.includes(interTags);
-                //var intersectingColors = getArraysIntersection(thisTag, arrayInterTags);
-                console.log(intersectingColors);
 
                 if (intersectingColors){
                     $(this).addClass("active");
+                }
+            });
+            $('.brand-logo img').each(function(){
+                $(this).addClass("d-none");
+                interPartner = $(this).attr('data-partner');
+                intersecting = thispartner.includes(interPartner);
+                if (intersecting){
+                    $(this).removeClass("d-none");
                 }
             });
         });
