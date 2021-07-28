@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="94px" height="94px" viewBox="0 0 94 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Floating element</title>
+    <defs>
+        <linearGradient x1="-53.6668347%" y1="-111.945565%" x2="122.983871%" y2="130.00252%" id="linearGradient-1">
+            <stop stop-color="#05ADEF" offset="0%"></stop>
+            <stop stop-color="#1B4A9B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Organisms-/-Footer" transform="translate(-161.000000, -58.000000)" fill="url(#linearGradient-1)">
+            <g id="Floating-element" transform="translate(208.000000, 105.000000) scale(-1, 1) translate(-208.000000, -105.000000) translate(161.000000, 58.000000)">
+                <polygon id="Rectangle" points="32 63 63 63 63 32 94 32 94 94 32 94"></polygon>
+                <rect id="Rectangle-Copy-20" opacity="0.4" x="32" y="32" width="31" height="31"></rect>
+                <rect id="Rectangle-Copy-23" x="0" y="0" width="32" height="32"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
