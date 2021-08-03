@@ -406,8 +406,14 @@ ul{
 .rectangle{
     padding-top: 48.5%;
 }
+.rectangle-v{
+    padding-top: 150%;
+}
 .between-sizes{
     padding-top: 65%;
+}
+.bigger-between-sizes{
+    padding-top: 73%;
 }
 .swiper-pagination-progressbar{
     height: 8px !important;
@@ -432,12 +438,25 @@ ul{
                 left: -5%;
             }
         }
+        .hidden-details{
+            opacity: 0;
+            visibility: hidden;
+            @extend.cubicTransition;
+            font-size: 0;
+            //display: none;
+        }
         &:hover{
             opacity: 1;
             .listing-hover{
                 opacity: 1;
                 visibility: visible;
                 //transform: translateY(0);
+            }
+            .hidden-details{
+                //display: block;
+                opacity: 1;
+                visibility: visible;
+                @extend.font-18;
             }
         }
     }

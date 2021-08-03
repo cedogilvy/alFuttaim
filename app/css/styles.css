@@ -39,7 +39,7 @@ Sizes
 .font-16 {
   font-size: 1rem; }
 
-.font-18 {
+.font-18, .listing .listing-anchor:hover .hidden-details {
   font-size: 1.125rem; }
 
 .font-20 {
@@ -301,7 +301,7 @@ Styles
 .object-fit-contain {
   object-fit: contain; }
 
-.cubicTransition, a, button, .listing .listing-anchor .listing-hover, main .mySwiper2, main .mySwiper2 .swiper-slide .state-content, .mySwiper .swiper-slide .slide-hover-content img, .mySwiper .swiper-slide .slide-hover-content p, .home-page header, .home-page .initial-state .img-wrapper, .home-page main .initial-state .state-content, .home-page .accordion {
+.cubicTransition, a, button, .listing .listing-anchor .listing-hover, .listing .listing-anchor .hidden-details, main .mySwiper2, main .mySwiper2 .swiper-slide .state-content, .mySwiper .swiper-slide .slide-hover-content img, .mySwiper .swiper-slide .slide-hover-content p, .home-page header, .home-page .initial-state .img-wrapper, .home-page main .initial-state .state-content, .home-page .accordion {
   transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
   -moz-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
@@ -418,8 +418,14 @@ ul {
 .rectangle {
   padding-top: 48.5%; }
 
+.rectangle-v {
+  padding-top: 150%; }
+
 .between-sizes {
   padding-top: 65%; }
+
+.bigger-between-sizes {
+  padding-top: 73%; }
 
 .swiper-pagination-progressbar {
   height: 8px !important;
@@ -438,9 +444,16 @@ ul {
       opacity: 0.2;
       bottom: 20%;
       left: -5%; }
+  .listing .listing-anchor .hidden-details {
+    opacity: 0;
+    visibility: hidden;
+    font-size: 0; }
   .listing .listing-anchor:hover {
     opacity: 1; }
     .listing .listing-anchor:hover .listing-hover {
+      opacity: 1;
+      visibility: visible; }
+    .listing .listing-anchor:hover .hidden-details {
       opacity: 1;
       visibility: visible; }
 
