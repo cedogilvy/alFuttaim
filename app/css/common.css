@@ -150,11 +150,11 @@ Colors
   background: linear-gradient(rgba(0, 0, 0, 0), black); }
 
 .border-0 {
-  border: 0 !important;
-  border-bottom-right-radius: 0 !important;
-  border-bottom-left-radius: 0 !important;
-  border-top-left-radius: 0 !important;
-  border-top-right-radius: 0 !important; }
+  border: 0 !important; }
+
+.btn {
+  width: 327px;
+  border: 1px solid #000000; }
 
 .automotive, .innovation, .healthcare, .financial {
   color: #00AF77; }
@@ -235,6 +235,9 @@ Styles
 .w-70 {
   width: calc( 70% - 3px);
   display: inline-block; }
+
+.h-70 {
+  height: calc( 70% - 3px); }
 
 .w-80 {
   width: calc( 80% - 3px);
@@ -430,8 +433,7 @@ ul {
   height: 100%; }
   .listing .listing-anchor .listing-hover {
     opacity: 0;
-    visibility: hidden;
-    transform: translateY(-100px); }
+    visibility: hidden; }
     .listing .listing-anchor .listing-hover .low-opacity {
       opacity: 0.2;
       bottom: 20%;
@@ -440,8 +442,7 @@ ul {
     opacity: 1; }
     .listing .listing-anchor:hover .listing-hover {
       opacity: 1;
-      visibility: visible;
-      transform: translateY(0); }
+      visibility: visible; }
 
 .input-wrapper::before {
   content: '';

@@ -71,25 +71,28 @@ jQuery(function($){
         
         var filters = $('.filter');
         var selectedFilter, itemsToHide, itemsToShow;
-        $('.filter').each(function(){
-            $(this).click(function(){
-                selectedFilter = $(this).attr('data-filter');
-                itemsToHide = $(`.listing .listing-item:not([data-filter='${selectedFilter}'])`);
-                itemsToShow = $(`.listing .listing-item[data-filter='${selectedFilter}']`);
-                $(`.listing .listing-item:not([data-filter='${selectedFilter}'])`).each(function(){
-                    $(this).addClass("hideItem");
-                    $(this).removeClass("showItem");
-                })
-                $(`.listing [data-filter='${selectedFilter}']`).each(function(){
-                    $(this).addClass("showItem");
+        $('.filter').click(function(){
+            selectedFilter = $(this).attr('data-filter');
+            itemsToHide = $('.listing .listing-item:not([data-filter=' + selectedFilter + '])');
+            itemsToShow = $('.listing .listing-item[data-filter=' + selectedFilter + ']');
+
+            $('.listing .listing-item:not([data-filter=' + selectedFilter + '])').each(function(){
+                $(this).addClass("hideItem");
+                $(this).removeClass("showItem");
+            })
+            $('.listing [data-filter=' + selectedFilter + ']').each(function(){
+                $(this).addClass("showItem");
+                $(this).removeClass("hideItem");
+            })
+            if (selectedFilter == 'all') {
+                $('.listing .listing-item').each(function(){
                     $(this).removeClass("hideItem");
                 })
-                if (selectedFilter == 'all') {
-                    $('.listing .listing-item').each(function(){
-                        $(this).removeClass("hideItem");
-                    })
-                }
+            }
+            $('.filter').each(function(){
+                $(this).removeClass("active")
             })
+            $(this).addClass("active")
         })
 
 
@@ -171,7 +174,7 @@ jQuery(function($){
         list.eq(randoNumo(list.length)).addClass('t');
         setTimeout(function() {
           go();
-        }, 100);
+        }, 50);
         
     })();
 

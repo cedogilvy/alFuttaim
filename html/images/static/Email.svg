@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="18px" viewBox="0 0 22 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Atoms / Icons / Email</title>
+    <defs>
+        <linearGradient x1="191.97298%" y1="-64.1765948%" x2="0.862610393%" y2="88.3685688%" id="linearGradient-1">
+            <stop stop-color="#05ADEF" offset="0%"></stop>
+            <stop stop-color="#1B4A9B" offset="100%"></stop>
+        </linearGradient>
+        <path d="M19,0 C20.6522844,0 22,1.34771525 22,3 L22,15 C22,16.6522847 20.6522844,18 19,18 L3,18 C1.3477149,18 6.11066753e-13,16.6522847 6.11066753e-13,14.9991667 L0.00999965278,3 C0.00999965278,1.34734877 1.34805636,0 3,0 L19,0 Z M16.6632471,4.14361248 L10.97,7.573 L5.51623483,4.2870756 C5.07697202,4.0224083 4.51570858,4.13493129 4.20956119,4.53110846 L4.14361214,4.62752667 C3.85858581,5.10057893 4.01101095,5.71512304 4.48406321,6.00014937 L4.48406321,6.00014937 L11.0036982,9.92839949 L11.01,9.917 L17.6998324,5.85777344 C18.1708902,5.57187774 18.3219063,4.9587924 18.0375286,4.48681667 L18.0358698,4.48406356 C17.7508435,4.0110113 17.1362994,3.85858616 16.6632471,4.14361248 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="9,0-Contact" transform="translate(-167.000000, -1663.000000)">
+            <g id="Details" transform="translate(166.000000, 1240.000000)">
+                <g id="Email" transform="translate(1.000000, 420.000000)">
+                    <g id="Group" transform="translate(0.000000, 3.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="Mask" fill="url(#linearGradient-1)" fill-rule="nonzero" xlink:href="#path-2"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="20px" viewBox="0 0 14 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Atoms / Icons  / Pin</title>
+    <defs>
+        <linearGradient x1="119.56676%" y1="-120.560093%" x2="25.9226791%" y2="107.316008%" id="linearGradient-1">
+            <stop stop-color="#05ADEF" offset="0%"></stop>
+            <stop stop-color="#1B4A9B" offset="100%"></stop>
+        </linearGradient>
+        <path d="M7,0 C3.13,0 0,3.13 0,7 C0,12.25 7,20 7,20 C7,20 14,12.25 14,7 C14,3.13 10.87,0 7,0 L7,0 Z M7,9.5 C5.62,9.5 4.5,8.38 4.5,7 C4.5,5.62 5.62,4.5 7,4.5 C8.38,4.5 9.5,5.62 9.5,7 C9.5,8.38 8.38,9.5 7,9.5 L7,9.5 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="9,0-Contact" transform="translate(-171.000000, -1535.000000)">
+            <g id="Details" transform="translate(166.000000, 1240.000000)">
+                <g id="Location" transform="translate(5.000000, 293.000000)">
+                    <g id="Group" transform="translate(0.000000, 2.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

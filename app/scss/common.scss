@@ -114,10 +114,14 @@ $red: #F46251;
 .gradient-txt{background: linear-gradient(rgba($color: $black, $alpha: 0),rgba($color: $black, $alpha: 1.0));}
 .border-0{
     border: 0 !important;
-    border-bottom-right-radius: 0 !important;
-    border-bottom-left-radius:  0 !important;
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
+    //border-bottom-right-radius: 0 !important;
+    //border-bottom-left-radius:  0 !important;
+    //border-top-left-radius: 0 !important;
+    //border-top-right-radius: 0 !important;
+}
+.btn{
+    width: 327px;
+    border: 1px solid $black;
 }
 
 .automotive, .innovation, .healthcare, .financial{
@@ -206,6 +210,9 @@ Styles
 .w-70{
     width: calc( 70% - 3px);
     display: inline-block;
+}
+.h-70{
+    height: calc( 70% - 3px);
 }
 .w-80{
     width: calc( 80% - 3px);
@@ -417,7 +424,7 @@ ul{
         .listing-hover{
             opacity: 0;
             visibility: hidden;
-            transform: translateY(-100px);
+            //transform: translateY(-100px);
             @extend.cubicTransition;
             .low-opacity{
                 opacity: 0.2;
@@ -430,7 +437,7 @@ ul{
             .listing-hover{
                 opacity: 1;
                 visibility: visible;
-                transform: translateY(0);
+                //transform: translateY(0);
             }
         }
     }
