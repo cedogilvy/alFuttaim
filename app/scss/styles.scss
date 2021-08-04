@@ -339,18 +339,6 @@ $rectRatioMin: 85px;
         &.active{
             display: block;
         }
-        &:first-child(){
-            top: 39%;
-            left: 49%;
-        }
-        &:nth-child(2){
-            top: 33%;
-            left: 40%;
-        }
-        &:nth-child(3){
-            top: 30%;
-            left: 34%;
-        }
     }
 }
 .logo-shape{
@@ -518,7 +506,7 @@ footer{
         height: 120vh;
     }
     .mySwiper4{
-        height: 530px !important;
+        height: 465px !important;
     }
     .logo-shape{
         left: 57.3%;top: 54.5%;

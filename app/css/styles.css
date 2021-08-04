@@ -228,6 +228,10 @@ Styles
   width: calc( 30% - 3px) !important;
   display: inline-block; }
 
+.w-40 {
+  width: calc( 40% - 3px) !important;
+  display: inline-block; }
+
 .w-60 {
   width: calc( 60% - 3px) !important;
   display: inline-block; }
@@ -358,13 +362,13 @@ Styles
 .half-opacity {
   opacity: .5; }
 
-.mx-8 {
-  margin-right: 2.25rem;
-  margin-left: 2.25rem; }
+.px-8 {
+  padding-right: 2.25rem;
+  padding-left: 2.25rem; }
 
-.mx-16 {
-  margin-right: 4.5rem;
-  margin-left: 4.5rem; }
+.px-16 {
+  padding-right: 4.5rem;
+  padding-left: 4.5rem; }
 
 .m-top-200 {
   margin-top: 200px; }
@@ -484,6 +488,10 @@ ul {
     overflow: hidden; }
     .grey-patern.article-patern img {
       transform: translateX(30%); }
+  .grey-patern.about-patern {
+    left: 0; }
+    .grey-patern.about-patern img {
+      transform: translateX(-30%); }
 
 .tooltip-inner {
   border: none;
@@ -528,6 +536,24 @@ ul {
   100% {
     transform: scale(1);
     display: block; } }
+
+.clipped-images img {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transform: translate(-50%, -50%); }
+  .clipped-images img:first-child {
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    left: 50%; }
+  .clipped-images img:nth-child(2), .clipped-images img:nth-child(3) {
+    width: 250px;
+    height: 250px; }
+  .clipped-images img:nth-child(2) {
+    top: calc(50% - 125px - 10px);
+    left: calc(50% + 250px + 10px); }
+  .clipped-images img:nth-child(3) {
+    top: calc(50% + 125px + 10px);
+    left: calc(50% + 250px + 10px); }
 
 @media (min-width: 992px) and (max-width: 1440px) {
   .font-80 {
@@ -776,15 +802,6 @@ $rectRatioMin: 105px; */
   display: none; }
   .map-pins-list a.active {
     display: block; }
-  .map-pins-list a:first-child {
-    top: 39%;
-    left: 49%; }
-  .map-pins-list a:nth-child(2) {
-    top: 33%;
-    left: 40%; }
-  .map-pins-list a:nth-child(3) {
-    top: 30%;
-    left: 34%; }
 
 .logo-shape {
   /* left: 53.9%;
@@ -905,7 +922,7 @@ footer {
   .mySwiper {
     height: 120vh; }
   .mySwiper4 {
-    height: 530px !important; }
+    height: 465px !important; }
   .logo-shape {
     left: 57.3%;
     top: 54.5%; } }
