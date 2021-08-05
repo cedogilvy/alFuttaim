@@ -283,6 +283,44 @@ Styles
     &.right{right: 0;}
     &.left{left: 0;}
 }
+.p-lg-absolute{
+    position: absolute;
+    &.top-left{
+        top:0;
+        left: 0;
+        bottom: initial;
+    }
+    &.top-right{
+        top:0;
+        right: 0;
+        bottom: initial;
+    }
+    &.bottom-left{
+        bottom:0;
+        left: 0;
+        top: initial;
+    }
+    &.bottom-right{
+        bottom:0;
+        right: 0;
+        top: initial;
+    }
+    &.center-y{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &.center-x{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &.center{
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    &.right{right: 0;}
+    &.left{left: 0;}
+}
 .object-fit-cover{
     object-fit: cover;
 }
@@ -466,6 +504,7 @@ ul{
     }
 }
 .input-wrapper{
+    min-height: 50px;
     &::before{
         content: '';
         position: absolute;
@@ -599,6 +638,98 @@ $imgRatio: 500px;
 
 // Comon mobile & Tablet
 @media (min-width: 100px) and (max-width: 1000px){
+    .py-200{
+        padding: 20px 0;
+    }
+    .p-lg-absolute{
+        position: relative;
+    }
+    .w-80, .w-70, .w-60, .w-50, .w-40, .w-30, .w-20{
+        width: 100% !important;
+        &.px-8{
+            //width: calc(100% - 4.5rem) !important;
+        }
+        &.state-content{
+            width: calc(100% - 30px) !important;
+        }
+    }
+    .rectangle, .rectangle-v, .between-sizes, .bigger-between-sizes{
+        padding-top: 100%;
+    }
+    .font-32{
+        font-size: $s24;
+    }
+    .font-60{
+        font-size: $s32;
+    }
+    .font-80{
+        font-size: 2.3rem;
+    }
+    /* $s14: 0.75rem;
+    $s16: 0.875rem;
+    $s18: 1rem;
+    $s20: 1.125rem;
+    $s22: 1.25rem;
+    $s24: 1.375rem;
+    $s26: 1.5rem;
+    $s28: 1.625rem;
+    $s30: 1.75rem;
+    $s32: 1.875rem;
+    $s38: 2rem;
+    $s40: 2.375rem;
+    $s42: 2.5rem;
+    $s46: 2.625rem;
+    $s48: 2.875rem;
+    $s60: 3rem;
+    $s64: 3.75rem;
+    $s80: 4rem;
+    $s90: 5rem; */
+    .rect{
+        &.s8{
+            width: $s6;
+            height: $s6;
+        }
+        &.s12{
+            width: $s8;
+            height: $s8;
+        }
+        &.s16{
+            width: $s12;
+            height: $s12;
+        }
+        &.s20{
+            width: $s16;
+            height: $s16;
+        }
+        &.s28{
+            width: $s20;
+            height: $s20;
+        }
+        &.s30{
+            width: $s26;
+            height: $s26;
+        }
+        &.s40{
+            width: $s30;
+            height: $s30;
+        }
+        &.s48{
+            width: $s40;
+            height: $s40;
+        }
+        &.s60{
+            width: $s48;
+            height: $s48;
+        }
+        &.s80{
+            width: $s60;
+            height: $s60;
+        }
+        &.s90{
+            width: $s80;
+            height: $s80;
+        }
+    }
 }
 
 
@@ -607,4 +738,28 @@ $imgRatio: 500px;
 
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px){}
+@media (max-width: 575.98px){
+
+.clipped-images{
+    img{
+        &:first-child(){
+            width: 200px;
+            height: 200px;
+            top: 50%;
+            left: 50%;
+        }
+        &:nth-child(2), &:nth-child(3){
+            width: 100px;
+            height: 100px;
+        }
+        &:nth-child(2){
+            top: calc(50% - 50px - 10px);
+            left: calc(50% + 100px + 10px);
+        }
+        &:nth-child(3){
+            top: calc(50% + 50px + 10px);
+            left: calc(50% + 100px + 10px);
+        }
+    }
+}
+}

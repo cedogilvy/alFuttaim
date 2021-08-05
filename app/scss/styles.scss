@@ -453,19 +453,22 @@ footer{
 }
 .modalSwiper2 {
     height: 80%;
-    width: 100%;
+    width: 80%;
+    margin-left: 0;
 }
 .modalSwiper {
     height: 20%;
     box-sizing: border-box;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 .video-modal{
     .modal-dialog{
-        max-width: 80vw;
+        max-width: 90vw;
+        margin-left: 10vw;
+        margin-right: 0;
     }
     .modal-body{
-        height: 80vh;
+        height: 90vh;
     }
     .modal-header{
         border-bottom: none;
@@ -473,7 +476,7 @@ footer{
     .btn-close{
         position: absolute;
         top: 20px;
-        right: 20px;
+        right: 20%;
         z-index: 1000;
     }
     .swiper-slide{
@@ -482,6 +485,25 @@ footer{
             height: 82%;
             object-fit: cover;
         }
+    }
+    .swiper-slide-thumb-active{
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: $black, $alpha: .7);
+        }
+    }
+    .swiper-button-next, .swiper-button-prev{ display: none;}
+}
+
+.modal-backdrop{
+    background-color: $white;
+    &.show{
+        opacity: 1;
     }
 }
 .first-fold{
@@ -494,6 +516,16 @@ footer{
         color: $blue;
         border-bottom: 3px solid grey;
     }
+}
+.accordion-body{
+    max-height: 90vh;
+    overflow-y: scroll;
+}
+.swiper-desktop{
+    display: block;
+}
+.swiper-mobile{
+    display: none;
 }
 @media (min-width: 1441px){
 }
@@ -525,12 +557,42 @@ footer{
 
 // Comon mobile & Tablet
 @media (min-width: 100px) and (max-width: 1000px){
+    .swiper-desktop{
+        display: none;
+    }
+    .swiper-mobile{
+        display: block;
+    }
+    .swiper-container-vertical > .swiper-pagination-bullets {
+        right: 5%;
+    }
+    .video-modal {
+        .modal-dialog{
+            max-width: 100vw;
+        }
+    }
+    main {
+        .state-content {
+            left: 15px;
+        }
+    }
+    .first-fold {
+        margin-top: 100px;
+    }
 }
 
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px){}
+@media (min-width: 768px) and (max-width: 991.98px){
+    .mySwiper4 {
+        height: 450px !important;
+    }
+}
 
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px){}
+@media (max-width: 575.98px){
+    .mySwiper4 {
+        height: 468px !important;
+    }
+}
