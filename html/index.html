@@ -58,10 +58,11 @@
               </nav>
               <nav class="navbar navbar-expand-lg p-0 p-lg-1 h-100 d-inline-flex float-end mx-3">
                 <button class="btn navbar-toggler p-0 border-0 rect s40" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <img src="images/static/menu.svg" alt="" class="w-100 h-100 object-fit-contain m-0">
+                  <img src="images/static/menu.svg" alt="" class="w-100 h-100 object-fit-contain m-0 open-menu">
+                  <img src="images/static/close-blue.svg" alt="" class="w-100 h-100 object-fit-contain m-0 d-none close-menu">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <div class="ms-auto mb-2 mb-lg-0">
+                  <div class="ms-auto mb-2 mb-lg-0 navbar-collapse-content">
                     <ul class="navbar-nav d-lg-inline-flex">
                       <li class="nav-item">
                         <a class="nav-link fontMedium font-14 text-uppercase" href="#">DRIVING</a>
@@ -82,7 +83,7 @@
                         <a class="nav-link fontMedium font-14 text-uppercase" href="#">CARING</a>
                       </li>
                     </ul>
-                    <div class="rect s8 bgBlue rotate d-lg-inline-flex mx-2"></div>
+                    <div class="rect s8 bgBlue rotate d-lg-inline-flex mx-2 mx-auto"></div>
                     <ul class="navbar-nav d-lg-inline-flex">
                       <li class="nav-item">
                         <a class="nav-link fontRegular font-14 text-uppercase" href="#">ABOUT US</a>
@@ -110,7 +111,7 @@
 
     <!--  MAIN COMPONENT  -->
     <main class="overflow-hidden">
-      <div class="state p-relative initial-state">
+      <div class="state p-relative initial-state swiper-desktop">
         <div class="img-wrapper p-relative w-100 h-100">
           <img src="images/dynamic/main/main-bg.png" alt="" class="w-100 h-100 object-fit-cover">
         </div>
@@ -129,7 +130,7 @@
       </div>
 
       <!-- Swiper -->
-      <div class="swiper-container mySwiper2 p-absolute top-left w-100">
+      <div class="swiper-container mySwiper2 p-absolute top-left w-100 swiper-desktop">
         <div class="swiper-wrapper">
           <div class="swiper-slide state p-relative">
             <div class="img-wrapper p-relative w-100 h-100">
@@ -336,7 +337,7 @@
           </div>
         </div>
       </div>
-      <div thumbsSlider="" class="swiper-container mySwiper p-absolute center-y right me-5">
+      <div thumbsSlider="" class="swiper-container mySwiper p-absolute center-y right me-5 swiper-desktop">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="swiper-slide-inner"></div>
@@ -433,6 +434,132 @@
             </g>
           </svg>
         </div> -->
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper-container swiper-mobile home-swiper-mobile p-absolute top-left w-100">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide state p-relative">
+            <div class="img-wrapper p-relative w-100 h-100">
+              <img src="images/dynamic/main/main-bg.png" alt="" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="state-content p-absolute">
+              <div class="h1 text-uppercase font-80 white lh-1">
+                <span class="d-block fontMedium">TOGETHER,</span>
+                <span class="d-block fontLight px-8">EVERY STEP</span>
+                <span class="d-block fontLight px-16">OF THE WAY</span>
+              </div>
+              <p class="font-14 fontRegular white px-8 mb-5">90 years of touching lives through flourishing enterprise. Together, every step of the way..</p>
+              <button class="btn text-start bgWhite border-0 p-3 text-uppercase black font-14 fontBold px-8 rounded-2">
+                <p class="mb-0 d-inline-block me-5 align-middle">discover more</p>
+                <img src="images/static/arrow-right.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12">
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide state p-relative">
+            <div class="img-wrapper p-relative w-100 h-100">
+              <img src="images/dynamic/living.png" alt="" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="state-content p-absolute">
+              <div class="h1 text-uppercase font-80 white lh-1">
+                <span class="d-block fontMedium">LIVING,</span>
+                <span class="d-block fontLight px-16">Together</span>
+              </div>
+              <p class="font-14 fontRegular white px-8 mb-5">90 years of touching lives through flourishing enterprise. Together, every step of the way..</p>
+              <button class="btn text-start bgWhite border-0 p-3 text-uppercase black font-14 fontBold px-8 rounded-2">
+                <p class="mb-0 d-inline-block me-5 align-middle">discover more</p>
+                <img src="images/static/arrow-right.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12">
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide state p-relative">
+            <div class="img-wrapper p-relative w-100 h-100">
+              <img src="images/dynamic/driving.png" alt="" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="state-content p-absolute">
+              <div class="h1 text-uppercase font-80 white lh-1">
+                <span class="d-block fontMedium">Driving,</span>
+                <span class="d-block fontLight px-8">EVERY STEP</span>
+                <span class="d-block fontLight px-16">OF THE WAY</span>
+              </div>
+              <p class="font-14 fontRegular white px-8 mb-5">90 years of touching lives through flourishing enterprise. Together, every step of the way..</p>
+              <button class="btn text-start bgWhite border-0 p-3 text-uppercase black font-14 fontBold px-8 rounded-2">
+                <p class="mb-0 d-inline-block me-5 align-middle">discover more</p>
+                <img src="images/static/arrow-right.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12">
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide state p-relative">
+            <div class="img-wrapper p-relative w-100 h-100">
+              <img src="images/dynamic/investing.png" alt="" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="state-content p-absolute">
+              <div class="h1 text-uppercase font-80 white lh-1">
+                <span class="d-block fontMedium">INVESTING,</span>
+                <span class="d-block fontLight px-8">EVERY STEP</span>
+                <span class="d-block fontLight px-16">OF THE WAY</span>
+              </div>
+              <p class="font-14 fontRegular white px-8 mb-5">90 years of touching lives through flourishing enterprise. Together, every step of the way..</p>
+              <button class="btn text-start bgWhite border-0 p-3 text-uppercase black font-14 fontBold px-8 rounded-2">
+                <p class="mb-0 d-inline-block me-5 align-middle">discover more</p>
+                <img src="images/static/arrow-right.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12">
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide state p-relative">
+            <div class="img-wrapper p-relative w-100 h-100">
+              <img src="images/dynamic/shopping.png" alt="" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="state-content p-absolute">
+              <div class="h1 text-uppercase font-80 white lh-1">
+                <span class="d-block fontMedium">SHOPPING,</span>
+                <span class="d-block fontLight px-8">EVERY STEP</span>
+                <span class="d-block fontLight px-16">OF THE WAY</span>
+              </div>
+              <p class="font-14 fontRegular white px-8 mb-5">90 years of touching lives through flourishing enterprise. Together, every step of the way..</p>
+              <button class="btn text-start bgWhite border-0 p-3 text-uppercase black font-14 fontBold px-8 rounded-2">
+                <p class="mb-0 d-inline-block me-5 align-middle">discover more</p>
+                <img src="images/static/arrow-right.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12">
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide state p-relative">
+            <div class="img-wrapper p-relative w-100 h-100">
+              <img src="images/dynamic/learning.png" alt="" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="state-content p-absolute">
+              <div class="h1 text-uppercase font-80 white lh-1">
+                <span class="d-block fontMedium">Learning,</span>
+                <span class="d-block fontLight px-8">EVERY STEP</span>
+                <span class="d-block fontLight px-16">OF THE WAY</span>
+              </div>
+              <p class="font-14 fontRegular white px-8 mb-5">90 years of touching lives through flourishing enterprise. Together, every step of the way..</p>
+              <button class="btn text-start bgWhite border-0 p-3 text-uppercase black font-14 fontBold px-8 rounded-2">
+                <p class="mb-0 d-inline-block me-5 align-middle">discover more</p>
+                <img src="images/static/arrow-right.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12">
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide state p-relative">
+            <div class="img-wrapper p-relative w-100 h-100">
+              <img src="images/dynamic/caring.png" alt="" class="w-100 h-100 object-fit-cover">
+            </div>
+            <div class="state-content p-absolute">
+              <div class="h1 text-uppercase font-80 white lh-1">
+                <span class="d-block fontMedium">caring,</span>
+                <span class="d-block fontLight px-8">EVERY STEP</span>
+                <span class="d-block fontLight px-16">OF THE WAY</span>
+              </div>
+              <p class="font-14 fontRegular white px-8 mb-5">90 years of touching lives through flourishing enterprise. Together, every step of the way..</p>
+              <button class="btn text-start bgWhite border-0 p-3 text-uppercase black font-14 fontBold px-8 rounded-2">
+                <p class="mb-0 d-inline-block me-5 align-middle">discover more</p>
+                <img src="images/static/arrow-right.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12">
+              </button>
+            </div>
+          </div>
+        </div>
+        <img src="images/static/patern-mobile.svg" alt="" class="p-absolute patern-mobile-main">
+        <div class="swiper-pagination"></div>
       </div>
     </main>
 
@@ -581,25 +708,27 @@
                   <div class="rect s12 bgNavy d-inline-block rotate me-2 align-middle"></div>
                   <p class="d-inline-block navy fontBold font-18 text-uppercase mb-0 align-middle">News</p>
                 </div>
-                <div class="col-10 col-lg-6">
-                  <ul class="d-block mb-2">
-                    <li class="d-inline-block me-1 mb-2 text-end"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">Automotive</a></li>
-                    <li class="d-inline-block me-1 mb-2 text-end"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">INNOVATION</a></li>
-                    <li class="d-inline-block me-1 mb-2 text-end"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">REAL ESTATE</a></li>
-                    <!-- <li class="d-inline-block me-1 mb-2 text-end"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">CAREERS</a></li> -->
-                    <li class="d-inline-block me-1 mb-2 text-end"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">FINANCE</a></li>
-                    <!-- <li class="d-inline-block me-1 mb-2 text-end"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">SUSTAINABILITY</a></li> -->
-                  </ul>
-                  <ul class="d-block hidden-tags d-none">
-                    <li class="d-inline-block me-1 mb-2"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">Automotive</a></li>
-                    <li class="d-inline-block me-1 mb-2"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">INNOVATION</a></li>
-                    <li class="d-inline-block me-1 mb-2"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">REAL ESTATE</a></li>
-                    <!-- <li class="d-inline-block me-1 mb-2"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">CAREERS</a></li> -->
-                    <li class="d-inline-block me-1 mb-2"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">FINANCE</a></li>
-                    <!-- <li class="d-inline-block me-1 mb-2"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">SUSTAINABILITY</a></li> -->
-                  </ul>
+                <div class="col-12 col-lg-6">
+                  <div class="tags-listing">
+                    <ul class="d-block mb-2">
+                      <li class="d-inline-block me-1 py-2 text-end"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">Automotive</a></li>
+                      <li class="d-inline-block me-1 py-2 text-end"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">INNOVATION</a></li>
+                      <li class="d-inline-block me-1 py-2 text-end"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">REAL ESTATE</a></li>
+                      <!-- <li class="d-inline-block me-1 py-2 text-end"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">CAREERS</a></li> -->
+                      <li class="d-inline-block me-1 py-2 text-end"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">FINANCE</a></li>
+                      <!-- <li class="d-inline-block me-1 py-2 text-end"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">SUSTAINABILITY</a></li> -->
+                    </ul>
+                    <ul class="d-block hidden-tags d-lg-none">
+                      <li class="d-inline-block me-1 py-2"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">Automotive</a></li>
+                      <li class="d-inline-block me-1 py-2"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">INNOVATION</a></li>
+                      <li class="d-inline-block me-1 py-2"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">REAL ESTATE</a></li>
+                      <!-- <li class="d-inline-block me-1 py-2"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">CAREERS</a></li> -->
+                      <li class="d-inline-block me-1 py-2"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">FINANCE</a></li>
+                      <!-- <li class="d-inline-block me-1 py-2"><a href="javascript:;" class="tag text-uppercase fontRegular font-14 text-decoration-none">SUSTAINABILITY</a></li> -->
+                    </ul>
+                  </div>
                 </div>
-                <div class="col-2">
+                <div class="col-0 col-lg-2">
                   <a href="javascript:;" class="text-decoration-none more-tags text-end">
                     <span class="more">
                       <p class="mb-0 d-inline-block me-2 fontMedium font-14 black">More tags</p>
@@ -1046,7 +1175,7 @@
       <!--  PARTNERS SECTION  -->
       <section class="py-80">
         <div class="container-fluid">
-          <div class="row justify-content-center">
+          <div class="row justify-content-center mb-5">
             <div class="col-lg-10">
               <div class="row justify-content-between mb-3 mb-lg-5">
                 <div class="col-lg-5">
@@ -1062,7 +1191,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-4 mb-3 mb-lg-0">
+            <div class="col-lg-4 mb-3 mb-lg-0 order-2 order-lg-1">
               <div class="map-wrapper">
                 <div class="map-img p-relative">
                   <img src="images/dynamic/map.png" alt="map" class="w-100">
@@ -1081,31 +1210,99 @@
                 <div class="row">
                   <div class="col-2"></div>
                   <div class="col-lg-8">
-                    <div class="brand-logo">
-                      <img src="images/dynamic/honda.png" alt="honda logo" data-partner="honda" class="d-none">
-                      <img src="images/dynamic/dodge.png" alt="dodge logo" data-partner="dodge" class="d-none">
-                      <img src="images/dynamic/hertz.png" alt="hertz logo" data-partner="hertz" class="d-none">
-                      <img src="images/dynamic/lexus.png" alt="lexus logo" data-partner="lexus" class="d-none">
-                      <img src="images/dynamic/nissan.png" alt="nissan logo" data-partner="nissan" class="d-none">
-                      <img src="images/dynamic/ford.png" alt="ford logo" data-partner="ford" class="d-none">
-                      <img src="images/dynamic/volvo.png" alt="volvo logo" data-partner="volvo" class="d-none">
-                      <img src="images/dynamic/suzuki.png" alt="suzuki logo" data-partner="suzuki" class="d-none">
-                      <img src="images/dynamic/automall.png" alt="automall logo" data-partner="automall" class="d-none">
-                      <img src="images/dynamic/avr.png" alt="avr logo" data-partner="avr" class="d-none">
-                      <img src="images/dynamic/body-center.png" alt="bodyCenter logo" data-partner="bodyCenter" class="d-none">
-                      <img src="images/dynamic/bott.png" alt="bott logo" data-partner="bott" class="d-none">
+                    <div class="brand-logos">
+                      <div class="brand-logo d-none" data-partner="honda">
+                        <img src="images/dynamic/honda.png" alt="honda logo">
+                        <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
+                          <p class="mb-0 d-inline-block me-5 align-middle">DISCOVER BRAND</p>
+                          <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
+                        </button>
+                      </div>
+                      <div class="brand-logo d-none" data-partner="dodge">
+                        <img src="images/dynamic/dodge.png" alt="dodge logo">
+                        <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
+                          <p class="mb-0 d-inline-block me-5 align-middle">DISCOVER BRAND</p>
+                          <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
+                        </button>
+                      </div>
+                      <div class="brand-logo d-none" data-partner="hertz">
+                        <img src="images/dynamic/hertz.png" alt="hertz logo">
+                        <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
+                          <p class="mb-0 d-inline-block me-5 align-middle">DISCOVER BRAND</p>
+                          <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
+                        </button>
+                      </div>
+                      <div class="brand-logo d-none" data-partner="lexus">
+                        <img src="images/dynamic/lexus.png" alt="lexus logo">
+                        <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
+                          <p class="mb-0 d-inline-block me-5 align-middle">DISCOVER BRAND</p>
+                          <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
+                        </button>
+                      </div>
+                      <div class="brand-logo d-none" data-partner="nissan">
+                        <img src="images/dynamic/nissan.png" alt="nissan logo">
+                        <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
+                          <p class="mb-0 d-inline-block me-5 align-middle">DISCOVER BRAND</p>
+                          <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
+                        </button>
+                      </div>
+                      <div class="brand-logo d-none" data-partner="ford">
+                        <img src="images/dynamic/ford.png" alt="ford logo">
+                        <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
+                          <p class="mb-0 d-inline-block me-5 align-middle">DISCOVER BRAND</p>
+                          <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
+                        </button>
+                      </div>
+                      <div class="brand-logo d-none" data-partner="volvo">
+                        <img src="images/dynamic/volvo.png" alt="volvo logo">
+                        <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
+                          <p class="mb-0 d-inline-block me-5 align-middle">DISCOVER BRAND</p>
+                          <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
+                        </button>
+                      </div>
+                      <div class="brand-logo d-none" data-partner="suzuki">
+                        <img src="images/dynamic/suzuki.png" alt="suzuki logo">
+                        <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
+                          <p class="mb-0 d-inline-block me-5 align-middle">DISCOVER BRAND</p>
+                          <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
+                        </button>
+                      </div>
+                      <div class="brand-logo d-none" data-partner="automall">
+                        <img src="images/dynamic/automall.png" alt="automall logo">
+                        <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
+                          <p class="mb-0 d-inline-block me-5 align-middle">DISCOVER BRAND</p>
+                          <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
+                        </button>
+                      </div>
+                      <div class="brand-logo d-none" data-partner="avr">
+                        <img src="images/dynamic/avr.png" alt="avr logo">
+                        <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
+                          <p class="mb-0 d-inline-block me-5 align-middle">DISCOVER BRAND</p>
+                          <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
+                        </button>
+                      </div>
+                      <div class="brand-logo d-none" data-partner="body-center">
+                        <img src="images/dynamic/body-center.png" alt="body-center logo">
+                        <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
+                          <p class="mb-0 d-inline-block me-5 align-middle">DISCOVER BRAND</p>
+                          <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
+                        </button>
+                      </div>
+                      <div class="brand-logo d-none" data-partner="bott">
+                        <img src="images/dynamic/bott.png" alt="bott logo">
+                        <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
+                          <p class="mb-0 d-inline-block me-5 align-middle">DISCOVER BRAND</p>
+                          <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
+                        </button>
+                      </div>
                     </div>
-                    <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
-                      <p class="mb-0 d-inline-block me-5 align-middle">DISCOVER BRAND</p>
-                      <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
-                    </button>
                     <div class="col-2"></div>
                   </div>
                 </div>
               </div>
             </div>
             <!-- <div class="col-1"></div> -->
-            <div class="col-lg-8">
+            <div class="col-lg-8 order-1 order-lg-2">
               <div class="gradient-right p-3 w-90">
                 <div class="row">
                   <div class="col-lg-4 mb-2 mb-md-0">
@@ -1138,11 +1335,11 @@
                 <div class="tab-content" id="nav-tabContent">
                   <div class="tab-pane fade show active" id="nav-automotive" role="tabpanel" aria-labelledby="nav-automotive-tab">
                     <!-- Swiper -->
-                    <div class="swiper-container mySwiper4">
+                    <div class="swiper-container mySwiper4 swiper-desktop">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide w-90 bgWhite">
                           <div class="row px-15">
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1152,7 +1349,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1162,7 +1359,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1172,7 +1369,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1182,7 +1379,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1192,7 +1389,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute  w-100 h-100 top-left">
@@ -1202,8 +1399,7 @@
                                 </div>
                               </div>
                             </div>
-                            
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1213,8 +1409,7 @@
                                 </div>
                               </div>
                             </div>
-                            
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1224,8 +1419,7 @@
                                 </div>
                               </div>
                             </div>
-                            
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1235,7 +1429,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1245,7 +1439,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1255,7 +1449,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1265,7 +1459,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1275,7 +1469,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1285,7 +1479,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1295,7 +1489,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1305,7 +1499,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1315,8 +1509,7 @@
                                 </div>
                               </div>
                             </div>
-                            
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute  w-100 h-100 top-left">
@@ -1326,8 +1519,7 @@
                                 </div>
                               </div>
                             </div>
-                            
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1337,8 +1529,7 @@
                                 </div>
                               </div>
                             </div>
-                            
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1348,8 +1539,7 @@
                                 </div>
                               </div>
                             </div>
-                            
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1359,7 +1549,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1369,7 +1559,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1379,7 +1569,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1393,7 +1583,7 @@
                         </div>
                         <div class="swiper-slide w-90 bgWhite">
                           <div class="row px-15">
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1403,7 +1593,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1413,7 +1603,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1423,7 +1613,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1433,7 +1623,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1443,7 +1633,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute  w-100 h-100 top-left">
@@ -1453,7 +1643,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1463,7 +1653,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1473,7 +1663,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1483,7 +1673,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1493,7 +1683,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1503,7 +1693,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1513,7 +1703,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1523,7 +1713,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1533,7 +1723,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1543,7 +1733,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1553,7 +1743,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1564,7 +1754,7 @@
                               </div>
                             </div>
                             
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute  w-100 h-100 top-left">
@@ -1575,7 +1765,7 @@
                               </div>
                             </div>
                             
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1586,7 +1776,7 @@
                               </div>
                             </div>
                             
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1597,7 +1787,7 @@
                               </div>
                             </div>
                             
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1607,7 +1797,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1617,7 +1807,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1627,7 +1817,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1641,7 +1831,7 @@
                         </div>
                         <div class="swiper-slide w-90 bgWhite">
                           <div class="row px-15">
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1651,7 +1841,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1661,7 +1851,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1671,7 +1861,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1681,7 +1871,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1692,7 +1882,7 @@
                               </div>
                             </div>
                             
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute  w-100 h-100 top-left">
@@ -1703,7 +1893,7 @@
                               </div>
                             </div>
                             
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1714,7 +1904,7 @@
                               </div>
                             </div>
                             
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1725,7 +1915,7 @@
                               </div>
                             </div>
                             
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1735,7 +1925,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1745,7 +1935,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1755,7 +1945,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1765,7 +1955,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1775,7 +1965,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1785,7 +1975,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1795,7 +1985,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1805,7 +1995,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1816,7 +2006,7 @@
                               </div>
                             </div>
                             
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute  w-100 h-100 top-left">
@@ -1827,7 +2017,7 @@
                               </div>
                             </div>
                             
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1838,7 +2028,7 @@
                               </div>
                             </div>
                             
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1849,7 +2039,7 @@
                               </div>
                             </div>
                             
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1859,7 +2049,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1869,7 +2059,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -1879,7 +2069,385 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col-3 col-md-2 p-0 m-0">
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="bott"  data-tag="ksa">
+                                    <img src="images/dynamic/bott.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- Swiper -->
+                    <div class="swiper-container mySwiper4 swiper-mobile">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide w-90 bgWhite">
+                          <div class="row px-15">
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="honda" data-tag="uae,ksa">
+                                    <img src="images/dynamic/honda.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-tag="ksa" data-partner="dodge">
+                                    <img src="images/dynamic/dodge.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="hertz"  data-tag="uae">
+                                    <img src="images/dynamic/hertz.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="lexus"  data-tag="uae">
+                                    <img src="images/dynamic/lexus.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="nissan"  data-tag="uae">
+                                    <img src="images/dynamic/nissan.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute  w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center"  data-partner="ford" data-tag="uae">
+                                    <img src="images/dynamic/ford.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="volvo"  data-tag="lb,uae">
+                                    <img src="images/dynamic/volvo.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="suzuki"  data-tag="uae">
+                                    <img src="images/dynamic/suzuki.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="automall"  data-tag="uae">
+                                    <img src="images/dynamic/automall.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="avr"  data-tag="uae">
+                                    <img src="images/dynamic/avr.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="bodyCenter"  data-tag="lb">
+                                    <img src="images/dynamic/body-center.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="bott"  data-tag="ksa">
+                                    <img src="images/dynamic/bott.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide w-90 bgWhite">
+                          <div class="row px-15">
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="honda" data-tag="uae,ksa">
+                                    <img src="images/dynamic/honda.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-tag="ksa" data-partner="dodge">
+                                    <img src="images/dynamic/dodge.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="hertz"  data-tag="uae">
+                                    <img src="images/dynamic/hertz.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="lexus"  data-tag="uae">
+                                    <img src="images/dynamic/lexus.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="nissan"  data-tag="uae">
+                                    <img src="images/dynamic/nissan.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute  w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center"  data-partner="ford" data-tag="uae">
+                                    <img src="images/dynamic/ford.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="volvo"  data-tag="lb,uae">
+                                    <img src="images/dynamic/volvo.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="suzuki"  data-tag="uae">
+                                    <img src="images/dynamic/suzuki.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="automall"  data-tag="uae">
+                                    <img src="images/dynamic/automall.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="avr"  data-tag="uae">
+                                    <img src="images/dynamic/avr.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="bodyCenter"  data-tag="lb">
+                                    <img src="images/dynamic/body-center.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="bott"  data-tag="ksa">
+                                    <img src="images/dynamic/bott.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide w-90 bgWhite">
+                          <div class="row px-15">
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="honda" data-tag="uae,ksa">
+                                    <img src="images/dynamic/honda.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-tag="ksa" data-partner="dodge">
+                                    <img src="images/dynamic/dodge.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="hertz"  data-tag="uae">
+                                    <img src="images/dynamic/hertz.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="lexus"  data-tag="uae">
+                                    <img src="images/dynamic/lexus.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="nissan"  data-tag="uae">
+                                    <img src="images/dynamic/nissan.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute  w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center"  data-partner="ford" data-tag="uae">
+                                    <img src="images/dynamic/ford.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="volvo"  data-tag="lb,uae">
+                                    <img src="images/dynamic/volvo.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="suzuki"  data-tag="uae">
+                                    <img src="images/dynamic/suzuki.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="automall"  data-tag="uae">
+                                    <img src="images/dynamic/automall.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="avr"  data-tag="uae">
+                                    <img src="images/dynamic/avr.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
+                              <div class="partner-logo-wrapper p-relative">
+                                <div class="square"></div>
+                                <div class="partners-logo p-absolute w-100 h-100 top-left">
+                                  <a href="javascript:;" class="d-block text-decoration-none bgWhite w-100 h-100 text-center" data-partner="bodyCenter"  data-tag="lb">
+                                    <img src="images/dynamic/body-center.png" alt="partner logo" class="p-absolute w-70 object-fit-contain center">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4 col-md-2 p-0 m-0">
                               <div class="partner-logo-wrapper p-relative">
                                 <div class="square"></div>
                                 <div class="partners-logo p-absolute w-100 h-100 top-left">
@@ -2363,6 +2931,18 @@
           });
         }, 500);
     });
+  });
+  var swiperHomeMobile = new Swiper(".home-swiper-mobile", {
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    }
   });
 </script>
 </html>

@@ -38,19 +38,23 @@ main{
     .state-content{
         left: 10%;
     }
+    .home-swiper-mobile, .mySwiper2{
+        height: 120vh;
+        .swiper-slide{
+            .img-wrapper{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+            }
+        }
+    }
     .mySwiper2{
         opacity: 0;
         visibility: hidden;
         @extend.cubicTransition;
-        height: 120vh;
         &.translate-x{
             opacity: 1;
             visibility: visible;
         }
         .swiper-slide{
-            .img-wrapper{
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-            }
             .state-content{
                 transform: translateY(-30%) translateX(-150%);
                 @extend.cubicTransition;
@@ -610,15 +614,78 @@ input, textarea, select, option{
     }
     .navbar-collapse{
         position: absolute;
-        top: -15px;
-        right: -15px;
-        width: 100vw;
+        top: -12px;
+        right: -28px;
+        width: calc(100vw + 12px);
         background: white;
-        height: calc(100vh + 15px);
+        height: calc(100vh + 12px);
     }
     header{
         .logo-wrapper{
             //width: 100%;
+        }
+        .navbar-nav {
+            .nav-link {
+                color: $navy;
+                text-align: center;
+            }
+        }
+        .navbar-collapse-content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .navbar-toggler{
+        z-index: 1;
+    }
+    .partners-tabs{
+        .bgGrey{
+            overflow-x: scroll;
+        }
+        .nav-tabs{
+            width: 700px;
+        }
+
+    }
+    .patern-mobile-main{
+        top: 50px;
+        right: -100px;
+        width: 100%;
+        height: 50vh;
+        z-index: 100;
+        object-fit: contain;
+    }
+    .home-page {
+        main {
+            .state-content{
+                top: 40%;
+            }
+        }
+    }
+    .home-swiper-mobile{
+        .swiper-pagination{
+            bottom: 28%;
+            text-align: left;
+            padding: 0 15px ;
+            .swiper-pagination-bullet{
+                width: 30px;
+                height: 4px;
+                border-radius: 0;
+                &.swiper-pagination-bullet-active{
+                    background: $white;
+                }
+            }
+        }
+    }
+    .more-tags{
+        display: none;
+    }
+    .tags-listing{
+        overflow-x: scroll;
+        ul{
+            width: 1400px;
         }
     }
 }
@@ -635,6 +702,6 @@ input, textarea, select, option{
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px){
     .mySwiper4 {
-        height: 468px !important;
+        height: 422px !important;
     }
 }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="42px" viewBox="0 0 41 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>flaticon1566680330-svg</title>
+    <defs>
+        <path d="M36.4319833,0.822732003 L40.6304626,5.02121132 L24.6975374,20.952732 L40.6304626,36.8851778 L36.4319833,41.0836572 L20.4995374,25.150732 L4.56801674,41.0836572 L0.369537423,36.8851778 L16.3015374,20.952732 L0.369537423,5.02121132 L4.56801674,0.822732003 L20.4995374,16.754732 L36.4319833,0.822732003 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Atoms--/-Icons-/-Close" transform="translate(-30.000000, -29.000000)">
+            <g id="Atoms-/-Colors-/-Accent" transform="translate(30.000000, 29.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g id="Group" mask="url(#mask-2)">
+                    <g transform="translate(-5.000000, 0.859375)" id="Atoms-/-Colors-/-Accent">
+                        <rect id="Rectangle-5" fill="#00A3DA" x="0" y="0" width="51" height="40"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

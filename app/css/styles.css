@@ -603,8 +603,8 @@ ul {
     width: 100% !important; }
     .w-80.state-content, .w-70.state-content, .w-60.state-content, .w-50.state-content, .w-40.state-content, .w-30.state-content, .w-20.state-content {
       width: calc(100% - 30px) !important; }
-  header .w-20 {
-    width: calc( 20% - 3px) !important;
+  header .w-10 {
+    width: calc( 30% - 3px) !important;
     display: inline-block; }
   header .w-80 {
     width: calc( 80% - 3px) !important;
@@ -710,15 +710,16 @@ main {
     height: 100vh; }
   main .state-content {
     left: 10%; }
+  main .home-swiper-mobile, main .mySwiper2 {
+    height: 120vh; }
+    main .home-swiper-mobile .swiper-slide .img-wrapper, main .mySwiper2 .swiper-slide .img-wrapper {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); }
   main .mySwiper2 {
     opacity: 0;
-    visibility: hidden;
-    height: 120vh; }
+    visibility: hidden; }
     main .mySwiper2.translate-x {
       opacity: 1;
       visibility: visible; }
-    main .mySwiper2 .swiper-slide .img-wrapper {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); }
     main .mySwiper2 .swiper-slide .state-content {
       transform: translateY(-30%) translateX(-150%);
       opacity: 0;
@@ -1115,11 +1116,50 @@ input, textarea, select, option {
     margin-top: 100px; }
   .navbar-collapse {
     position: absolute;
-    top: -15px;
-    right: -15px;
-    width: 100vw;
+    top: -12px;
+    right: -28px;
+    width: calc(100vw + 12px);
     background: white;
-    height: calc(100vh + 15px); } }
+    height: calc(100vh + 12px); }
+  header .navbar-nav .nav-link {
+    color: #005093;
+    text-align: center; }
+  header .navbar-collapse-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .navbar-toggler {
+    z-index: 1; }
+  .partners-tabs .bgGrey {
+    overflow-x: scroll; }
+  .partners-tabs .nav-tabs {
+    width: 700px; }
+  .patern-mobile-main {
+    top: 50px;
+    right: -100px;
+    width: 100%;
+    height: 50vh;
+    z-index: 100;
+    object-fit: contain; }
+  .home-page main .state-content {
+    top: 40%; }
+  .home-swiper-mobile .swiper-pagination {
+    bottom: 28%;
+    text-align: left;
+    padding: 0 15px; }
+    .home-swiper-mobile .swiper-pagination .swiper-pagination-bullet {
+      width: 30px;
+      height: 4px;
+      border-radius: 0; }
+      .home-swiper-mobile .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: #FFFFFF; }
+  .more-tags {
+    display: none; }
+  .tags-listing {
+    overflow-x: scroll; }
+    .tags-listing ul {
+      width: 1400px; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .mySwiper4 {
@@ -1127,4 +1167,4 @@ input, textarea, select, option {
 
 @media (max-width: 575.98px) {
   .mySwiper4 {
-    height: 468px !important; } }
+    height: 422px !important; } }

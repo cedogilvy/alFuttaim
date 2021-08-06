@@ -50,7 +50,7 @@ jQuery(function($){
                     $(this).addClass("active");
                 }
             });
-            $('.brand-logo img').each(function(){
+            $('.brand-logo').each(function(){
                 $(this).addClass("d-none");
                 interPartner = $(this).attr('data-partner');
                 intersecting = thispartner.includes(interPartner);
@@ -63,6 +63,11 @@ jQuery(function($){
         function getArraysIntersection(a1,a2){
             return  a1.filter(function(n) { return a2.indexOf(n) !== -1;});
         }
+        $(".navbar-toggler").click(function(){
+            $(".open-menu").toggleClass("d-none");
+            $(".close-menu").toggleClass("d-none");
+            $("body").toggleClass("overflow-hidden");
+        })
 
 
 

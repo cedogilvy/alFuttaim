@@ -603,8 +603,8 @@ ul {
     width: 100% !important; }
     .w-80.state-content, .w-70.state-content, .w-60.state-content, .w-50.state-content, .w-40.state-content, .w-30.state-content, .w-20.state-content {
       width: calc(100% - 30px) !important; }
-  header .w-20 {
-    width: calc( 20% - 3px) !important;
+  header .w-10 {
+    width: calc( 30% - 3px) !important;
     display: inline-block; }
   header .w-80 {
     width: calc( 80% - 3px) !important;
