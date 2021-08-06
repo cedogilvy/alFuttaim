@@ -9,6 +9,7 @@ header{
     .navbar-nav {
         .nav-link{
             position: relative;
+            color: $white;
             &.active{
                 @extend.fontBold;
                 &:after{
@@ -23,6 +24,9 @@ header{
                 }
             }
         }
+    }
+    .logo-wrapper{
+        //width: 50%;
     }
 }
 
@@ -527,6 +531,31 @@ footer{
 .swiper-mobile{
     display: none;
 }
+textarea{
+    min-height: 170px !important;
+}
+input, textarea, select, option{
+    color: #B0C0C5 !important;
+    @extend.fontRegular;
+    @extend.font-18;
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #B0C0C5 !important;
+        @extend.fontRegular;
+        @extend.font-18;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #B0C0C5 !important;
+        @extend.fontRegular;
+        @extend.font-18;
+    }
+    
+    &::-ms-input-placeholder { /* Microsoft Edge */
+        color: #B0C0C5 !important;
+        @extend.fontRegular;
+        @extend.font-18;
+    }
+}
+
 @media (min-width: 1441px){
 }
 // commun Styles between Large and Extra Large devices
@@ -578,6 +607,19 @@ footer{
     }
     .first-fold {
         margin-top: 100px;
+    }
+    .navbar-collapse{
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        width: 100vw;
+        background: white;
+        height: calc(100vh + 15px);
+    }
+    header{
+        .logo-wrapper{
+            //width: 100%;
+        }
     }
 }
 

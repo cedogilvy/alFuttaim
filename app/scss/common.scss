@@ -653,6 +653,16 @@ $imgRatio: 500px;
             width: calc(100% - 30px) !important;
         }
     }
+    header{
+        .w-20{
+            width: calc( 20% - 3px) !important;
+            display: inline-block;
+        }
+        .w-80{
+            width: calc( 80% - 3px) !important;
+            display: inline-block;
+        }
+    }
     .rectangle, .rectangle-v, .between-sizes, .bigger-between-sizes{
         padding-top: 100%;
     }

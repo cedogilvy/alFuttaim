@@ -6,7 +6,7 @@ Fonts
   font-family: 'Graphik', sans-serif;
   font-weight: 300; }
 
-.fontRegular {
+.fontRegular, input, textarea, select, option, input::placeholder, textarea::placeholder, select::placeholder, option::placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder, option:-ms-input-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder, option::-ms-input-placeholder {
   font-family: 'Graphik', sans-serif;
   font-weight: 400; }
 
@@ -39,7 +39,7 @@ Sizes
 .font-16 {
   font-size: 1rem; }
 
-.font-18, .listing .listing-anchor:hover .hidden-details {
+.font-18, .listing .listing-anchor:hover .hidden-details, input, textarea, select, option, input::placeholder, textarea::placeholder, select::placeholder, option::placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder, option:-ms-input-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder, option::-ms-input-placeholder {
   font-size: 1.125rem; }
 
 .font-20 {
@@ -603,6 +603,12 @@ ul {
     width: 100% !important; }
     .w-80.state-content, .w-70.state-content, .w-60.state-content, .w-50.state-content, .w-40.state-content, .w-30.state-content, .w-20.state-content {
       width: calc(100% - 30px) !important; }
+  header .w-20 {
+    width: calc( 20% - 3px) !important;
+    display: inline-block; }
+  header .w-80 {
+    width: calc( 80% - 3px) !important;
+    display: inline-block; }
   .rectangle, .rectangle-v, .between-sizes, .bigger-between-sizes {
     padding-top: 100%; }
   .font-32 {
@@ -686,7 +692,8 @@ body {
 header {
   transform: translateY(0); }
   header .navbar-nav .nav-link {
-    position: relative; }
+    position: relative;
+    color: #FFFFFF; }
     header .navbar-nav .nav-link.active:after {
       content: '';
       position: absolute;
@@ -1069,6 +1076,21 @@ footer {
 .swiper-mobile {
   display: none; }
 
+textarea {
+  min-height: 170px !important; }
+
+input, textarea, select, option {
+  color: #B0C0C5 !important; }
+  input::placeholder, textarea::placeholder, select::placeholder, option::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #B0C0C5 !important; }
+  input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder, option:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #B0C0C5 !important; }
+  input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder, option::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #B0C0C5 !important; }
+
 @media (min-width: 992px) and (max-width: 1440px) {
   .mySwiper {
     height: 120vh; }
@@ -1090,7 +1112,14 @@ footer {
   main .state-content {
     left: 15px; }
   .first-fold {
-    margin-top: 100px; } }
+    margin-top: 100px; }
+  .navbar-collapse {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 100vw;
+    background: white;
+    height: calc(100vh + 15px); } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .mySwiper4 {
