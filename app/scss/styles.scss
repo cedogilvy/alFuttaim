@@ -456,10 +456,12 @@ footer{
     border-bottom: 1px solid #00A3DA;
 }
 .gradient-image{
-    bottom: 75px;
+    position: absolute;
+    height: 80px;
+    bottom: 43px;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    width: 80%;
 }
-
-
 
 
 .modalSwiper2 {

@@ -1,7 +1,8 @@
 /* -----------------------------------------------------
 Fonts
 ----------------------------------------------------- */
-@import url('http://fonts.cdnfonts.com/css/graphik');
+// @import url('http://fonts.cdnfonts.com/css/graphik');
+@import url('../css/font.css');
 
 .fontLight{
     font-family: 'Graphik', sans-serif;
@@ -258,10 +259,6 @@ Styles
 }
 .p-relative{
     position: relative;
-    &.center-x{
-        left: 50%;
-        transform: translateX(-50%);
-    }
 }
 .p-absolute{
     position: absolute;

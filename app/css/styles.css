@@ -1,7 +1,7 @@
 /* -----------------------------------------------------
 Fonts
 ----------------------------------------------------- */
-@import url("http://fonts.cdnfonts.com/css/graphik");
+@import url("../css/font.css");
 .fontLight {
   font-family: 'Graphik', sans-serif;
   font-weight: 300; }
@@ -281,9 +281,6 @@ Styles
 
 .p-relative {
   position: relative; }
-  .p-relative.center-x {
-    left: 50%;
-    transform: translateX(-50%); }
 
 .p-absolute {
   position: absolute; }
@@ -1040,7 +1037,11 @@ footer {
   border-bottom: 1px solid #00A3DA; }
 
 .gradient-image {
-  bottom: 75px; }
+  position: absolute;
+  height: 80px;
+  bottom: 43px;
+  background: linear-gradient(rgba(255, 255, 255, 0), white);
+  width: 80%; }
 
 .modalSwiper2 {
   height: 80%;

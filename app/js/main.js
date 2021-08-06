@@ -1,26 +1,26 @@
-jQuery(function($){
-  
+jQuery(function ($) {
+
     ///////////////////////////////////////////////////////////////   START DOCUMENT READY  ///////////////////////////////////////////////////////////////
-    
-    $(document).ready(function() {
+
+    $(document).ready(function () {
 
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();
             $('[data-toggle="tooltip"]').tooltip({
-              customClass: 'tooltip-custom'
+                customClass: 'tooltip-custom'
             });
         })
-        $(".mySwiper .swiper-slide").click(function(){
+        $(".mySwiper .swiper-slide").click(function () {
             $(".mySwiper2").addClass("translate-x");
         })
-        
-        $(".mySwiper .swiper-slide").each(function(){
-            $(this).click(function(){
+
+        $(".mySwiper .swiper-slide").each(function () {
+            $(this).click(function () {
                 $(".mySwiper .swiper-slide").removeClass("active")
                 $(this).addClass("active")
             })
         });
-        $(".more-tags").click(function(){
+        $(".more-tags").click(function () {
             $(".hidden-tags").toggleClass("d-none");
             $(".more-tags .more").toggleClass("d-none");
             $(".more-tags .less").toggleClass("d-none");
@@ -32,150 +32,158 @@ jQuery(function($){
         $(".home-page .accordion").addClass("loaded");
 
 
-        
+
         var thisTag = [];
-        $('.partners-logo a').click(function(){
+        $('.partners-logo a').click(function () {
             $('.partners-logo').removeClass("active");
             $(this).parent().addClass("active");
             thisTag = $(this).attr('data-tag');
             thispartner = $(this).attr('data-partner');
             console.log(thispartner);
             var arrayInterTags = thisTag.split(",");
-            $('.map-pins-list a').each(function(){
+            $('.map-pins-list a').each(function () {
                 $(this).removeClass("active");
                 interTags = $(this).attr('data-tag');
                 intersectingColors = arrayInterTags.includes(interTags);
 
-                if (intersectingColors){
+                if (intersectingColors) {
                     $(this).addClass("active");
                 }
             });
-            $('.brand-logo img').each(function(){
+            $('.brand-logo img').each(function () {
                 $(this).addClass("d-none");
                 interPartner = $(this).attr('data-partner');
                 intersecting = thispartner.includes(interPartner);
-                if (intersecting){
+                if (intersecting) {
                     $(this).removeClass("d-none");
                 }
             });
         });
 
-        function getArraysIntersection(a1,a2){
-            return  a1.filter(function(n) { return a2.indexOf(n) !== -1;});
+        function getArraysIntersection(a1, a2) {
+            return a1.filter(function (n) { return a2.indexOf(n) !== -1; });
         }
 
 
 
 
         /////////////////// FILTERS ///////////////////
-        
+
         var filters = $('.filter');
         var selectedFilter, itemsToHide, itemsToShow;
-        $('.filter').click(function(){
+        $('.filter').click(function () {
             selectedFilter = $(this).attr('data-filter');
             itemsToHide = $('.listing .listing-item:not([data-filter=' + selectedFilter + '])');
             itemsToShow = $('.listing .listing-item[data-filter=' + selectedFilter + ']');
 
-            $('.listing .listing-item:not([data-filter=' + selectedFilter + '])').each(function(){
+            $('.listing .listing-item:not([data-filter=' + selectedFilter + '])').each(function () {
                 $(this).addClass("hideItem");
                 $(this).removeClass("showItem");
             })
-            $('.listing [data-filter=' + selectedFilter + ']').each(function(){
+            $('.listing [data-filter=' + selectedFilter + ']').each(function () {
                 $(this).addClass("showItem");
                 $(this).removeClass("hideItem");
             })
             if (selectedFilter == 'all') {
-                $('.listing .listing-item').each(function(){
+                $('.listing .listing-item').each(function () {
                     $(this).removeClass("hideItem");
                 })
             }
-            $('.filter').each(function(){
+            $('.filter').each(function () {
                 $(this).removeClass("active")
             })
             $(this).addClass("active")
         })
 
 
+        /////////////////// ACCORDION TEXT TOGGLE ///////////////////
+
+        $(".more-text").click(function () {
+            $(".hidden-text").toggleClass("d-none");
+            $(".more-text .more").toggleClass("d-none");
+            $(".more-text .less").toggleClass("d-none");
+            $(".gradient-image").toggleClass("d-none");
+        })
 
     });
-    
+
     ///////////////////////////////////////////////////////////////   END DOCUMENT READY  ///////////////////////////////////////////////////////////////
 
 
-    
+
     ///////////////   START DATA SCROLL  ///////////////
-    $.fn.moveIt = function(){
+    $.fn.moveIt = function () {
         var $window = $(window);
         var instances = [];
-        
-        $(this).each(function(){
-        instances.push(new moveItItem($(this)));
+
+        $(this).each(function () {
+            instances.push(new moveItItem($(this)));
         });
-        
-        window.addEventListener('scroll', function(){
-        var scrollTop = $window.scrollTop();
-        instances.forEach(function(inst){
-            inst.update(scrollTop);
-        });
-        }, {passive: true});
-    } 
-    var moveItItem = function(el){
+
+        window.addEventListener('scroll', function () {
+            var scrollTop = $window.scrollTop();
+            instances.forEach(function (inst) {
+                inst.update(scrollTop);
+            });
+        }, { passive: true });
+    }
+    var moveItItem = function (el) {
         this.el = $(el);
         this.speed = parseInt(this.el.attr('data-scroll-speed'));
     };
-    moveItItem.prototype.update = function(scrollTop){
+    moveItItem.prototype.update = function (scrollTop) {
         this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
         this.el.css('margin-bottom', -(scrollTop / this.speed) + 'px');
-    }; 
+    };
     // Initialization
-    $(function(){
+    $(function () {
         $('[data-scroll-speed]').moveIt();
     });
 
 
-    $.fn.moveItX = function(){
+    $.fn.moveItX = function () {
         var $window = $(window);
         var instances = [];
-        
-        $(this).each(function(){
-        instances.push(new moveItXItem($(this)));
+
+        $(this).each(function () {
+            instances.push(new moveItXItem($(this)));
         });
-        
-        window.addEventListener('scroll', function(){
-        var scrollTop = $window.scrollTop();
-        instances.forEach(function(inst){
-            inst.update(scrollTop);
-        });
-        }, {passive: true});
-    } 
-    var moveItXItem = function(el){
+
+        window.addEventListener('scroll', function () {
+            var scrollTop = $window.scrollTop();
+            instances.forEach(function (inst) {
+                inst.update(scrollTop);
+            });
+        }, { passive: true });
+    }
+    var moveItXItem = function (el) {
         this.el = $(el);
         this.speed = parseInt(this.el.attr('data-scroll-speed-x'));
     };
-    moveItXItem.prototype.update = function(scrollTop){
+    moveItXItem.prototype.update = function (scrollTop) {
         this.el.css('transform', 'translateX(' + -(scrollTop / this.speed) + 'px)');
-    }; 
+    };
     // Initialization
-    $(function(){
+    $(function () {
         $('[data-scroll-speed-x]').moveItX();
     });
     ///////////////   END DATA SCROLL  ///////////////
 
 
 
-    var randoNumo = function(value) {
-        return Math.floor(Math.random()*value);
-      };
-      
-      var list = $('.mySwiper .swiper-slide');
-      
-      (function go() {
-        
+    var randoNumo = function (value) {
+        return Math.floor(Math.random() * value);
+    };
+
+    var list = $('.mySwiper .swiper-slide');
+
+    (function go() {
+
         list.eq(randoNumo(list.length)).addClass('t');
-        setTimeout(function() {
-          go();
+        setTimeout(function () {
+            go();
         }, 50);
-        
+
     })();
 
 });

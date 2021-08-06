@@ -295,7 +295,8 @@
                     challenging off-road conditions, identified by five key consumer-oriented performance categories:
                     traction, ground clearance, maneuverability, articulation and water fording.
                   </p>
-                  <div class="collapse" id="collapseParagraph">
+                  <!-- <div class="collapse hidden-text" id="collapseParagraph"> -->
+                  <div class="hidden-text d-none">
                     <p class="pb-1">This, combined with available advanced safety and security features such as Forward
                       Collision Warning with Crash Mitigation and Selec-Speed Control, electronic stability control
                       (ESC),
@@ -334,13 +335,18 @@
                     </p>
                   </div>
                 </div>
-                <img src="./images/dynamic/white-gradient.png" alt="" class="p-absolute gradient-image">
-                <button class="btn mt-3 border-0 p-relative center-x" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseParagraph" aria-expanded="false" aria-controls="collapseParagraph">
-                  <p class="mb-0 d-inline-block me-5 align-middle">READ MORE</p>
-                  <img src="images/static/plus.svg" alt="button arrow"
-                    class="d-inline-block float-end align-middle rect s12">
-                </button>
+
+                <span class="gradient-image p-absolute"></span>
+                <a href="javascript:;" class="text-decoration-none more-text d-flex justify-content-center">
+                  <span class="more">
+                    <p class="mb-0 d-inline-block me-5 fontMedium font-14 black mt-3">READ MORE</p>
+                    <img src="images/static/plus.svg" alt="button arrow" class="d-inline-block align-middle rect s12">
+                  </span>
+                  <span class="less d-none">
+                    <p class="mb-0 d-inline-block me-5 fontMedium font-14 black mt-3">READ LESS</p>
+                    <img src="images/static/minus.svg" alt="button arrow" class="d-inline-block align-middle rect s12">
+                  </span>
+                </a>
               </div>
             </div>
           </div>
