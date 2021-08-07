@@ -533,6 +533,7 @@ footer{
 .accordion-body{
     max-height: 90vh;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 .swiper-desktop{
     display: block;
@@ -540,6 +541,8 @@ footer{
 .swiper-mobile{
     display: none;
 }
+
+
 @media (min-width: 1441px){
 }
 // commun Styles between Large and Extra Large devices
