@@ -106,6 +106,51 @@ jQuery(function ($) {
         })
 
 
+
+        /////////////////// RANGE SLIDER ///////////////////
+
+        $(".fixed-bottom .accordion").click(function () {
+
+            // var setLabel = (lbl, val) => {
+            //     var label = $(`#slider-${lbl}-label`);
+            //     label.text(val);
+            //     var slider = $(`#slider-div .${lbl}-slider-handle`);
+            //     var rect = slider[0].getBoundingClientRect();
+            //     label.offset({
+            //         left: rect.left
+            //     });
+            // };
+            // var setLabels = values => {
+            //     setLabel("min", values[0]);
+            //     setLabel("max", values[1]);
+            // };
+
+            // $('#ex2').slider().on('slide', function (ev) {
+            //     setLabels(ev.value);
+            // });
+            // setLabels($('#ex2').attr("data-value").split(","));
+            //////////////////////////////////////////////////
+
+            function setLabel(lbl, val) {
+                var label = $('#slider-' + lbl + '-label');
+                label.text(val);
+                var slider = $('#slider-div .' + lbl + '-slider-handle');
+                var rect = slider[0].getBoundingClientRect();
+                label.offset({
+                    left: rect.left
+                });
+            }
+
+            function setLabels(values) {
+                setLabel("min", values[0]);
+                setLabel("max", values[1]);
+            }
+            $('#ex2').slider().on('slide', function (ev) {
+                setLabels(ev.value);
+            });
+            setLabels($('#ex2').attr("data-value").split(","));
+
+        });
     });
 
     ///////////////////////////////////////////////////////////////   END DOCUMENT READY  ///////////////////////////////////////////////////////////////

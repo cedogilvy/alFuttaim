@@ -117,15 +117,15 @@ Colors
 .orange {
   color: #FEBE12 !important; }
 
-.white {
+.white, .slider-label {
   color: #FFFFFF !important; }
-  .white::-webkit-input-placeholder {
+  .white::-webkit-input-placeholder, .slider-label::-webkit-input-placeholder {
     /* Edge */
     color: #FFFFFF; }
-  .white:-ms-input-placeholder {
+  .white:-ms-input-placeholder, .slider-label:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #FFFFFF; }
-  .white::placeholder {
+  .white::placeholder, .slider-label::placeholder {
     color: #FFFFFF; }
 
 .black {
@@ -770,6 +770,41 @@ input[type="file"] {
       content: none; }
     .accordion-body .progressbar li.active::before {
       background: #FFFFFF !important; }
+
+#slider-div {
+  display: flex;
+  flex-direction: row; }
+
+#slider-div > div {
+  margin: 8px; }
+
+.slider-label {
+  position: absolute;
+  padding: 4px;
+  font-size: 0.75rem;
+  bottom: 0 !important; }
+  .slider-label::after {
+    content: " Yrs"; }
+
+.slider.slider-horizontal {
+  width: 100% !important;
+  height: 28px !important; }
+  .slider.slider-horizontal::after {
+    transform: rotate(90deg);
+    content: "_";
+    color: white;
+    position: absolute;
+    right: -13px;
+    width: 10px; }
+
+.slider-track {
+  height: 1px !important; }
+
+.slider-selection {
+  height: 3px !important; }
+
+.slider-handle {
+  background: white !important; }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .accordion-body .progressbar li:after {

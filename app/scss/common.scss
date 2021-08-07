@@ -858,6 +858,51 @@ input[type="file"] {
     }
 }
 
+#slider-div {
+    display: flex;
+    flex-direction: row;
+}
+
+#slider-div>div {
+    margin: 8px;
+}
+
+.slider-label {
+    @extend .white;
+    position: absolute;
+    padding: 4px;
+    font-size: 0.75rem;
+    bottom: 0!important;
+    &::after{
+        content: " Yrs";
+    }
+}
+.slider{
+    &.slider-horizontal{
+        width: 100%!important;
+        height: 28px!important;
+        &::after{
+            transform: rotate(90deg);
+            content: "_";
+            color: white;
+            position: absolute;
+            right: -13px;
+            width: 10px;
+        }
+    }
+}
+.slider-track{
+    height: 1px!important;
+}
+.slider-selection {
+    height: 3px!important;
+}
+.slider-handle{
+    background: white!important;
+}
+// #slider-fixed-label{
+//     right: 20px;
+// }
 
 @media (min-width: 992px) and (max-width: 1199.98px){
     .accordion-body{
