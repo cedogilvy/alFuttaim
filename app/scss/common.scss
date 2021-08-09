@@ -112,8 +112,13 @@ $red: #F46251;
 .gradient-buttom{background: linear-gradient( $navy, $blue);}
 .gradient-top{background: linear-gradient($blue,$navy);}
 .gradient-txt{background: linear-gradient(rgba($color: $black, $alpha: 0),rgba($color: $black, $alpha: 1.0));}
+body{
+    font-family: 'Graphik', sans-serif;
+    overflow-x: hidden;
+    width: 100vw;
+}
 .border-0{
-    border: 0 !important;
+    //border: 0 !important;
     //border-bottom-right-radius: 0 !important;
     //border-bottom-left-radius:  0 !important;
     //border-top-left-radius: 0 !important;
@@ -122,6 +127,13 @@ $red: #F46251;
 .btn{
     width: 327px;
     border: 1px solid $black;
+    &.btn-bigger{
+        width: 360px;
+        &.p-lg-absolute{
+            bottom: -28px;
+            right: 50px;
+        }
+    }
 }
 
 .automotive, .innovation, .healthcare, .financial{
@@ -672,6 +684,9 @@ $imgRatio: 500px;
     .font-60{
         font-size: $s32;
     }
+    .font-64{
+        font-size: $s32;
+    }
     .font-80{
         font-size: 2.3rem;
     }
@@ -749,27 +764,35 @@ $imgRatio: 500px;
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px){
-
-.clipped-images{
-    img{
-        &:first-child(){
-            width: 200px;
-            height: 200px;
-            top: 50%;
-            left: 50%;
-        }
-        &:nth-child(2), &:nth-child(3){
-            width: 100px;
-            height: 100px;
-        }
-        &:nth-child(2){
-            top: calc(50% - 50px - 10px);
-            left: calc(50% + 100px + 10px);
-        }
-        &:nth-child(3){
-            top: calc(50% + 50px + 10px);
-            left: calc(50% + 100px + 10px);
+    .clipped-images{
+        img{
+            &:first-child(){
+                width: 200px;
+                height: 200px;
+                top: 50%;
+                left: 50%;
+            }
+            &:nth-child(2), &:nth-child(3){
+                width: 100px;
+                height: 100px;
+            }
+            &:nth-child(2){
+                top: calc(50% - 50px - 10px);
+                left: calc(50% + 100px + 10px);
+            }
+            &:nth-child(3){
+                top: calc(50% + 50px + 10px);
+                left: calc(50% + 100px + 10px);
+            }
         }
     }
-}
+    .btn{
+        &.btn-bigger{
+            width: 100%;
+            &.p-absolute{
+                bottom: inherit;
+                right: inherit;
+            }
+        }
+    }
 }

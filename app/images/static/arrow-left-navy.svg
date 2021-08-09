@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="25px" viewBox="0 0 15 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7 Copy</title>
+    <defs>
+        <polygon id="path-1" points="2.83783784 0 2.52320205e-13 2.8 9.32432432 12 2.52320205e-13 21.2 2.83783784 24 15 12"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3,0-Careers" transform="translate(-166.000000, -2583.000000)">
+            <g id="2-PROGRESS-TAB" transform="translate(0.000000, 1240.000000)">
+                <g id="Tab2" transform="translate(166.000000, 1003.000000)">
+                    <g id="arrows" transform="translate(27.000000, 352.314575) rotate(90.000000) translate(-27.000000, -352.314575) translate(15.000000, 325.314575)">
+                        <g id="Group-7-Copy" transform="translate(12.000000, 46.500000) scale(1, -1) rotate(90.000000) translate(-12.000000, -46.500000) translate(4.500000, 34.500000)">
+                            <g id="Molecules-/-Icons-/-Arrow-Copy-2" transform="translate(7.500000, 12.000000) scale(-1, 1) translate(-7.500000, -12.000000) translate(-0.000000, 0.000000)">
+                                <g id="flaticon1566679521-svg" transform="translate(0.000000, 0.000000)">
+                                    <g id="Atoms-/-Colors-/-Accent" transform="translate(0.000000, 0.000000)">
+                                        <mask id="mask-2" fill="white">
+                                            <use xlink:href="#path-1"></use>
+                                        </mask>
+                                        <use id="Mask" fill="#005398" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

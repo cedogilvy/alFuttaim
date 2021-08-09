@@ -149,12 +149,19 @@ Colors
 .gradient-txt {
   background: linear-gradient(rgba(0, 0, 0, 0), black); }
 
-.border-0 {
-  border: 0 !important; }
+body {
+  font-family: 'Graphik', sans-serif;
+  overflow-x: hidden;
+  width: 100vw; }
 
 .btn {
   width: 327px;
   border: 1px solid #000000; }
+  .btn.btn-bigger {
+    width: 360px; }
+    .btn.btn-bigger.p-lg-absolute {
+      bottom: -28px;
+      right: 50px; }
 
 .automotive, .innovation, .healthcare, .financial {
   color: #00AF77; }
@@ -615,6 +622,8 @@ ul {
     font-size: 1.5rem; }
   .font-60 {
     font-size: 2rem; }
+  .font-64 {
+    font-size: 2rem; }
   .font-80 {
     font-size: 2.3rem; }
   /* $s14: 0.75rem;
@@ -684,4 +693,9 @@ ul {
     left: calc(50% + 100px + 10px); }
   .clipped-images img:nth-child(3) {
     top: calc(50% + 50px + 10px);
-    left: calc(50% + 100px + 10px); } }
+    left: calc(50% + 100px + 10px); }
+  .btn.btn-bigger {
+    width: 100%; }
+    .btn.btn-bigger.p-absolute {
+      bottom: inherit;
+      right: inherit; } }

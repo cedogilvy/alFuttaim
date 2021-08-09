@@ -419,7 +419,7 @@
   </style>
 
 <body>
-    <header class="p-absolute top-left w-100 sticky-top">
+    <header class="p-absolute top-left w-100">
         <div class="container-fluid">
           <div class="row py-2">
             <div class="col-1">
@@ -433,7 +433,7 @@
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="collapse navbar-collapse navbar-collapse-menu" id="navbarSupportedContent">
                     <div class="ms-auto mb-2 mb-lg-0">
                       <ul class="navbar-nav d-inline-flex">
                         <li class="nav-item">
@@ -508,10 +508,283 @@
             <span class="d-block px-8">EVERY STEP</span>
             <span class="d-block px-16">OF THE WAY</span>
           </h1>
-          <p class="font-14 fontRegular black px-8 mb-5 w-50">90 years of touching lives through flourishing enterprise. Together, every step of the way..</p>
+          <p class="font-14 fontRegular black px-8 mb-5 w-70">90 years of touching lives through flourishing enterprise. Together, every step of the way..</p>
         </div>
       </div>
     </main>
+
+    <!--  SEARCH POPUP  -->
+    <section class="search">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="bgWhite"></div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 p-0">
+            <div class="gradient-right w-100 p-3 p-lg-5">
+              <p class="white fontRegular font-32 d-block mb-5">Filters</p>
+              <div class="accordion accordion-flush">
+                <div class="accordion-item mb-3 border-0 no-bg">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button fontMedium font-18 white text-uppercase no-bg border-bottom rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                      By Date
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne">
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label font-16 fontRegular white" for="flexCheckDefault">
+                          Option 1
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label font-16 fontRegular white" for="flexCheckChecked">
+                          Option 2
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-3 border-0 no-bg">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed fontMedium font-18 white text-uppercase no-bg border-bottom rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      BY  LOCATION
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo">
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label font-16 fontRegular white" for="flexCheckDefault">
+                          Option 1
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label font-16 fontRegular white" for="flexCheckChecked">
+                          Option 2
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-3 border-0 no-bg">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed fontMedium font-18 white text-uppercase no-bg border-bottom rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      BY CATEGORY
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree">
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label font-16 fontRegular white" for="flexCheckDefault">
+                          Automotive
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label font-16 fontRegular white" for="flexCheckChecked">
+                          Financial Services
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label font-16 fontRegular white" for="flexCheckChecked">
+                          Real Estate
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label font-16 fontRegular white" for="flexCheckChecked">
+                          Retail
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label font-16 fontRegular white" for="flexCheckChecked">
+                          Education
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label font-16 fontRegular white" for="flexCheckChecked">
+                          Health
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-3 border-0 no-bg">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed fontMedium font-18 white text-uppercase no-bg border-bottom rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      BY Brand
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour">
+                    <div class="accordion-body">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label font-16 fontRegular white" for="flexCheckDefault">
+                          Honda
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label font-16 fontRegular white" for="flexCheckChecked">
+                          Lexus
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label font-16 fontRegular white" for="flexCheckChecked">
+                          Volvo
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label font-16 fontRegular white" for="flexCheckChecked">
+                          Hertz
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label font-16 fontRegular white" for="flexCheckChecked">
+                          Automall
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label font-16 fontRegular white" for="flexCheckChecked">
+                          AVR
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 p-0">
+            <div class="gradient-right w-100 p-3 p-lg-5">
+              <div class="input-group mb-5 border-bottom">
+                <input type="text" class="form-control no-bg border-0 rounded-0 fontRegular font-20 white" placeholder="Search for brands. articles, stories…" aria-label="search" aria-describedby="basic-addon1">
+                <span class="input-group-text no-bg border-0 rounded-0" id="basic-addon1"><img src="images/static/search-darkMode.svg" alt=""></span>
+              </div>
+              <div class="search-result">
+                <p class="white fontRegular font-20 mb-5">Showing 321 Results for <span class="fontMedium">Honda</span></p>
+                <div class="search-listing white fontRegular border-bottom mb-4">
+                  <p class="d-block font-14 half-opacity mb-0">Date: May 10, 2020</p>
+                  <p class="text-uppercase font-20 d-block">AL-FUTTAIM <span class="fontMedium">HONDA</span>’S NEW ABU DHABI FACILITY OFFERS A CONVENIENT AND EFFICIENT CUSTOMER JOURNEY</p>
+                  <p class="font-14 d-block">We always put our customers first. This guides us as we strive to deliver the highest standards of excellence and create long-lasting relationships by offering memorable, value-added experiences for motorists, fleet owners and contractors alike.</p>
+                </div>
+                <div class="search-listing white fontRegular border-bottom mb-4">
+                  <p class="d-block font-14 half-opacity mb-0">Date: May 10, 2020</p>
+                  <p class="text-uppercase font-20 d-block">AL-FUTTAIM <span class="fontMedium">HONDA</span>’S NEW ABU DHABI FACILITY OFFERS A CONVENIENT AND EFFICIENT CUSTOMER JOURNEY</p>
+                  <p class="font-14 d-block">We always put our customers first. This guides us as we strive to deliver the highest standards of excellence and create long-lasting relationships by offering memorable, value-added experiences for motorists, fleet owners and contractors alike.</p>
+                </div>
+                <div class="search-listing white fontRegular border-bottom mb-4">
+                  <p class="d-block font-14 half-opacity mb-0">Date: May 10, 2020</p>
+                  <p class="text-uppercase font-20 d-block">AL-FUTTAIM <span class="fontMedium">HONDA</span>’S NEW ABU DHABI FACILITY OFFERS A CONVENIENT AND EFFICIENT CUSTOMER JOURNEY</p>
+                  <p class="font-14 d-block">We always put our customers first. This guides us as we strive to deliver the highest standards of excellence and create long-lasting relationships by offering memorable, value-added experiences for motorists, fleet owners and contractors alike.</p>
+                </div>
+                <div class="search-listing white fontRegular border-bottom mb-4">
+                  <p class="d-block font-14 half-opacity mb-0">Date: May 10, 2020</p>
+                  <p class="text-uppercase font-20 d-block">AL-FUTTAIM <span class="fontMedium">HONDA</span>’S NEW ABU DHABI FACILITY OFFERS A CONVENIENT AND EFFICIENT CUSTOMER JOURNEY</p>
+                  <p class="font-14 d-block">We always put our customers first. This guides us as we strive to deliver the highest standards of excellence and create long-lasting relationships by offering memorable, value-added experiences for motorists, fleet owners and contractors alike.</p>
+                </div>
+              </div>
+              <div class="search-no-result">
+                <p class="white fontRegular font-20 mb-5">No results found for <span class="fontMedium">‘shjam’</span></p>
+                <p class="white fontMedium font-32">Check these out instead</p>
+                <div class="row">
+                  <div class="col-lg-6 mb-3">
+                    <div class="listing p-relative overflow-hidden">
+                      <div class="between-sizes w-100"></div>
+                      <a href="javascript:;" class="d-block p-absolute top-left w-100 h-100 text-decoration-none listing-anchor">
+                        <img src="images/dynamic/news4.jpg" alt="" class="w-100 h-100 object-fit-cover">
+                        <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
+                        <span class="p-absolute w-100 h-100 top-left listing-hover gradient-right">
+                          <img src="images/dynamic/lexus.png" alt="lexus logo" class="rect s60 p-absolute top-left ms-3 mt-3">
+                          <img src="images/static/hover-patern.svg" alt="hover-patern" class="hover-patern p-absolute w-50 h-70 object-fit-contain">
+                        </span>
+                        <span class="content-group p-absolute bottom-left px-3">
+                          <p class="education text-uppercase fontBold font-14 d-inline-block mb-0">education</p>
+                          <span class="rect s6 bgWhite mx-2 d-inline-block rotate"></span>
+                          <p class="text-uppercase fontBold font-14 d-inline-block mb-0 white">14 JUL 2020</p>
+                          <p class="fontRegular font-22 white mb-2 d-block lh-sm">Find out how UAS students rankin 2019 IB Diploma results <img src="images/static/arrow-right.svg" alt="" class="rect s12"></p>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mb-3">
+                    <div class="listing p-relative overflow-hidden">
+                      <div class="between-sizes w-100"></div>
+                      <a href="javascript:;" class="d-block p-absolute top-left w-100 h-100 text-decoration-none listing-anchor">
+                        <img src="images/dynamic/news5.jpg" alt="" class="w-100 h-100 object-fit-cover">
+                        <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
+                        <span class="p-absolute w-100 h-100 top-left listing-hover gradient-right">
+                          <img src="images/dynamic/lexus.png" alt="lexus logo" class="rect s60 p-absolute top-left ms-3 mt-3">
+                          <img src="images/static/hover-patern.svg" alt="hover-patern" class="hover-patern p-absolute w-50 h-70 object-fit-contain">
+                        </span>
+                        <span class="content-group p-absolute bottom-left px-3">
+                          <p class="retail text-uppercase fontBold font-14 d-inline-block mb-0">RETAIL</p>
+                          <span class="rect s6 bgWhite mx-2 d-inline-block rotate"></span>
+                          <p class="text-uppercase fontBold font-14 d-inline-block mb-0 white">14 JUL 2020</p>
+                          <p class="fontRegular font-22 white mb-2 d-block lh-sm">IKEA’s New Store Gets Closer to Customers in the Capital <img src="images/static/arrow-right.svg" alt="" class="rect s12"></p>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mb-3">
+                    <div class="listing p-relative overflow-hidden">
+                      <div class="between-sizes w-100"></div>
+                      <a href="javascript:;" class="d-block p-absolute top-left w-100 h-100 text-decoration-none listing-anchor">
+                        <img src="images/dynamic/news1.jpg" alt="" class="w-100 h-100 object-fit-cover">
+                        <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
+                        <span class="p-absolute w-100 h-100 top-left listing-hover gradient-right">
+                          <img src="images/dynamic/lexus.png" alt="lexus logo" class="rect s60 p-absolute top-left ms-3 mt-3">
+                          <img src="images/static/hover-patern.svg" alt="hover-patern" class="hover-patern p-absolute w-50 h-70 object-fit-contain">
+                        </span>
+                        <span class="content-group p-absolute bottom-left px-3">
+                          <p class="retail text-uppercase fontBold font-14 d-inline-block mb-0">retail</p>
+                          <span class="rect s6 bgWhite mx-2 d-inline-block rotate"></span>
+                          <p class="text-uppercase fontBold font-14 d-inline-block mb-0 white">14 JUL 2020</p>
+                          <p class="fontRegular font-22 white mb-2 d-block lh-sm">Dubai Festival City Mall Partners With Spotify To Launch Music Library in Industry First <img src="images/static/arrow-right.svg" alt="" class="rect s12"></p>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 mb-3">
+                    <div class="listing p-relative overflow-hidden">
+                      <div class="between-sizes w-100"></div>
+                      <a href="javascript:;" class="d-block p-absolute top-left w-100 h-100 text-decoration-none listing-anchor">
+                        <img src="images/dynamic/news2.jpg" alt="" class="w-100 h-100 object-fit-cover">
+                        <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
+                        <span class="p-absolute w-100 h-100 top-left listing-hover gradient-right">
+                          <img src="images/dynamic/lexus.png" alt="lexus logo" class="rect s60 p-absolute top-left ms-3 mt-3">
+                          <img src="images/static/hover-patern.svg" alt="hover-patern" class="hover-patern p-absolute w-50 h-70 object-fit-contain">
+                        </span>
+                        <span class="content-group p-absolute bottom-left px-3">
+                          <p class="automotive text-uppercase fontBold font-14 d-inline-block mb-0">automotive</p>
+                          <span class="rect s6 bgWhite mx-2 d-inline-block rotate"></span>
+                          <p class="text-uppercase fontBold font-14 d-inline-block mb-0 white">14 JUL 2020</p>
+                          <p class="fontRegular font-22 white mb-2 d-block lh-sm">Al-Futtaim’s Trading Enterprises Volvo Cars invests in designing… <img src="images/static/arrow-right.svg" alt="" class="rect s12"></p>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="p-relative">
       <!--  FIXED BLUE BAR  -->
       <div class="section fixed-bottom overflow-hidden">
@@ -604,136 +877,6 @@
           </div>
         </div>
       </div>
-
-
-      <!--  OUR TIMELINE  -->
-      <section class="py-80">
-        <div class="container-fluid p-relative">
-          <div class="row justify-content-center mb-3 mb-lg-5">
-            <div class="col-lg-10">
-              <div class="row mb-3 mb-lg-5">
-                <div class="col-lg-8">
-                  <p class="navy fontMedium font-60 pb-3 lh-1">Our Timeline</p>
-                </div>
-              </div>
-              <div class="row mb-3 mb-lg-5">
-                <div class="cd-horizontal-timeline">
-                  <div class="timeline">
-                    <div class="events-wrapper">
-                      <div class="events">
-                        <ul>
-                          <li>
-                            <!-- <a href="#0" data-date="21/06/2016">1950-59</a> -->
-                            <ul>
-                              <li><a href="#0" data-date="14/06/2016" class="selected">June 14</a></li>
-                              <li><a href="#0" data-date="21/06/2016">June 21</a></li>
-                              <li><a href="#0" data-date="24/06/2016">June 24</a></li>
-                              <li><a href="#0" data-date="30/06/2016">June 21-30</a></li>
-                            </ul>
-                          </li>
-                          <li>
-                            <ul>
-                              <li><a href="#0" data-date="08/07/2016"> July</a></li>
-                              <li><a href="#0" data-date="17/07/2016">June 28</a></li>
-                              <li><a href="#0" data-date="23/07/2016">June 30</a></li>
-                              <li><a href="#0" data-date="26/07/2016">Aug 23</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-
-                        <span class="filling-line" aria-hidden="true"></span>
-                      </div> <!-- .events -->
-                    </div> <!-- .events-wrapper -->
-                      
-                    <ul class="cd-timeline-navigation">
-                      <li><a href="#0" class="prev inactive">Prev</a></li>
-                      <li><a href="#0" class="next">Next</a></li>
-                    </ul> <!-- .cd-timeline-navigation -->
-                  </div> <!-- .timeline -->
-
-                  <div class="events-content">
-                    <ol>
-                      <li class="selected" data-date="14/06/2016">
-                        <h2>TK</h2>
-                        <em>June 14th, 2016</em>
-                        <p>	
-                          AMA issues CSAPH 	2-A-16, “Human Environmental Effects of LED Community Lighting.”
-                        </p>
-                      </li>
-
-                      <li data-date="21/06/2016">
-                        <h2>TK</h2>
-                        <em>June 21st, 2016</em>
-                        <p>	
-                          CNN publishes “Doctors issue warning about LED streetlighting.”
-                        </p>
-                      </li>
-
-                      <li data-date="24/06/2016">
-                        <h2>TK</h2>
-                        <em>June 24th, 2016</em>
-                        <p>	
-                          In response to AMA Report 2-A-16, IES Issues “IES Board Position on AMA CSAPH Report 2-A-16.
-                        </p>
-                      </li>
-
-                      <li data-date="30/06/2016">
-                        <h2>TK</h2>
-                        <em>June 21-30th, 2016</em>
-                        <p>	
-                          Various entities in the lighting community issue responses to AMA Report 2-A-16.
-                        </p>
-                      </li>
-
-                      <li data-date="08/07/2016">
-                        <h2>TK</h2>
-                        <em>July, 2016</em>
-                        <p>	
-                          Lighting publications report on the AMA controversy. 
-                        </p>
-                      </li>
-
-                      <li data-date="17/07/2016">
-                        <h2>TK</h2>
-                        <em>June 28th, 2017</em>
-                        <p>	
-                          IES issues Position Statement PS-09-17 (status update of dialogue with AMA). 
-                        </p>
-                      </li>
-
-                      <li data-date="23/07/2016">
-                        <h2>TK</h2>
-                        <em>June 30th, 2017</em>
-                        <p>	
-                          IALD endorses IES Position Statement PS-09-17. 
-                        </p>
-                      </li>
-
-                      <li data-date="26/07/2016">
-                        <h2>TK</h2>
-                        <em>August 23rd, 2017</em>
-                        <p>	
-                          U.S. Department of Energy’s Solid-State Lighting program issues an activity and research update in its SSL Postings newsletter. 
-                        </p>
-                      </li>
-
-                      <li data-date="30/07/2016">
-                        <h2>TK</h2>
-                        <em>September 25, 2017</em>
-                        <p>	
-                          The Washington Post publishes, “Some cities are taking another look at LED lighting after AMA warning.”
-                        </p>
-                      </li>
-
-                      
-                    </ol>
-                  </div> <!-- .events-content -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
   
       <!--  SUBSCRIBE SECTION  -->
       <section class="py-80">
@@ -764,7 +907,7 @@
                     </div>
                     <div class="col-lg-4">
                       <button class="btn no-bg text-uppercase black font-14 fontBold mx-auto p-3 text-start rounded-2 w-100" type="submit">
-                        <p class="mb-0 d-inline-block me-5 align-middle">Sign-up</p>
+                        <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">Sign-up</p>
                         <img src="images/static/arrow-right.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12">
                       </button>
                     </div>
@@ -774,12 +917,12 @@
               </div>
               <div class="row mb-3 mb-lg-5">
                 <!-- <div class="col-1"></div> -->
-                <div class="col-lg-5">
+                <div class="col-lg-5 mb-3 mb-lg-0">
                   <p class="fontBold font-18 navy text-uppercase mb-0">COMPLIANCE CONCERNS</p>
                   <p class="fontRegular font-32 black">Let us know</p>
                   <p class="fontBold font-42 navy">00971 4-294-9999</p>
                   <button class="btn no-bg text-uppercase black font-14 fontBold mx-auto p-3 mb-3 text-start rounded-2">
-                    <p class="mb-0 d-inline-block me-5 align-middle">Tell us</p>
+                    <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">Tell us</p>
                     <img src="images/static/arrow-right.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
                   </button>
                 </div>
@@ -791,7 +934,7 @@
                   <p class="fontBold font-18 navy text-uppercase mb-0">CONTACT US</p>
                   <p class="fontRegular font-32 black">We’re here to answer all your questions</p>
                   <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
-                    <p class="mb-0 d-inline-block me-5 align-middle">Tell us</p>
+                    <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">Tell us</p>
                     <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
                   </button>
                 </div>
@@ -817,7 +960,7 @@
                 <div class="col-12">
                   <div class="row d-lg-flex">
                     <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
-                      <li class="text-uppercase white fontSemiBold font-14 d-block mb-3">Automotive</li>
+                      <li class="text-uppercase white fontMedium font-14 d-block mb-3">Automotive</li>
                       <li class="white fontRegular font-14 d-block"><a href="javascript:;" class="text-decoration-none white ">Aftersales</a></li>
                       <li class="white fontRegular font-14 d-block"><a href="javascript:;" class="text-decoration-none white ">Distributors</a></li>
                       <li class="white fontRegular font-14 d-block"><a href="javascript:;" class="text-decoration-none white ">Logistics</a></li>
@@ -825,7 +968,7 @@
                       <li class="white fontRegular font-14 d-block"><a href="javascript:;" class="text-decoration-none white ">Rental & Leasing</a></li>
                     </ul>
                     <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
-                      <li class="text-uppercase white fontSemiBold font-14 d-block mb-3">Retail</li>
+                      <li class="text-uppercase white fontMedium font-14 d-block mb-3">Retail</li>
                       <li class="white fontRegular font-14 d-block"><a href="javascript:;" class="text-decoration-none white ">Electronics</a></li>
                       <li class="white fontRegular font-14 d-block"><a href="javascript:;" class="text-decoration-none white ">Fashion</a></li>
                       <li class="white fontRegular font-14 d-block"><a href="javascript:;" class="text-decoration-none white ">Food & Beverage</a></li>
@@ -835,36 +978,36 @@
                       <li class="white fontRegular font-14 d-block"><a href="javascript:;" class="text-decoration-none white ">Toys</a></li>
                     </ul>
                     <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
-                      <li class="text-uppercase white fontSemiBold font-14 d-block mb-3">Real Estate</li>
+                      <li class="text-uppercase white fontMedium font-14 d-block mb-3">Real Estate</li>
                       <li class="white fontRegular font-14 d-block"><a href="javascript:;" class="text-decoration-none white ">Malls & Lifestyle</a></li>
                       <li class="white fontRegular font-14 d-block"><a href="javascript:;" class="text-decoration-none white ">Property Management</a></li>
                     </ul>
                     <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
-                      <li class="text-uppercase white fontSemiBold font-14 d-block mb-3">financial services</li>
+                      <li class="text-uppercase white fontMedium font-14 d-block mb-3">financial services</li>
                       <li class="white fontRegular font-14 d-block"><a href="javascript:;" class="text-decoration-none white ">Banking</a></li>
                       <li class="white fontRegular font-14 d-block"><a href="javascript:;" class="text-decoration-none white ">Finance</a></li>
                       <li class="white fontRegular font-14 d-block"><a href="javascript:;" class="text-decoration-none white ">Insurance</a></li>
                       <li class="white fontRegular font-14 d-block"><a href="javascript:;" class="text-decoration-none white ">Investement</a></li>
                     </ul>
                     <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
-                      <li class="text-uppercase white fontSemiBold font-14 d-block mb-3">Health</li>
+                      <li class="text-uppercase white fontMedium font-14 d-block mb-3">Health</li>
                       <li class="white fontRegular font-14 d-block"><a href="javascript:;" class="text-decoration-none white ">Clinic</a></li>
                       <li class="white fontRegular font-14 d-block"><a href="javascript:;" class="text-decoration-none white ">Pharmacy</a></li>
                     </ul>
                     <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
-                      <li class="text-uppercase white fontSemiBold font-14 d-block mb-3">Education</li>
+                      <li class="text-uppercase white fontMedium font-14 d-block mb-3">Education</li>
                       <li class="white fontRegular font-14 d-block"><a href="javascript:;" class="text-decoration-none white ">School</a></li>
                     </ul>
                     <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
-                      <li class="text-uppercase white fontSemiBold font-14"><a href="javascript:;" class="text-decoration-none white ">Stories</a></li>
-                      <li class="text-uppercase white fontSemiBold font-14"><a href="javascript:;" class="text-decoration-none white ">Careers</a></li>
-                      <li class="text-uppercase white fontSemiBold font-14"><a href="javascript:;" class="text-decoration-none white ">About</a></li>
-                      <li class="text-uppercase white fontSemiBold font-14"><a href="javascript:;" class="text-decoration-none white ">Media</a></li>
-                      <li class="text-uppercase white fontSemiBold font-14"><a href="javascript:;" class="text-decoration-none white ">Contact</a></li>
-                      <li class="text-uppercase white fontSemiBold font-14"><a href="javascript:;" class="text-decoration-none white ">Al-Futtaim Credit Cards</a></li>
+                      <li class="text-uppercase white fontMedium font-14"><a href="javascript:;" class="text-decoration-none white ">Stories</a></li>
+                      <li class="text-uppercase white fontMedium font-14"><a href="javascript:;" class="text-decoration-none white ">Careers</a></li>
+                      <li class="text-uppercase white fontMedium font-14"><a href="javascript:;" class="text-decoration-none white ">About</a></li>
+                      <li class="text-uppercase white fontMedium font-14"><a href="javascript:;" class="text-decoration-none white ">Media</a></li>
+                      <li class="text-uppercase white fontMedium font-14"><a href="javascript:;" class="text-decoration-none white ">Contact</a></li>
+                      <li class="text-uppercase white fontMedium font-14"><a href="javascript:;" class="text-decoration-none white ">Al-Futtaim Credit Cards</a></li>
                     </ul>
                     <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
-                      <li class="text-uppercase white fontSemiBold font-14 d-block mb-3">Connect</li>
+                      <li class="text-uppercase white fontMedium font-14 d-block mb-3">Connect</li>
                       <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block"><img src="images/static/SMW-Facebook.svg" alt="facebook" class="w-100 h-100 object-fit-contain"></a></li>
                       <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block"><img src="images/static/SMW-instagram.svg" alt="instagram" class="w-100 h-100 object-fit-contain"></a></li>
                       <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block"><img src="images/static/SMW-Linkedin.svg" alt="Linkedin" class="w-100 h-100 object-fit-contain"></a></li>
