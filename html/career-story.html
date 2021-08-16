@@ -17,22 +17,21 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.css" integrity="sha512-SZgE3m1he0aEF3tIxxnz/3mXu/u/wlMNxQSnE0Cni9j/O8Gs+TjM9tm1NX34nRQ7GiLwUEzwuE3Wv2FLz2667w==" crossorigin="anonymous" />
+
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link href="css/styles.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
 
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js" integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA==" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 
 </head>
@@ -55,7 +54,7 @@
                         <a class="nav-link fontRegular font-14 text-uppercase search-icon" href="javascript:;"><img src="images/static/search.svg" alt="" class="rect s40 w-100 h-100 object-fit-contain"></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link fontRegular font-14 text-uppercase lang black" href="#">عربي</a>
+                      <a class="nav-link fontRegular font-14 text-uppercase lang black" href="ar/career-story.html">عربي</a>
                     </li>
                   </ul>
                 </div>
@@ -119,7 +118,7 @@
     <div class="state p-relative initial-state">
       <div class="img-wrapper p-relative no-dark-overlay w-100 h-100">
         <img src="images/dynamic/main/career-stories.png" alt="" class="w-100 h-100 object-fit-cover">
-        <img src="images/dynamic/patern-overlay.png" alt="" class="p-absolute top-left w-100 h-100 object-fit-cover">
+        <img src="images/dynamic/patern-overlay.png" alt="" class="p-absolute top-left w-100 h-100 object-fit-cover main-patern-overlay">
       </div>
       <div class="state-content p-absolute center-y w-70">
         <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb" class="mb-3">
@@ -142,7 +141,7 @@
     <section class="search">
       <div class="container-fluid">
         <div class="row">
-          <div class="bgWhite"></div>
+          <div class="bgWhite top-search"></div>
         </div>
       </div>
       <div class="container-fluid">
@@ -449,7 +448,7 @@
                               at?</p>
                             <button
                               class="btn bgWhite text-uppercase black font-14 fontBold mx-auto p-3 mb-5 text-start rounded-2 border-0">
-                              <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">A FUTURE WITH US</p>
+                              <p class="mb-0 d-inline-block me-3 align-middle">A FUTURE WITH US</p>
                               <img src="images/static/arrow-right.svg" alt="button arrow"
                                 class="d-inline-block float-end align-middle rect s12">
                             </button>
@@ -503,9 +502,8 @@
         </div>
       </div>
     </div>
-
     <!--  FIXED BLUE BAR - Your Interests  -->
-    <div class="section fixed-bottom overflow-hidden">
+    <div class="section fixed-bottom overflow-hidden d-none">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -523,8 +521,8 @@
                   aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                   <div class="accordion-body py-0 px-0">
                     <div class="row">
-                      <div class="col-lg-4 p-0">
-                        <div class="p-relative overflow-hidden">
+                      <div class="col-lg-4 p-0 mb-3 mb-lg-0">
+                        <div class="p-relative overflow-hidden w-100 h-100">
                           <div class="rectangle-ve w-100"></div>
                           <div class="d-block p-absolute top-left w-100 h-100">
                             <img src="images/dynamic/story28.jpg" alt="" class="w-100 h-100 object-fit-cover">
@@ -541,88 +539,90 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-8">
-                        <ul class="progressbar font-12 white fontRegular py-3 mb-5">
-                          <li class="active">Your interests</li>
-                          <li>Your Experience</li>
-                          <li>Your Strength</li>
-                          <li>Your Location</li>
-                          <li>Get in Touch</li>
-                        </ul>
-                        <div class="p-relative w-100 overflow-scroll h-70">
-                          <div class="p-lg-absolute w-100 p-3 p-lg-3">
-                            <div class="me-3">
-                              <p class="fontBold font-22 white mb-3 d-inline-block me-5 align-middle">
-                                Your Interest</p>
-                              <a href="#"
-                                class="d-inline-block float-end align-middle white font-12 text-decoration-none fontRegular">Skip</a>
+                      <div class="col-lg-8 mb-3 mb-lg-0">
+                        <div class="p-relative h-100">
+                          <ul class="progressbar font-12 white fontRegular py-3 mb-5">
+                            <li class="active">Your interests</li>
+                            <li>Your Experience</li>
+                            <li>Your Strength</li>
+                            <li>Your Location</li>
+                            <li>Get in Touch</li>
+                          </ul>
+                          <div class="p-relative w-100 pb-5">
+                            <div class=" w-100 p-3 p-lg-3 p-relative">
+                              <div class="me-3">
+                                <p class="fontMedium font-22 white mb-3 d-inline-block me-5 align-middle">
+                                  Your Interest</p>
+                                <a href="#"
+                                  class="d-inline-block float-end align-middle white font-12 text-decoration-none fontRegular">Skip</a>
+                              </div>
+                              <ul class="mb-2">
+                                <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
+                                    class="tag text-uppercase fontRegular font-14 text-decoration-none interest active">Audit
+                                    &
+                                    risk
+                                    compliance</a>
+                                </li>
+                                <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
+                                    class="tag text-uppercase fontRegular font-14 text-decoration-none interest">Automotive</a>
+                                </li>
+                                <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
+                                    class="tag text-uppercase fontRegular font-14 text-decoration-none interest active">Corporate</a>
+                                </li>
+                                <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
+                                    class="tag text-uppercase fontRegular font-14 text-decoration-none interest">Retail</a>
+                                </li>
+                                <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
+                                    class="tag text-uppercase fontRegular font-14 text-decoration-none interest">finance &
+                                    Accounting</a></li>
+                                <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
+                                    class="tag text-uppercase fontRegular font-14 text-decoration-none interest">Financial
+                                    services</a></li>
+                                <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
+                                    class="tag text-uppercase fontRegular font-14 text-decoration-none interest">General
+                                    management</a>
+                                </li>
+                                <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
+                                    class="tag text-uppercase fontRegular font-14 text-decoration-none interest active">health
+                                    &
+                                    safety environment</a>
+                                </li>
+                                <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
+                                    class="tag text-uppercase fontRegular font-14 text-decoration-none interest">human
+                                    resources</a>
+                                </li>
+                                <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
+                                    class="tag text-uppercase fontRegular font-14 text-decoration-none interest">information
+                                    technology</a>
+                                </li>
+                                <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
+                                    class="tag text-uppercase fontRegular font-14 text-decoration-none interest">procurement
+                                    &
+                                    commercial</a></li>
+                                <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
+                                    class="tag text-uppercase fontRegular font-14 text-decoration-none interest">sales &
+                                    customer management</a></li>
+                                <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
+                                    class="tag text-uppercase fontRegular font-14 text-decoration-none interest">marketing</a>
+                                </li>
+                                <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
+                                    class="tag text-uppercase fontRegular font-14 text-decoration-none interest">logistics
+                                    & supply chain</a></li>
+                              </ul>
                             </div>
-                            <ul class="mb-2">
-                              <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
-                                  class="tag text-uppercase fontRegular font-14 text-decoration-none interest active">Audit
-                                  &
-                                  risk
-                                  compliance</a>
-                              </li>
-                              <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
-                                  class="tag text-uppercase fontRegular font-14 text-decoration-none interest">Automotive</a>
-                              </li>
-                              <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
-                                  class="tag text-uppercase fontRegular font-14 text-decoration-none interest active">Corporate</a>
-                              </li>
-                              <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
-                                  class="tag text-uppercase fontRegular font-14 text-decoration-none interest">Retail</a>
-                              </li>
-                              <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
-                                  class="tag text-uppercase fontRegular font-14 text-decoration-none interest">finance &
-                                  Accounting</a></li>
-                              <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
-                                  class="tag text-uppercase fontRegular font-14 text-decoration-none interest">Financial
-                                  services</a></li>
-                              <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
-                                  class="tag text-uppercase fontRegular font-14 text-decoration-none interest">General
-                                  management</a>
-                              </li>
-                              <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
-                                  class="tag text-uppercase fontRegular font-14 text-decoration-none interest active">health
-                                  &
-                                  safety environment</a>
-                              </li>
-                              <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
-                                  class="tag text-uppercase fontRegular font-14 text-decoration-none interest">human
-                                  resources</a>
-                              </li>
-                              <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
-                                  class="tag text-uppercase fontRegular font-14 text-decoration-none interest">information
-                                  technology</a>
-                              </li>
-                              <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
-                                  class="tag text-uppercase fontRegular font-14 text-decoration-none interest">procurement
-                                  &
-                                  commercial</a></li>
-                              <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
-                                  class="tag text-uppercase fontRegular font-14 text-decoration-none interest">sales &
-                                  customer management</a></li>
-                              <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
-                                  class="tag text-uppercase fontRegular font-14 text-decoration-none interest">marketing</a>
-                              </li>
-                              <li class="d-inline-block me-1 mb-3 text-end"><a href="javascript:;"
-                                  class="tag text-uppercase fontRegular font-14 text-decoration-none interest">logistics
-                                  & supply chain</a></li>
-                            </ul>
                           </div>
-                        </div>
-                        <div class="mx-4 mt-2">
-                          <a href="#" class="d-inline-block align-middle text-decoration-none opacity-25">
-                            <img src="images/static/arrow-left-white.svg" alt="button arrow"
-                              class="d-inline-block align-middle rect s8 rect s8 my-3">
-                            <p class="text-uppercase white fontRegular font-12 d-inline-block">Back</p>
-                          </a>
-                          <a href="#" class="d-inline-block align-middle text-decoration-none float-end">
-                            <p class="text-uppercase white fontRegular font-12 d-inline-block">Next</p>
-                            <img src="images/static/arrow-right-white.svg" alt="button arrow"
-                              class="d-inline-block align-middle rect s8 rect s8 my-3">
-                          </a>
+                          <div class="p-lg-absolute bottom-left w-90 center-x mb-3">
+                            <a href="#" class="d-inline-block align-middle text-decoration-none acc-btn opacity-25">
+                              <img src="images/static/arrow-left-white.svg" alt="button arrow"
+                                class="d-inline-block align-middle rect s8 rect s8 my-3">
+                              <p class="text-uppercase white fontRegular font-12 d-inline-block">Back</p>
+                            </a>
+                            <a href="#" class="d-inline-block align-middle text-decoration-none acc-btn float-end">
+                              <p class="text-uppercase white fontRegular font-12 d-inline-block">Next</p>
+                              <img src="images/static/arrow-right-white.svg" alt="button arrow"
+                                class="d-inline-block align-middle rect s8 rect s8 my-3">
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -653,8 +653,8 @@
                   aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                   <div class="accordion-body py-0 px-0">
                     <div class="row">
-                      <div class="col-lg-4 p-0">
-                        <div class="p-relative overflow-hidden">
+                      <div class="col-lg-4 p-0 mb-3 mb-lg-0">
+                        <div class="p-relative overflow-hidden w-100 h-100">
                           <div class="rectangle-ve w-100"></div>
                           <div class="d-block p-absolute top-left w-100 h-100">
                             <img src="images/dynamic/story28.jpg" alt="" class="w-100 h-100 object-fit-cover">
@@ -671,43 +671,50 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-8">
-                        <ul class="progressbar font-12 white fontRegular py-3 mb-5">
-                          <li class="active">Your interests</li>
-                          <li class="active">Your Experience</li>
-                          <li>Your Strength</li>
-                          <li>Your Location</li>
-                          <li>Get in Touch</li>
-                        </ul>
-                        <div class="p-relative w-100 overflow-scroll h-70">
-                          <div class="p-lg-absolute w-100 p-3 p-lg-3">
-                            <div class="me-3">
-                              <p class="fontBold font-22 white mb-3 d-inline-block me-5 align-middle">
-                                Your Experience</p>
-                              <a href="#"
-                                class="d-inline-block float-end align-middle white font-12 text-decoration-none fontRegular">Skip</a>
-                            </div>
-                            <form>
-                              <div class="form-group">
-                                <label for="customRange3">Years Of Experience</label>
-                                <input type="range" class="form-control-range form-range" min="0" max="20" step="1"
-                                  id="formControlRange customRange3">
-
+                      <div class="col-lg-8 mb-3 mb-lg-0">
+                        <div class="p-relative h-100">
+                          <ul class="progressbar font-12 white fontRegular py-3 mb-5">
+                            <li class="active">Your interests</li>
+                            <li class="active">Your Experience</li>
+                            <li>Your Strength</li>
+                            <li>Your Location</li>
+                            <li>Get in Touch</li>
+                          </ul>
+                          <div class="p-relative w-100 pb-5">
+                            <div class="w-100 p-3 p-lg-3 p-relative">
+                              <div class="me-3">
+                                <p class="fontMedium font-22 white mb-3 d-inline-block me-5 align-middle">
+                                  Your Experience</p>
+                                <a href="#"
+                                  class="d-inline-block float-end align-middle white font-12 text-decoration-none fontRegular">Skip</a>
                               </div>
-                            </form>
+                              <p class="px-4 white fontRegular font-16 m-0 mt-3">Years Of Experience</p>
+                              <div id="slider-outer-div">
+                                <div id="slider-max-label" class="slider-label">
+                                </div>
+                                <!-- <div id="slider-fixed-label" class="slider-label">20</div> -->
+                                <div id="slider-min-label" class="slider-label"></div>
+                                <div id="slider-div">
+                                  <div class="w-90 mx-auto">
+                                    <input id="ex2" type="text" data-slider-min="0" data-slider-max="20"
+                                      data-slider-value="[0,8]" data-slider-tooltip="hide" />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <div class="mx-4 mt-2">
-                          <a href="#" class="d-inline-block align-middle text-decoration-none">
-                            <img src="images/static/arrow-left-white.svg" alt="button arrow"
-                              class="d-inline-block align-middle rect s8 rect s8 my-3">
-                            <p class="text-uppercase white fontRegular font-12 d-inline-block">Back</p>
-                          </a>
-                          <a href="#" class="d-inline-block align-middle text-decoration-none float-end">
-                            <p class="text-uppercase white fontRegular font-12 d-inline-block">Next</p>
-                            <img src="images/static/arrow-right-white.svg" alt="button arrow"
-                              class="d-inline-block align-middle rect s8 rect s8 my-3">
-                          </a>
+                          <div class="p-lg-absolute bottom-left w-90 center-x mb-3">
+                            <a href="#" class="d-inline-block align-middle text-decoration-none acc-btn">
+                              <img src="images/static/arrow-left-white.svg" alt="button arrow"
+                                class="d-inline-block align-middle rect s8 rect s8 my-3">
+                              <p class="text-uppercase white fontRegular font-12 d-inline-block">Back</p>
+                            </a>
+                            <a href="#" class="d-inline-block align-middle text-decoration-none acc-btn float-end">
+                              <p class="text-uppercase white fontRegular font-12 d-inline-block">Next</p>
+                              <img src="images/static/arrow-right-white.svg" alt="button arrow"
+                                class="d-inline-block align-middle rect s8 rect s8 my-3">
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -719,7 +726,6 @@
         </div>
       </div>
     </div>
-
     <!--  FIXED BLUE BAR - Your Strength  -->
     <div class="section fixed-bottom overflow-hidden d-none">
       <div class="container">
@@ -739,8 +745,8 @@
                   aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                   <div class="accordion-body py-0 px-0">
                     <div class="row">
-                      <div class="col-lg-4 p-0">
-                        <div class="p-relative overflow-hidden">
+                      <div class="col-lg-4 p-0 mb-3 mb-lg-0">
+                        <div class="p-relative overflow-hidden w-100 h-100">
                           <div class="rectangle-ve w-100"></div>
                           <div class="d-block p-absolute top-left w-100 h-100">
                             <img src="images/dynamic/story28.jpg" alt="" class="w-100 h-100 object-fit-cover">
@@ -757,49 +763,51 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-8">
-                        <ul class="progressbar font-12 white fontRegular py-3 mb-5">
-                          <li class="active">Your interests</li>
-                          <li class="active">Your Experience</li>
-                          <li class="active">Your Strength</li>
-                          <li>Your Location</li>
-                          <li>Get in Touch</li>
-                        </ul>
-                        <div class="p-relative w-100 overflow-scroll h-70">
-                          <div class="p-lg-absolute w-100 p-3 p-lg-3">
-                            <div class="me-3">
-                              <p class="fontBold font-22 white mb-3 d-inline-block me-5 align-middle">
-                                Your Strength</p>
-                              <a href="#"
-                                class="d-inline-block float-end align-middle white font-12 text-decoration-none fontRegular">Skip</a>
-                            </div>
-                            <form>
-                              <div class="form-group bgWhite fontMedium py-2">
-                                <input class="form-control no-bg border-0 w-25 d-inline-block" type="text"
-                                  placeholder="Your strength">
-                                <ul class="d-inline-block">
-                                  <li class="d-inline-block mb-2 text-end mx-2"><a href="javascript:;"
-                                      class="tag text-uppercase fontRegular font-14 text-decoration-none strength">Audit
-                                      &
-                                      risk
-                                      compliance</a>
-                                  </li>
-                                </ul>
+                      <div class="col-lg-8 mb-3 mb-lg-0">
+                        <div class="p-relative h-100">
+                          <ul class="progressbar font-12 white fontRegular py-3 mb-5">
+                            <li class="active">Your interests</li>
+                            <li class="active">Your Experience</li>
+                            <li class="active">Your Strength</li>
+                            <li>Your Location</li>
+                            <li>Get in Touch</li>
+                          </ul>
+                          <div class="p-relative w-100 pb-5">
+                            <div class=" w-100 p-3 p-lg-3 p-relative">
+                              <div class="me-3">
+                                <p class="fontMedium font-22 white mb-3 d-inline-block me-5 align-middle">
+                                  Your Strength</p>
+                                <a href="#"
+                                  class="d-inline-block float-end align-middle white font-12 text-decoration-none fontRegular">Skip</a>
                               </div>
-                            </form>
+                              <form>
+                                <div class="form-group bgWhite fontMedium py-2">
+                                  <input class="form-control no-bg border-0 w-25 d-inline-block" type="text"
+                                    placeholder="Your strength">
+                                  <ul class="d-inline-block">
+                                    <li class="d-inline-block mb-2 text-end mx-2"><a href="javascript:;"
+                                        class="tag text-uppercase fontRegular font-14 text-decoration-none strength">Audit
+                                        &
+                                        risk
+                                        compliance</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </form>
+                            </div>
                           </div>
-                        </div>
-                        <div class="mx-4 mt-2">
-                          <a href="#" class="d-inline-block align-middle text-decoration-none">
-                            <img src="images/static/arrow-left-white.svg" alt="button arrow"
-                              class="d-inline-block align-middle rect s8 rect s8 my-3">
-                            <p class="text-uppercase white fontRegular font-12 d-inline-block">Back</p>
-                          </a>
-                          <a href="#" class="d-inline-block align-middle text-decoration-none float-end">
-                            <p class="text-uppercase white fontRegular font-12 d-inline-block">Next</p>
-                            <img src="images/static/arrow-right-white.svg" alt="button arrow"
-                              class="d-inline-block align-middle rect s8 rect s8 my-3">
-                          </a>
+                          <div class="p-lg-absolute bottom-left w-90 center-x mb-3">
+                            <a href="#" class="d-inline-block align-middle text-decoration-none acc-btn">
+                              <img src="images/static/arrow-left-white.svg" alt="button arrow"
+                                class="d-inline-block align-middle rect s8 rect s8 my-3">
+                              <p class="text-uppercase white fontRegular font-12 d-inline-block">Back</p>
+                            </a>
+                            <a href="#" class="d-inline-block align-middle text-decoration-none acc-btn float-end">
+                              <p class="text-uppercase white fontRegular font-12 d-inline-block">Next</p>
+                              <img src="images/static/arrow-right-white.svg" alt="button arrow"
+                                class="d-inline-block align-middle rect s8 rect s8 my-3">
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -812,7 +820,7 @@
       </div>
     </div>
     <!--  FIXED BLUE BAR - Location  -->
-    <div class="section fixed-bottom overflow-hidden d-none">
+    <div class="section fixed-bottom overflow-hidden">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -830,8 +838,8 @@
                   aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                   <div class="accordion-body py-0 px-0">
                     <div class="row">
-                      <div class="col-lg-4 p-0">
-                        <div class="p-relative overflow-hidden">
+                      <div class="col-lg-4 p-0 mb-3 mb-lg-0">
+                        <div class="p-relative overflow-hidden w-100 h-100">
                           <div class="rectangle-ve w-100"></div>
                           <div class="d-block p-absolute top-left w-100 h-100">
                             <img src="images/dynamic/story28.jpg" alt="" class="w-100 h-100 object-fit-cover">
@@ -848,54 +856,56 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-8">
-                        <ul class="progressbar font-12 white fontRegular py-3 mb-5">
-                          <li class="active">Your interests</li>
-                          <li class="active">Your Experience</li>
-                          <li class="active">Your Strength</li>
-                          <li class="active">Your Location</li>
-                          <li>Get in Touch</li>
-                        </ul>
-                        <div class="p-relative w-100 overflow-scroll h-70">
-                          <div class="p-lg-absolute w-100 p-3 p-lg-3">
-                            <div class="me-3">
-                              <p class="fontBold font-22 white mb-3 d-inline-block me-5 align-middle">
-                                Preffered Location</p>
-                              <a href="#"
-                                class="d-inline-block float-end align-middle white font-12 text-decoration-none fontRegular">Skip</a>
-                            </div>
-                            <div class="w-30 d-inline-block d-inline-lg-flex">
-                              <select class="form-select fontRegular font-14 border-0 rounded-2 h-100 my-2 mb-lg-0 py-2"
-                                aria-label="Default select example">
-                                <option selected="">Country</option>
-                                <option value="1">UAE</option>
-                                <option value="2">UAE</option>
-                                <option value="3">UAE</option>
-                              </select>
-                            </div>
-                            <div class="w-30 d-inline-block d-inline-lg-flex">
-                              <select
-                                class="form-select fontRegular font-14 border-0 rounded-2 h-100 my-2 mb-lg-0 py-2 ms-2"
-                                aria-label="Default select example">
-                                <option selected="">City</option>
-                                <option value="1">UAE</option>
-                                <option value="2">UAE</option>
-                                <option value="3">UAE</option>
-                              </select>
+                      <div class="col-lg-8 mb-3 mb-lg-0">
+                        <div class="p-relative h-100">
+                          <ul class="progressbar font-12 white fontRegular py-3 mb-5">
+                            <li class="active">Your interests</li>
+                            <li class="active">Your Experience</li>
+                            <li class="active">Your Strength</li>
+                            <li class="active">Your Location</li>
+                            <li>Get in Touch</li>
+                          </ul>
+                          <div class="p-relative w-100 pb-5">
+                            <div class=" w-100 p-3 p-lg-3 p-relative">
+                              <div class="me-3">
+                                <p class="fontMedium font-22 white mb-3 d-inline-block me-5 align-middle">
+                                  Preffered Location</p>
+                                <a href="#"
+                                  class="d-inline-block float-end align-middle white font-12 text-decoration-none fontRegular">Skip</a>
+                              </div>
+                              <div class="w-30 d-inline-block d-inline-lg-flex mb-2 mb-lg-0 me-0 me-lg-2">
+                                <select class="form-select fontRegular font-14 border-0 rounded-2"
+                                  aria-label="Default select example">
+                                  <option selected="">Country</option>
+                                  <option value="1">UAE</option>
+                                  <option value="2">UAE</option>
+                                  <option value="3">UAE</option>
+                                </select>
+                              </div>
+                              <div class="w-30 d-inline-block d-inline-lg-flex mb-2 mb-lg-0">
+                                <select
+                                  class="form-select fontRegular font-14 border-0 rounded-2"
+                                  aria-label="Default select example">
+                                  <option selected="">City</option>
+                                  <option value="1">UAE</option>
+                                  <option value="2">UAE</option>
+                                  <option value="3">UAE</option>
+                                </select>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="mx-4 mt-2">
-                          <a href="#" class="d-inline-block align-middle text-decoration-none">
-                            <img src="images/static/arrow-left-white.svg" alt="button arrow"
-                              class="d-inline-block align-middle rect s8 rect s8 my-3">
-                            <p class="text-uppercase white fontRegular font-12 d-inline-block">Back</p>
-                          </a>
-                          <a href="#" class="d-inline-block align-middle text-decoration-none float-end">
-                            <p class="text-uppercase white fontRegular font-12 d-inline-block">Next</p>
-                            <img src="images/static/arrow-right-white.svg" alt="button arrow"
-                              class="d-inline-block align-middle rect s8 rect s8 my-3">
-                          </a>
+                          <div class="p-lg-absolute bottom-left w-90 center-x mb-3">
+                            <a href="#" class="d-inline-block align-middle text-decoration-none acc-btn">
+                              <img src="images/static/arrow-left-white.svg" alt="button arrow"
+                                class="d-inline-block align-middle rect s8 rect s8 my-3">
+                              <p class="text-uppercase white fontRegular font-12 d-inline-block">Back</p>
+                            </a>
+                            <a href="#" class="d-inline-block align-middle text-decoration-none acc-btn float-end">
+                              <p class="text-uppercase white fontRegular font-12 d-inline-block">Next</p>
+                              <img src="images/static/arrow-right-white.svg" alt="button arrow"
+                                class="d-inline-block align-middle rect s8 rect s8 my-3">
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -926,8 +936,8 @@
                   aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                   <div class="accordion-body py-0 px-0">
                     <div class="row">
-                      <div class="col-lg-4 p-0">
-                        <div class="p-relative overflow-hidden">
+                      <div class="col-lg-4 p-0 mb-3 mb-lg-0">
+                        <div class="p-relative overflow-hidden w-100 h-100">
                           <div class="rectangle-ve w-100"></div>
                           <div class="d-block p-absolute top-left w-100 h-100">
                             <img src="images/dynamic/story28.jpg" alt="" class="w-100 h-100 object-fit-cover">
@@ -944,76 +954,78 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-8">
-                        <ul class="progressbar font-12 white fontRegular py-3 mb-5">
-                          <li class="active">Your interests</li>
-                          <li class="active">Your Experience</li>
-                          <li class="active">Your Strength</li>
-                          <li class="active">Your Location</li>
-                          <li class="active">Get in Touch</li>
-                        </ul>
-                        <div class="p-relative w-100 overflow-scroll h-60">
-                          <div class="p-lg-absolute w-100 p-3 p-lg-3">
-                            <div class="me-3">
-                              <p class="fontBold font-22 white mb-3 d-inline-block me-5 align-middle">
-                                Get In Touch</p>
-                            </div>
-                            <div class="row">
-                              <div class="col-lg-5">
-                                <div class="input-wrapper p-relative h-25 mb-3 mt-1">
-                                  <label for="name" class="visually-hidden">Full Name</label>
-                                  <input type="text"
-                                    class="form-control h-100 bgGrey border-0 rounded-0 fontRegular ps-4 w-90" id="name"
-                                    value="" placeholder="Full Name*">
-                                </div>
-                                <div class="input-wrapper p-relative h-25 mb-3">
-                                  <label for="staticEmail" class="visually-hidden">Email</label>
-                                  <input type="email"
-                                    class="form-control h-100 bgGrey border-0 rounded-0 fontRegular ps-4 w-90"
-                                    id="staticEmail" value="" placeholder="Email*">
-                                </div>
-                                <div class="input-wrapper p-relative h-25 mb-3">
-                                  <label for="number" class="visually-hidden">Phone number</label>
-                                  <input type="number"
-                                    class="form-control h-100 bgGrey border-0 rounded-0 fontRegular ps-4 w-90"
-                                    id="number" value="" placeholder="Phone Number">
-                                </div>
+                      <div class="col-lg-8 mb-3 mb-lg-0">
+                        <div class="p-relative h-100">
+                          <ul class="progressbar font-12 white fontRegular py-3 mb-5">
+                            <li class="active">Your interests</li>
+                            <li class="active">Your Experience</li>
+                            <li class="active">Your Strength</li>
+                            <li class="active">Your Location</li>
+                            <li class="active">Get in Touch</li>
+                          </ul>
+                          <div class="p-relative w-100 pb-5">
+                            <div class=" w-100 p-3 p-lg-3 p-relative">
+                              <div class="me-3">
+                                <p class="fontMedium font-22 white mb-3 d-inline-block me-5 align-middle">
+                                  Get In Touch</p>
                               </div>
-                              <div class="col-lg-5">
-                                <p class="fontRegular white font-14">Share your Resume with us and we'll get back to
-                                  you.</p>
-                                <form>
-                                  <div class="form-group">
-                                    <label for="exampleFormControlFile1"
-                                      class="custom-file-upload bgTransparent rounded-2 text-center py-2">
-                                      <img src="./images/static/upload.svg" alt="" class="mt-3">
-                                      <p class="text-uppercase fontBold mt-3 white">Upload Resume</p>
-                                    </label>
-                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                              <div class="row">
+                                <div class="col-lg-5">
+                                  <div class="input-wrapper p-relative h-25 mb-3 mt-1">
+                                    <label for="name" class="visually-hidden">Full Name</label>
+                                    <input type="text"
+                                      class="form-control h-100 bgGrey border-0 rounded-0 fontRegular ps-4 w-90" id="name"
+                                      value="" placeholder="Full Name*">
                                   </div>
-                                </form>
+                                  <div class="input-wrapper p-relative h-25 mb-3">
+                                    <label for="staticEmail" class="visually-hidden">Email</label>
+                                    <input type="email"
+                                      class="form-control h-100 bgGrey border-0 rounded-0 fontRegular ps-4 w-90"
+                                      id="staticEmail" value="" placeholder="Email*">
+                                  </div>
+                                  <div class="input-wrapper p-relative h-25 mb-3">
+                                    <label for="number" class="visually-hidden">Phone number</label>
+                                    <input type="number"
+                                      class="form-control h-100 bgGrey border-0 rounded-0 fontRegular ps-4 w-90"
+                                      id="number" value="" placeholder="Phone Number">
+                                  </div>
+                                </div>
+                                <div class="col-lg-5">
+                                  <p class="fontRegular white font-14">Share your Resume with us and we'll get back to
+                                    you.</p>
+                                  <form>
+                                    <div class="form-group">
+                                      <label for="exampleFormControlFile1"
+                                        class="custom-file-upload bgTransparent rounded-2 text-center py-2">
+                                        <img src="../images/static/upload.svg" alt="" class="mt-3">
+                                        <p class="text-uppercase fontBold mt-3 white">Upload Resume</p>
+                                      </label>
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+                                  </form>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="mx-4 mt-3">
-                          <a href="#" class="d-inline-block align-middle text-decoration-none mt-2">
-                            <img src="images/static/arrow-left-white.svg" alt="button arrow"
-                              class="d-inline-block align-middle rect s8 rect s8 my-3">
-                            <p class="text-uppercase white fontRegular font-12 d-inline-block">Back</p>
-                          </a>
-                          <!-- <a href="#" class="d-inline-block align-middle text-decoration-none float-end">
-                            <p class="text-uppercase white fontRegular font-12 d-inline-block">Next</p>
-                            <img src="images/static/arrow-right-white.svg" alt="button arrow"
-                              class="d-inline-block align-middle rect s8 rect s8 my-3">
-                          </a> -->
-                          <button
-                            class="btn bgWhite border-0 text-uppercase black font-14 fontBold p-3 text-start rounded-2 d-inline-block float-end w-30"
-                            type="submit">
-                            <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">Submit</p>
-                            <img src="images/static/arrow-right.svg" alt="button arrow"
-                              class="d-inline-block float-end align-middle rect s12">
-                          </button>
+                          <div class="p-lg-absolute bottom-left w-90 center-x mb-3">
+                            <a href="#" class="d-inline-block align-middle text-decoration-none acc-btn mt-2">
+                              <img src="images/static/arrow-left-white.svg" alt="button arrow"
+                                class="d-inline-block align-middle rect s8 rect s8 my-3">
+                              <p class="text-uppercase white fontRegular font-12 d-inline-block">Back</p>
+                            </a>
+                            <!-- <a href="#" class="d-inline-block align-middle text-decoration-none acc-btn float-end">
+                              <p class="text-uppercase white fontRegular font-12 d-inline-block">Next</p>
+                              <img src="images/static/arrow-right-white.svg" alt="button arrow"
+                                class="d-inline-block align-middle rect s8 rect s8 my-3">
+                            </a> -->
+                            <button
+                              class="btn bgWhite border-0 text-uppercase black font-14 fontBold p-3 text-start rounded-2 d-inline-block float-end w-30"
+                              type="submit">
+                              <p class="mb-0 d-inline-block me-3 align-middle">Submit</p>
+                              <img src="images/static/arrow-right.svg" alt="button arrow"
+                                class="d-inline-block float-end align-middle rect s12">
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1025,541 +1037,539 @@
         </div>
       </div>
     </div>
-    
-
-      <!--  CAREERS TABS  -->
-      <section class="py-80">
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <!-- <div class="col-1"></div> -->
-            <div class="col-lg-10">
-              <div class="partners-tabs">
-                <nav class="bgGrey">
-                  <div class="nav nav-tabs mx-3 d-flex border-0" id="nav-tab" role="tablist">
-                    <button class="nav-link text-uppercase fontRegular font-12 no-bg py-3 px-2 mx-auto active" id="growing-tab" data-bs-toggle="tab" data-bs-target="#growing" type="button" role="tab" aria-controls="growing" aria-selected="true">Growing</button>
-                    <button class="nav-link text-uppercase fontRegular font-12 no-bg py-3 px-2 mx-auto " id="learning-tab" data-bs-toggle="tab" data-bs-target="#learning" type="button" role="tab" aria-controls="learning" aria-selected="false">Learning</button>
-                    <button class="nav-link text-uppercase fontRegular font-12 no-bg py-3 px-2 mx-auto " id="inspiring-tab" data-bs-toggle="tab" data-bs-target="#inspiring" type="button" role="tab" aria-controls="inspiring" aria-selected="false">Inspiring</button>
-                  </div>
-                </nav>
-                <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane mh-100 fade show active" id="growing" role="tabpanel" aria-labelledby="growing-tab">
-                    <div class="listing mt-5">
-                      <p class="navy fontMedium font-60 pb-3 lh-1">Growing with Al-Futtaim</p>
-                      <p class="font-14 fontRegular black px-8 mb-5 w-70">Join our community and take the next great leap
-                        forward in your career.</p>
-                      <div class="row mb-3 mb-lg-5">
-                        <div class="col-lg-8 mb-3">
-                          <div class="video-wrapper p-relative w-100">
-                            <div class="square"></div>
-                            <a href="javascript:;" class="d-block p-absolute top-left w-100 h-100 text-decoration-none listing-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                              <img src="images/dynamic/career1.png" alt="" class="w-100 h-100 object-fit-cover"/>
-                              <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
-                              <img src="images/static/video-icon.svg" alt="video-icon" class="p-absolute rect s60 center">
-                            </a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 mb-3">
-                          <div class="video-wrapper p-relative w-100 mb-4">
-                            <div class="square"></div>
-                            <a href="javascript:;" class="d-block p-absolute top-left w-100 h-100 text-decoration-none listing-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                              <img src="images/dynamic/career2.png" alt="" class="w-100 h-100 object-fit-cover"/>
-                              <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
-                              <img src="images/static/video-icon.svg" alt="video-icon" class="p-absolute rect s60 center">
-                            </a>
-                          </div>
-                          <div class="video-wrapper p-relative w-100">
-                            <div class="square"></div>
-                            <a href="javascript:;" class="d-block p-absolute top-left w-100 h-100 text-decoration-none listing-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                              <img src="images/dynamic/career3.png" alt="" class="w-100 h-100 object-fit-cover"/>
-                              <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
-                              <img src="images/static/video-icon.svg" alt="video-icon" class="p-absolute rect s60 center">
-                            </a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 mb-3">
-                          <div class="video-wrapper p-relative w-100">
-                            <div class="square"></div>
-                            <a href="javascript:;" class="d-block p-absolute top-left w-100 h-100 text-decoration-none listing-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                              <img src="images/dynamic/story1.jpg" alt="" class="w-100 h-100 object-fit-cover"/>
-                              <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
-                              <img src="images/static/video-icon.svg" alt="video-icon" class="p-absolute rect s60 center">
-                            </a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 mb-3">
-                          <div class="video-wrapper p-relative w-100">
-                            <div class="square"></div>
-                            <a href="javascript:;" class="d-block p-absolute top-left w-100 h-100 text-decoration-none listing-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                              <img src="images/dynamic/story2.jpg" alt="" class="w-100 h-100 object-fit-cover"/>
-                              <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
-                              <img src="images/static/video-icon.svg" alt="video-icon" class="p-absolute rect s60 center">
-                            </a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 mb-3">
-                          <div class="video-wrapper p-relative w-100">
-                            <div class="square"></div>
-                            <a href="javascript:;" class="d-block p-absolute top-left w-100 h-100 text-decoration-none listing-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                              <img src="images/dynamic/story3.jpg" alt="" class="w-100 h-100 object-fit-cover"/>
-                              <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
-                              <img src="images/static/video-icon.svg" alt="video-icon" class="p-absolute rect s60 center">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row justify-content-center mb-3 mb-lg-5">
-                        <div class="col-auto col-lg-3">
-                          <button class="btn no-bg text-uppercase black font-14 fontBold mx-auto p-3 text-start rounded-2 w-100">
-                            <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">Load more</p>
-                            <img src="images/static/arrow-down.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12">
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane mh-100 fade" id="learning" role="tabpanel" aria-labelledby="learning-tab">Learning</div>
-                  <div class="tab-pane mh-100 fade" id="inspiring" role="tabpanel" aria-labelledby="inspiring-tab">Inspiring</div>
-                </div>
-              </div>
-            </div>
-            <!-- <div class="col-1"></div> -->
-          </div>
-        </div>
-      </section>
-
-    <!--  SUBSCRIBE SECTION  -->
+    <!--  CAREERS TABS  -->
     <section class="py-80">
       <div class="container-fluid">
         <div class="row justify-content-center">
+          <!-- <div class="col-1"></div> -->
           <div class="col-lg-10">
-            <div class="row pb-5 mb-5 border-bottom">
-              <div class="col-2 col-md-1">
-                <img src="images/static/floating-blue.svg" alt="" class="w-100">
-              </div>
-              <div class="col-10 col-lg-4 mb-3">
-                <p class="fontBold font-18 navy text-uppercase mb-0">DON’T MISS OUT ON AL-FUTTAIM</p>
-                <p class="fontRegular font-32 black mb-0">Subscribe for updates</p>
-              </div>
-              <div class="col-lg-7">
-                <form class="row">
-                  <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
-                    <div class="input-wrapper p-relative h-100">
-                      <label for="inputName" class="visually-hidden">Name</label>
-                      <input type="text" class="form-control h-100 bgGrey border-0 rounded-0 fontRegular" id="inputName"
-                        placeholder="Name">
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
-                    <div class="input-wrapper p-relative h-100">
-                      <label for="staticEmail" class="visually-hidden">Email</label>
-                      <input type="text" class="form-control h-100 bgGrey border-0 rounded-0 fontRegular"
-                        id="staticEmail" value="" placeholder="Email">
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <button
-                      class="btn no-bg text-uppercase black font-14 fontBold mx-auto p-3 text-start rounded-2 w-100"
-                      type="submit">
-                      <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">Sign-up</p>
-                      <img src="images/static/arrow-right.svg" alt="button arrow"
-                        class="d-inline-block float-end align-middle rect s12">
-                    </button>
-                  </div>
-                </form>
-              </div>
-              <!-- <div class="col-1"></div> -->
-            </div>
-            <div class="row mb-3 mb-lg-5">
-              <!-- <div class="col-1"></div> -->
-              <div class="col-lg-5 mb-3 mb-lg-0">
-                <p class="fontBold font-18 navy text-uppercase mb-0">COMPLIANCE CONCERNS</p>
-                <p class="fontRegular font-32 black">Let us know</p>
-                <p class="fontBold font-42 navy">00971 4-294-9999</p>
-                <button class="btn no-bg text-uppercase black font-14 fontBold mx-auto p-3 mb-3 text-start rounded-2">
-                  <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">Tell us</p>
-                  <img src="images/static/arrow-right.svg" alt="button arrow"
-                    class="d-inline-block float-end align-middle rect s12 rect s12">
-                </button>
-              </div>
-              <div class="col-1"></div>
-              <div class="col-2 mb-4 mb-lg-0">
-                <img src="images/dynamic/molecule.png" alt="molecule" class="w-100 d-none d-lg-block">
-              </div>
-              <div class="col-lg-4">
-                <p class="fontBold font-18 navy text-uppercase mb-0">CONTACT US</p>
-                <p class="fontRegular font-32 black">We’re here to answer all your questions</p>
-                <button
-                  class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
-                  <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">Tell us</p>
-                  <img src="images/static/arrow-right-white.svg" alt="button arrow"
-                    class="d-inline-block float-end align-middle rect s12 rect s12">
-                </button>
-              </div>
-              <!-- <div class="col-1"></div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!--  FOOTER  -->
-  <footer class="p-relative gradient-right">
-    <div class="footer-logo rect s80 p-absolute center-x">
-      <img src="images/static/white-patern.svg" alt="white patern" class="rect s-40 p-absolute center">
-    </div>
-    <div class="gradient-right py-4 py-md-5"></div>
-    <section class="gradient-right py-4 py-md-5">
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-12">
-                <div class="row d-lg-flex">
-                  <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
-                    <li class="text-uppercase white fontMedium font-14 d-block mb-3">Automotive</li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Aftersales</a></li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Distributors</a></li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Logistics</a></li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Manufacturing</a></li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Rental & Leasing</a></li>
-                  </ul>
-                  <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
-                    <li class="text-uppercase white fontMedium font-14 d-block mb-3">Retail</li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Electronics</a></li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Fashion</a></li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Food & Beverage</a></li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Home</a></li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Lifestyle</a></li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Multi-Brand Retailers</a></li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Toys</a></li>
-                  </ul>
-                  <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
-                    <li class="text-uppercase white fontMedium font-14 d-block mb-3">Real Estate</li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Malls & Lifestyle</a></li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Property Management</a></li>
-                  </ul>
-                  <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
-                    <li class="text-uppercase white fontMedium font-14 d-block mb-3">financial services</li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Banking</a></li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Finance</a></li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Insurance</a></li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Investement</a></li>
-                  </ul>
-                  <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
-                    <li class="text-uppercase white fontMedium font-14 d-block mb-3">Health</li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Clinic</a></li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">Pharmacy</a></li>
-                  </ul>
-                  <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
-                    <li class="text-uppercase white fontMedium font-14 d-block mb-3">Education</li>
-                    <li class="white fontRegular font-14 d-block"><a href="javascript:;"
-                        class="text-decoration-none white ">School</a></li>
-                  </ul>
-                  <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
-                    <li class="text-uppercase white fontMedium font-14"><a href="javascript:;"
-                        class="text-decoration-none white ">Stories</a></li>
-                    <li class="text-uppercase white fontMedium font-14"><a href="javascript:;"
-                        class="text-decoration-none white ">Careers</a></li>
-                    <li class="text-uppercase white fontMedium font-14"><a href="javascript:;"
-                        class="text-decoration-none white ">About</a></li>
-                    <li class="text-uppercase white fontMedium font-14"><a href="javascript:;"
-                        class="text-decoration-none white ">Media</a></li>
-                    <li class="text-uppercase white fontMedium font-14"><a href="javascript:;"
-                        class="text-decoration-none white ">Contact</a></li>
-                    <li class="text-uppercase white fontMedium font-14"><a href="javascript:;"
-                        class="text-decoration-none white ">Al-Futtaim Credit Cards</a></li>
-                  </ul>
-                  <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
-                    <li class="text-uppercase white fontMedium font-14 d-block mb-3">Connect</li>
-                    <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block"><img
-                          src="images/static/SMW-Facebook.svg" alt="facebook"
-                          class="w-100 h-100 object-fit-contain"></a></li>
-                    <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block"><img
-                          src="images/static/SMW-instagram.svg" alt="instagram"
-                          class="w-100 h-100 object-fit-contain"></a></li>
-                    <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block"><img
-                          src="images/static/SMW-Linkedin.svg" alt="Linkedin"
-                          class="w-100 h-100 object-fit-contain"></a></li>
-                    <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block"><img
-                          src="images/static/SMW-Twitter.svg" alt="Twitter23"
-                          class="w-100 h-100 object-fit-contain"></a></li>
-                  </ul>
+            <div class="partners-tabs">
+              <nav class="bgGrey">
+                <div class="nav nav-tabs mx-3 d-flex border-0" id="nav-tab" role="tablist">
+                  <button class="nav-link text-uppercase fontRegular font-12 no-bg py-3 px-2 mx-auto active" id="growing-tab" data-bs-toggle="tab" data-bs-target="#growing" type="button" role="tab" aria-controls="growing" aria-selected="true">Growing</button>
+                  <button class="nav-link text-uppercase fontRegular font-12 no-bg py-3 px-2 mx-auto " id="learning-tab" data-bs-toggle="tab" data-bs-target="#learning" type="button" role="tab" aria-controls="learning" aria-selected="false">Learning</button>
+                  <button class="nav-link text-uppercase fontRegular font-12 no-bg py-3 px-2 mx-auto " id="inspiring-tab" data-bs-toggle="tab" data-bs-target="#inspiring" type="button" role="tab" aria-controls="inspiring" aria-selected="false">Inspiring</button>
                 </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane mh-100 fade show active" id="growing" role="tabpanel" aria-labelledby="growing-tab">
+                  <div class="listing mt-5">
+                    <p class="navy fontMedium font-60 pb-3 lh-1">Growing with Al-Futtaim</p>
+                    <p class="font-14 fontRegular black px-8 mb-5 w-70">Join our community and take the next great leap
+                      forward in your career.</p>
+                    <div class="row mb-3 mb-lg-5">
+                      <div class="col-lg-8 mb-3">
+                        <div class="video-wrapper p-relative w-100">
+                          <div class="square"></div>
+                          <a href="javascript:;" class="d-block p-absolute top-left w-100 h-100 text-decoration-none listing-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="images/dynamic/career1.png" alt="" class="w-100 h-100 object-fit-cover"/>
+                            <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
+                            <img src="images/static/video-icon.svg" alt="video-icon" class="p-absolute rect s60 center">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 mb-3">
+                        <div class="video-wrapper p-relative w-100 mb-4">
+                          <div class="square"></div>
+                          <a href="javascript:;" class="d-block p-absolute top-left w-100 h-100 text-decoration-none listing-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="images/dynamic/career2.png" alt="" class="w-100 h-100 object-fit-cover"/>
+                            <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
+                            <img src="images/static/video-icon.svg" alt="video-icon" class="p-absolute rect s60 center">
+                          </a>
+                        </div>
+                        <div class="video-wrapper p-relative w-100">
+                          <div class="square"></div>
+                          <a href="javascript:;" class="d-block p-absolute top-left w-100 h-100 text-decoration-none listing-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="images/dynamic/career3.png" alt="" class="w-100 h-100 object-fit-cover"/>
+                            <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
+                            <img src="images/static/video-icon.svg" alt="video-icon" class="p-absolute rect s60 center">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 mb-3">
+                        <div class="video-wrapper p-relative w-100">
+                          <div class="square"></div>
+                          <a href="javascript:;" class="d-block p-absolute top-left w-100 h-100 text-decoration-none listing-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="images/dynamic/story1.jpg" alt="" class="w-100 h-100 object-fit-cover"/>
+                            <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
+                            <img src="images/static/video-icon.svg" alt="video-icon" class="p-absolute rect s60 center">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 mb-3">
+                        <div class="video-wrapper p-relative w-100">
+                          <div class="square"></div>
+                          <a href="javascript:;" class="d-block p-absolute top-left w-100 h-100 text-decoration-none listing-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="images/dynamic/story2.jpg" alt="" class="w-100 h-100 object-fit-cover"/>
+                            <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
+                            <img src="images/static/video-icon.svg" alt="video-icon" class="p-absolute rect s60 center">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 mb-3">
+                        <div class="video-wrapper p-relative w-100">
+                          <div class="square"></div>
+                          <a href="javascript:;" class="d-block p-absolute top-left w-100 h-100 text-decoration-none listing-anchor" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="images/dynamic/story3.jpg" alt="" class="w-100 h-100 object-fit-cover"/>
+                            <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
+                            <img src="images/static/video-icon.svg" alt="video-icon" class="p-absolute rect s60 center">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row justify-content-center mb-3 mb-lg-5">
+                      <div class="col-auto col-lg-3">
+                        <button class="btn no-bg text-uppercase black font-14 fontBold mx-auto p-3 text-start rounded-2 w-100">
+                          <p class="mb-0 d-inline-block me-3 align-middle">Load more</p>
+                          <img src="images/static/arrow-down.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane mh-100 fade" id="learning" role="tabpanel" aria-labelledby="learning-tab">Learning</div>
+                <div class="tab-pane mh-100 fade" id="inspiring" role="tabpanel" aria-labelledby="inspiring-tab">Inspiring</div>
               </div>
             </div>
           </div>
+          <!-- <div class="col-1"></div> -->
         </div>
       </div>
     </section>
-    <section class="bgNavy py-3 py-lg-2">
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div class="row">
-              <div class="col-lg-6 mb-2 mb-lg-0">
-                <ul>
-                  <li class="d-inline-block me-2"><a href="javascript:;"
-                      class="text-decoration-none fontMedium font-14 white">Terms and conditions</a></li>
-                  <li class="d-inline-block me-2"><a href="javascript:;"
-                      class="text-decoration-none fontMedium font-14 white">Privacy Policy</a></li>
-                  <li class="d-inline-block me-2"><a href="javascript:;"
-                      class="text-decoration-none fontMedium font-14 white">Site Map</a></li>
+
+  <!--  SUBSCRIBE SECTION  -->
+  <section class="py-80">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row pb-5 mb-5 border-bottom">
+            <div class="col-2 col-md-1">
+              <img src="images/static/floating-blue.svg" alt="" class="w-100">
+            </div>
+            <div class="col-10 col-lg-4 mb-3">
+              <p class="fontBold font-18 navy text-uppercase mb-0">DON’T MISS OUT ON AL-FUTTAIM</p>
+              <p class="fontRegular font-32 black mb-0">Subscribe for updates</p>
+            </div>
+            <div class="col-lg-7">
+              <form class="row">
+                <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
+                  <div class="input-wrapper p-relative h-100">
+                    <label for="inputName" class="visually-hidden">Name</label>
+                    <input type="text" class="form-control h-100 bgGrey border-0 rounded-0 fontRegular" id="inputName"
+                      placeholder="Name">
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-2 mb-lg-0">
+                  <div class="input-wrapper p-relative h-100">
+                    <label for="staticEmail" class="visually-hidden">Email</label>
+                    <input type="text" class="form-control h-100 bgGrey border-0 rounded-0 fontRegular"
+                      id="staticEmail" value="" placeholder="Email">
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <button
+                    class="btn no-bg text-uppercase black font-14 fontBold mx-auto p-3 text-start rounded-2 w-100"
+                    type="submit">
+                    <p class="mb-0 d-inline-block me-3 align-middle">Sign-up</p>
+                    <img src="images/static/arrow-right.svg" alt="button arrow"
+                      class="d-inline-block float-end align-middle rect s12">
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- <div class="col-1"></div> -->
+          </div>
+          <div class="row mb-3 mb-lg-5">
+            <!-- <div class="col-1"></div> -->
+            <div class="col-lg-5 mb-3 mb-lg-0">
+              <p class="fontBold font-18 navy text-uppercase mb-0">COMPLIANCE CONCERNS</p>
+              <p class="fontRegular font-32 black">Let us know</p>
+              <p class="fontBold font-42 navy">00971 4-294-9999</p>
+              <button class="btn no-bg text-uppercase black font-14 fontBold mx-auto p-3 mb-3 text-start rounded-2">
+                <p class="mb-0 d-inline-block me-3 align-middle">Tell us</p>
+                <img src="images/static/arrow-right.svg" alt="button arrow"
+                  class="d-inline-block float-end align-middle rect s12 rect s12">
+              </button>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-2 mb-4 mb-lg-0">
+              <img src="images/dynamic/molecule.png" alt="molecule" class="w-100 d-none d-lg-block">
+            </div>
+            <div class="col-lg-4">
+              <p class="fontBold font-18 navy text-uppercase mb-0">CONTACT US</p>
+              <p class="fontRegular font-32 black">We’re here to answer all your questions</p>
+              <button
+                class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
+                <p class="mb-0 d-inline-block me-3 align-middle">Tell us</p>
+                <img src="images/static/arrow-right-white.svg" alt="button arrow"
+                  class="d-inline-block float-end align-middle rect s12 rect s12">
+              </button>
+            </div>
+            <!-- <div class="col-1"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!--  FOOTER  -->
+<footer class="p-relative gradient-right">
+  <div class="footer-logo rect s80 p-absolute center-x">
+    <img src="images/static/white-patern.svg" alt="white patern" class="rect s-40 p-absolute center">
+  </div>
+  <div class="gradient-right py-4 py-md-5"></div>
+  <section class="gradient-right py-4 py-md-5">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12">
+              <div class="row d-lg-flex">
+                <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
+                  <li class="text-uppercase white fontMedium font-14 d-block mb-3">Automotive</li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Aftersales</a></li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Distributors</a></li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Logistics</a></li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Manufacturing</a></li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Rental & Leasing</a></li>
+                </ul>
+                <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
+                  <li class="text-uppercase white fontMedium font-14 d-block mb-3">Retail</li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Electronics</a></li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Fashion</a></li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Food & Beverage</a></li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Home</a></li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Lifestyle</a></li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Multi-Brand Retailers</a></li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Toys</a></li>
+                </ul>
+                <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
+                  <li class="text-uppercase white fontMedium font-14 d-block mb-3">Real Estate</li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Malls & Lifestyle</a></li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Property Management</a></li>
+                </ul>
+                <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
+                  <li class="text-uppercase white fontMedium font-14 d-block mb-3">financial services</li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Banking</a></li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Finance</a></li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Insurance</a></li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Investement</a></li>
+                </ul>
+                <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
+                  <li class="text-uppercase white fontMedium font-14 d-block mb-3">Health</li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Clinic</a></li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">Pharmacy</a></li>
+                </ul>
+                <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
+                  <li class="text-uppercase white fontMedium font-14 d-block mb-3">Education</li>
+                  <li class="white fontRegular font-14 d-block"><a href="javascript:;"
+                      class="text-decoration-none white ">School</a></li>
+                </ul>
+                <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
+                  <li class="text-uppercase white fontMedium font-14"><a href="javascript:;"
+                      class="text-decoration-none white ">Stories</a></li>
+                  <li class="text-uppercase white fontMedium font-14"><a href="javascript:;"
+                      class="text-decoration-none white ">Careers</a></li>
+                  <li class="text-uppercase white fontMedium font-14"><a href="javascript:;"
+                      class="text-decoration-none white ">About</a></li>
+                  <li class="text-uppercase white fontMedium font-14"><a href="javascript:;"
+                      class="text-decoration-none white ">Media</a></li>
+                  <li class="text-uppercase white fontMedium font-14"><a href="javascript:;"
+                      class="text-decoration-none white ">Contact</a></li>
+                  <li class="text-uppercase white fontMedium font-14"><a href="javascript:;"
+                      class="text-decoration-none white ">Al-Futtaim Credit Cards</a></li>
+                </ul>
+                <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
+                  <li class="text-uppercase white fontMedium font-14 d-block mb-3">Connect</li>
+                  <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block"><img
+                        src="images/static/SMW-Facebook.svg" alt="facebook"
+                        class="w-100 h-100 object-fit-contain"></a></li>
+                  <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block"><img
+                        src="images/static/SMW-instagram.svg" alt="instagram"
+                        class="w-100 h-100 object-fit-contain"></a></li>
+                  <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block"><img
+                        src="images/static/SMW-Linkedin.svg" alt="Linkedin"
+                        class="w-100 h-100 object-fit-contain"></a></li>
+                  <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block"><img
+                        src="images/static/SMW-Twitter.svg" alt="Twitter23"
+                        class="w-100 h-100 object-fit-contain"></a></li>
                 </ul>
               </div>
-              <div class="col-lg-6">
-                <p class="mb-0 fontMedium font-14 white text-lg-end">©2020 - Al-Futtaim | All right reserved</p>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </footer>
-
-
-  <!-- Modal -->
-  <div class="modal fade video-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content border-0 rounded-0">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        <div class="modal-body p-0 pt-3">
-          <!-- Swiper -->
-          <div style="--swiper-navigation-color: #005093; --swiper-pagination-color: #005093"
-            class="swiper-container modalSwiper2">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
-                <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
-                <video width="100%" controls="" class="" poster="images/dynamic/career1.png">
-                  <source src="videos/promo.mp4" type="video/mp4">
-                  <source src="movie.ogg" type="video/ogg">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="swiper-slide">
-                <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
-                <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
-                <video width="100%" controls="" class="" poster="images/dynamic/career2.png">
-                  <source src="videos/promo.mp4" type="video/mp4">
-                  <source src="movie.ogg" type="video/ogg">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="swiper-slide">
-                <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
-                <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
-                <video width="100%" controls="" class="" poster="images/dynamic/career3.png">
-                  <source src="videos/promo.mp4" type="video/mp4">
-                  <source src="movie.ogg" type="video/ogg">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="swiper-slide">
-                <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
-                <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
-                <video width="100%" controls="" class="" poster="images/dynamic/career1.png">
-                  <source src="videos/promo.mp4" type="video/mp4">
-                  <source src="movie.ogg" type="video/ogg">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="swiper-slide">
-                <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
-                <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
-                <video width="100%" controls="" class="" poster="images/dynamic/career2.png">
-                  <source src="videos/promo.mp4" type="video/mp4">
-                  <source src="movie.ogg" type="video/ogg">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="swiper-slide">
-                <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
-                <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
-                <video width="100%" controls="" class="" poster="images/dynamic/career1.png">
-                  <source src="videos/promo.mp4" type="video/mp4">
-                  <source src="movie.ogg" type="video/ogg">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="swiper-slide">
-                <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
-                <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
-                <video width="100%" controls="" class="" poster="images/dynamic/career2.png">
-                  <source src="videos/promo.mp4" type="video/mp4">
-                  <source src="movie.ogg" type="video/ogg">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="swiper-slide">
-                <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
-                <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
-                <video width="100%" controls="" class="" poster="images/dynamic/career3.png">
-                  <source src="videos/promo.mp4" type="video/mp4">
-                  <source src="movie.ogg" type="video/ogg">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="swiper-slide">
-                <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
-                <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
-                <video width="100%" controls="" class="" poster="images/dynamic/career1.png">
-                  <source src="videos/promo.mp4" type="video/mp4">
-                  <source src="movie.ogg" type="video/ogg">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="swiper-slide">
-                <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
-                <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
-                <video width="100%" controls="" class="" poster="images/dynamic/career2.png">
-                  <source src="videos/promo.mp4" type="video/mp4">
-                  <source src="movie.ogg" type="video/ogg">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
+    </div>
+  </section>
+  <section class="bgNavy py-3 py-lg-2">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row">
+            <div class="col-lg-6 mb-2 mb-lg-0">
+              <ul>
+                <li class="d-inline-block me-2"><a href="javascript:;"
+                    class="text-decoration-none fontMedium font-14 white">Terms and conditions</a></li>
+                <li class="d-inline-block me-2"><a href="javascript:;"
+                    class="text-decoration-none fontMedium font-14 white">Privacy Policy</a></li>
+                <li class="d-inline-block me-2"><a href="javascript:;"
+                    class="text-decoration-none fontMedium font-14 white">Site Map</a></li>
+              </ul>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="col-lg-6">
+              <p class="mb-0 fontMedium font-14 white text-lg-end">©2020 - Al-Futtaim | All right reserved</p>
+            </div>
           </div>
-          <div thumbsSlider="" class="swiper-container modalSwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="images/dynamic/career1.png" alt="" class="w-100 h-100 object-fit-cover" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/dynamic/career2.png" alt="" class="w-100 h-100 object-fit-cover" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/dynamic/career3.png" alt="" class="w-100 h-100 object-fit-cover" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/dynamic/career1.png" alt="" class="w-100 h-100 object-fit-cover" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/dynamic/career2.png" alt="" class="w-100 h-100 object-fit-cover" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/dynamic/career1.png" alt="" class="w-100 h-100 object-fit-cover" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/dynamic/career2.png" alt="" class="w-100 h-100 object-fit-cover" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/dynamic/career3.png" alt="" class="w-100 h-100 object-fit-cover" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/dynamic/career1.png" alt="" class="w-100 h-100 object-fit-cover" />
-              </div>
-              <div class="swiper-slide">
-                <img src="images/dynamic/career2.png" alt="" class="w-100 h-100 object-fit-cover" />
-              </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+
+
+<!-- Modal -->
+<div class="modal fade video-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 rounded-0">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body p-0 pt-3">
+        <!-- Swiper -->
+        <div style="--swiper-navigation-color: #005093; --swiper-pagination-color: #005093"
+          class="swiper-container modalSwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
+              <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
+              <video width="100%" controls="" class="" poster="images/dynamic/career1.png">
+                <source src="videos/promo.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
+              <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
+              <video width="100%" controls="" class="" poster="images/dynamic/career2.png">
+                <source src="videos/promo.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
+              <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
+              <video width="100%" controls="" class="" poster="images/dynamic/career3.png">
+                <source src="videos/promo.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
+              <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
+              <video width="100%" controls="" class="" poster="images/dynamic/career1.png">
+                <source src="videos/promo.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
+              <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
+              <video width="100%" controls="" class="" poster="images/dynamic/career2.png">
+                <source src="videos/promo.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
+              <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
+              <video width="100%" controls="" class="" poster="images/dynamic/career1.png">
+                <source src="videos/promo.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
+              <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
+              <video width="100%" controls="" class="" poster="images/dynamic/career2.png">
+                <source src="videos/promo.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
+              <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
+              <video width="100%" controls="" class="" poster="images/dynamic/career3.png">
+                <source src="videos/promo.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
+              <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
+              <video width="100%" controls="" class="" poster="images/dynamic/career1.png">
+                <source src="videos/promo.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="swiper-slide">
+              <p class="blue text-uppercase fontBold font-14 d-inline-block mx-3">SUCCESS STORIES</p>
+              <p class="fontRegular font-22 navy mb-4 d-block lh-sm mx-3">The journey of Martha at Al-Futtaim</p>
+              <video width="100%" controls="" class="" poster="images/dynamic/career2.png">
+                <source src="videos/promo.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div thumbsSlider="" class="swiper-container modalSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/dynamic/career1.png" alt="" class="w-100 h-100 object-fit-cover" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/dynamic/career2.png" alt="" class="w-100 h-100 object-fit-cover" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/dynamic/career3.png" alt="" class="w-100 h-100 object-fit-cover" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/dynamic/career1.png" alt="" class="w-100 h-100 object-fit-cover" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/dynamic/career2.png" alt="" class="w-100 h-100 object-fit-cover" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/dynamic/career1.png" alt="" class="w-100 h-100 object-fit-cover" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/dynamic/career2.png" alt="" class="w-100 h-100 object-fit-cover" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/dynamic/career3.png" alt="" class="w-100 h-100 object-fit-cover" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/dynamic/career1.png" alt="" class="w-100 h-100 object-fit-cover" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/dynamic/career2.png" alt="" class="w-100 h-100 object-fit-cover" />
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
 </body>
 <!-- Initialize Swiper -->
 <script>
-  var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 10,
-    slidesPerView: 4,
-    freeMode: true,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-    allowTouchMove: false,
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  allowTouchMove: false,
 
-  });
-  var swiper2 = new Swiper(".mySwiper2", {
-    effect: "fade",
-    pagination: {
-      el: ".mySwiper2 .swiper-pagination",
-      clickable: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  effect: "fade",
+  pagination: {
+    el: ".mySwiper2 .swiper-pagination",
+    clickable: true,
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+});
+var swiper3 = new Swiper(".mySwiper3", {
+  spaceBetween: 10,
+  pagination: {
+    el: ".mySwiper3 .swiper-pagination",
+    type: "progressbar",
+  },
+});
+var swiper4 = new Swiper(".mySwiper4", {
+  direction: "vertical",
+  pagination: {
+    el: ".mySwiper4 .swiper-pagination",
+    clickable: true,
+  },
+});
+var swiperFraction = new Swiper(".swiper-franction", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+var timeline = new Swiper(".timeline", {
+  pagination: {
+    el: ".timeline .swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
     },
-    thumbs: {
-      swiper: swiper,
-    },
+  },
+});
+$(document).ready(function () {
+  $(".modal").on('show.bs.modal', function () {
+    setTimeout(function () {
+      var modalSwiper = new Swiper(".modalSwiper", {
+        spaceBetween: 20,
+        slidesPerView: 7,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+      var modalSwiper2 = new Swiper(".modalSwiper2", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".modalSwiper2 .swiper-button-next",
+          prevEl: ".modalSwiper2 .swiper-button-prev",
+        },
+        thumbs: {
+          swiper: modalSwiper,
+        },
+      });
+    }, 500);
   });
-  var swiper3 = new Swiper(".mySwiper3", {
-    spaceBetween: 10,
-    pagination: {
-      el: ".mySwiper3 .swiper-pagination",
-      type: "progressbar",
-    },
-  });
-  var swiper4 = new Swiper(".mySwiper4", {
-    direction: "vertical",
-    pagination: {
-      el: ".mySwiper4 .swiper-pagination",
-      clickable: true,
-    },
-  });
-  var swiperFraction = new Swiper(".swiper-franction", {
-    pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-  var timeline = new Swiper(".timeline", {
-    pagination: {
-      el: ".timeline .swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + "</span>";
-      },
-    },
-  });
-  $(document).ready(function () {
-    $(".modal").on('show.bs.modal', function () {
-      setTimeout(function () {
-        var modalSwiper = new Swiper(".modalSwiper", {
-          spaceBetween: 20,
-          slidesPerView: 7,
-          freeMode: true,
-          watchSlidesVisibility: true,
-          watchSlidesProgress: true,
-        });
-        var modalSwiper2 = new Swiper(".modalSwiper2", {
-          spaceBetween: 10,
-          navigation: {
-            nextEl: ".modalSwiper2 .swiper-button-next",
-            prevEl: ".modalSwiper2 .swiper-button-prev",
-          },
-          thumbs: {
-            swiper: modalSwiper,
-          },
-        });
-      }, 500);
-    });
-  });
+});
 </script>
 
 </html>

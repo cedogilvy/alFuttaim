@@ -71,19 +71,6 @@ main{
             }
         }
     }
-    .mySwiper{
-        .swiper-slide{
-            opacity: 0;
-            transform: translateY(200px) rotateY(180deg);
-            &.t {
-                animation: fade 1s forwards;
-            }
-            @keyframes fade {
-                0%   { opacity: 0; transform: translateY(200px) rotateY(180deg); }
-                100% { opacity: 1; transform: translateY(200px) rotateY(0); }
-            }
-        }
-    }
     .initial-state{
         .img-wrapper{
             transform: translateX(0);
@@ -109,6 +96,17 @@ main{
     transform: translateX(-50%);
     z-index: 1;
 }
+
+.paragraph{
+    border-bottom: 1px solid #00A3DA;
+}
+.gradient-image{
+    position: absolute;
+    height: 80px;
+    bottom: 43px;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    width: 80%;
+}
 /* $rectRatio: 150px;
 $rectRatioMax: 210px; // $rectRatio + 25px on each side
 $rectRatioMin: 105px; */ // $rectRatioMax / 2
@@ -124,8 +122,11 @@ $rectRatioMin: 85px;
         position: absolute;
         margin-top: 30px;
         margin-right: 0 !important;
-        //opacity: 1 !important;
         cursor: pointer;
+        opacity: 0;
+        transform: translateY(140px) rotateY(180deg);
+        //transition-delay: 2s;
+        @extend.cubicTransition;
         &:before {
             position: absolute;
             display: block;
@@ -169,51 +170,51 @@ $rectRatioMin: 85px;
         }
         &:first-child(){
             top:0;
-            left: 50%;
+            left: 45%;
         }
         &:nth-child(2){
             top: calc(#{$rectRatioMax} / 2);
-            left: calc(50% - #{$rectRatioMin});
+            left: calc(45% - #{$rectRatioMin});
         }
         &:nth-child(3){
             top: calc(#{$rectRatioMax} / 2);
-            left: calc(50% + #{$rectRatioMin});
+            left: calc(45% + #{$rectRatioMin});
         }
         &:nth-child(4){
             top: #{$rectRatioMax};
-            left: calc(50% - #{$rectRatioMax});
+            left: calc(45% - #{$rectRatioMax});
         }
         &:nth-child(5){
             top: #{$rectRatioMax};
-            left: calc(50% + #{$rectRatioMax});
+            left: calc(45% + #{$rectRatioMax});
         }
         &:nth-child(6){
             top: calc(#{$rectRatioMax} + #{$rectRatioMin});
-            left: calc(50% - calc(#{$rectRatioMax} + #{$rectRatioMin}));
+            left: calc(45% - calc(#{$rectRatioMax} + #{$rectRatioMin}));
         }
         &:nth-child(7){
             top: calc(#{$rectRatioMax} + #{$rectRatioMin});
-            left: calc(50% + calc(#{$rectRatioMax} + #{$rectRatioMin}));
+            left: calc(45% + calc(#{$rectRatioMax} + #{$rectRatioMin}));
         }
         &:nth-child(8){
             top: calc(#{$rectRatioMax} + #{$rectRatioMin});
-            left: calc(50% - #{$rectRatioMin});
+            left: calc(45% - #{$rectRatioMin});
         }
         &:nth-child(9){
             top: calc(#{$rectRatioMax} + #{$rectRatioMin});
-            left: calc(50% + #{$rectRatioMin});
+            left: calc(45% + #{$rectRatioMin});
         }
         &:nth-child(10){
             top: calc(#{$rectRatioMax} * 2);
-            left: 50%;
+            left: 45%;
         }
         &:nth-child(11){
             top: calc(#{$rectRatioMax} + calc(#{$rectRatioMax} + #{$rectRatioMin}));
-            left: calc(50% - #{$rectRatioMin});
+            left: calc(45% - #{$rectRatioMin});
         }
         &:nth-child(12){
             top: calc(#{$rectRatioMax} + calc(#{$rectRatioMax} + #{$rectRatioMin}));
-            left: calc(50% + #{$rectRatioMin});
+            left: calc(45% + #{$rectRatioMin});
         }
         .slide-hover-content{
             img {
@@ -258,6 +259,10 @@ $rectRatioMin: 85px;
                     visibility: visible;
                 }
             }
+        }
+        &.loaded{
+            opacity: 1;
+            transform: translateY(140px) rotateY(0);
         }
     }
       
@@ -332,18 +337,41 @@ $rectRatioMin: 85px;
 }
 .mySwiper4{
     //height: 838px !important;
-    height: 985px !important;
-    overflow: hidden;
+    //height: 985px !important;
+    //overflow: hidden;
     .swiper-pagination-bullet {
-        width: 4px;
-        height: 50px;
-        border-radius: 0;
-        background: $navy;
+        width: auto;
+        height: auto;
+        background: transparent;
+        @extend.fontRegular;
+        color: $navy;
+        //width: 4px;
+        //height: 50px;
+        //border-radius: 0;
+        //background: $navy;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        bottom: 5px;
+        top: inherit;
+    }
+    .swiper-button-next{
+        left: calc(50% + 100px);
+        &:after{
+            content: url("../images/static/arrow-right-navy.svg");
+            //width: 15px;
+            //height: 25px;
+        }
+    }
+    .swiper-button-prev{
+        left: calc(50% - 100px - 27px);
+        &:after{
+            content: url("../images/static/arrow-left-navy.svg");
+        }
     }
 }
-.swiper-container-vertical>.swiper-pagination-bullets{
+/* .swiper-container-vertical>.swiper-pagination-bullets{
     right: 9%;
-}
+} */
 .map-pins-list{
     a{
         background-color: rgba($color: $navy, $alpha: .1);
@@ -472,8 +500,9 @@ footer{
 }
 .fixed-bottom{
     .accordion-body{
-        max-height: 90vh;
+        max-height: 78vh;
         overflow-y: scroll;
+        overflow-x: hidden;
     }
 }
 .modalSwiper2 {
@@ -507,7 +536,7 @@ footer{
     .swiper-slide{
         video{
             width: 100%;
-            height: 82%;
+            height: 80%;
             object-fit: cover;
         }
     }
@@ -535,12 +564,14 @@ footer{
     margin-top: 200px;
 }
 .filter{
-    color: $black;
+    color: $black !important;
     border-bottom: 3px solid transparent;
+    padding: .6rem;
     &.active{
-        color: $blue;
+        color: $blue !important;
         border-bottom: 3px solid grey;
     }
+    
 }
 .faq{
     .accordion-button{
@@ -559,7 +590,7 @@ footer{
 .search{
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     z-index: 1031;
     position: absolute;
@@ -569,7 +600,7 @@ footer{
     &.open{
         transform: translateX(0);
     }
-    .bgWhite, .bgBlack{
+    .top-search{
         height: 94px;
     }
     .gradient-right{
@@ -591,6 +622,13 @@ footer{
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
         }
     }
+    .btn-close{
+        opacity: 1;
+        background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+        &:hover{
+            opacity: .5;
+        }
+    }
 }
 .swiper-desktop{
     display: block;
@@ -601,25 +639,48 @@ footer{
 textarea{
     min-height: 170px !important;
 }
-input, textarea, select, option{
-    color: #B0C0C5 !important;
+input, textarea{
+    color: #fff !important;
     @extend.fontRegular;
     @extend.font-18;
     &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: #B0C0C5 !important;
+        color: #fff !important;
         @extend.fontRegular;
         @extend.font-18;
     }
     &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-        color: #B0C0C5 !important;
+        color: #fff !important;
         @extend.fontRegular;
         @extend.font-18;
     }
     
     &::-ms-input-placeholder { /* Microsoft Edge */
+        color: #fff !important;
+        @extend.fontRegular;
+        @extend.font-18;
+    }
+}
+.subscribe, .contact-form{
+    input, textarea, select, option{
         color: #B0C0C5 !important;
         @extend.fontRegular;
         @extend.font-18;
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #B0C0C5 !important;
+            @extend.fontRegular;
+            @extend.font-18;
+        }
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #B0C0C5 !important;
+            @extend.fontRegular;
+            @extend.font-18;
+        }
+        
+        &::-ms-input-placeholder { /* Microsoft Edge */
+            color: #B0C0C5 !important;
+            @extend.fontRegular;
+            @extend.font-18;
+        }
     }
 }
 
@@ -627,7 +688,7 @@ input, textarea, select, option{
     height: 100vh;
 }
 .scroll-to-tabs{
-    @extend.cubicTransition;
+    //@extend.cubicTransition;
     transform: translateY(-53px);
     &.bgWhite{
         transform: translateY(0px);
@@ -1007,7 +1068,7 @@ input, textarea, select, option{
             -ms-transform: translateX(-50%) translateY(-50%);
             -o-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
-            background: url(../img/cd-arrow.svg) no-repeat 0 0;
+            //background: url(../img/cd-arrow.svg) no-repeat 0 0;
         }
         &.prev {
             left: 0;
@@ -1054,6 +1115,238 @@ input, textarea, select, option{
         }
     }
 }
+.mySwiperTwo{
+    .rectangle{
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: $black, $alpha: .3);
+        }
+    }
+}
+.mySwiperOne{
+    .swiper-slide-thumb-active{
+        .rectangle{
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba($color: $black, $alpha: .3);
+            }
+        }
+    }
+}
+.accordion-item{
+    &:last-of-type {
+        .accordion-button{
+            &.collapsed{
+                border-bottom-right-radius: 0 !important;
+                border-bottom-left-radius: 0 !important;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.ar{
+    main{
+        .initial-state{
+            .img-wrapper{
+                .main-patern-overlay{
+                    transform: scaleX(-1);
+                }
+            }
+        }
+        .state-content{
+            right: 10%;
+            left: inherit;
+        }
+        .mySwiper2 {
+            .swiper-slide {
+                .state-content{
+                    transform: translateY(-30%) translateX(150%);
+                }
+            }
+        }
+    }
+    &.home-page {
+        main {
+            .initial-state {
+                .state-content{
+                    transform: translateY(-30%) translateX(150%);
+                    &.loaded{
+                        transform: translateY(-30%) translateX(0%);
+                    }
+                }
+            }
+        }
+    }
+    .mySwiper {
+        .swiper-slide{
+            &:first-child(){
+                right: 50%;
+                left: inherit;
+            }
+            &:nth-child(2){
+                right: calc(50% - #{$rectRatioMin});
+                left: inherit;
+            }
+            &:nth-child(3){
+                right: calc(50% + #{$rectRatioMin});
+                left: inherit;
+            }
+            &:nth-child(4){
+                right: calc(50% - #{$rectRatioMax});
+                left: inherit;
+            }
+            &:nth-child(5){
+                right: calc(50% + #{$rectRatioMax});
+                left: inherit;
+            }
+            &:nth-child(6){
+                right: calc(50% - calc(#{$rectRatioMax} + #{$rectRatioMin}));
+                left: inherit;
+            }
+            &:nth-child(7){
+                right: calc(50% + calc(#{$rectRatioMax} + #{$rectRatioMin}));
+                left: inherit;
+            }
+            &:nth-child(8){
+                right: calc(50% - #{$rectRatioMin});
+                left: inherit;
+            }
+            &:nth-child(9){
+                right: calc(50% + #{$rectRatioMin});
+                left: inherit;
+            }
+            &:nth-child(10){
+                right: 50%;
+                left: inherit;
+            }
+            &:nth-child(11){
+                right: calc(50% - #{$rectRatioMin});
+                left: inherit;
+            }
+            &:nth-child(12){
+                right: calc(50% + #{$rectRatioMin});
+                left: inherit;
+            }
+            
+        }
+    }
+    .btn img, .content-group img, .breadcrumb-item+.breadcrumb-item::before, .timeline-arrows-wrapper a img, .acc-btn img, .flipped{
+        transform: scaleX(-1);
+    }
+    .breadcrumb-item+.breadcrumb-item::before{
+        padding-right: .5rem;
+        padding-left: 0;
+    }
+    .input-wrapper{
+        &::before{
+            right: 0;
+            left: inherit;
+        }
+    }
+    /* .swiper-container-vertical > .swiper-pagination-bullets{
+        left: 9%;
+        right: inherit;
+    } */
+    .modalSwiper2{
+        margin-right: 0;
+        margin-left: auto;
+    }
+    .video-modal {
+        .modal-dialog{
+            margin-right: 10vw;
+            margin-left: 0;
+        }
+        .btn-close{
+            left: 20%;
+            right: inherit;
+        }
+    }
+    .search{
+        right: 0;
+        left: inherit;
+        transform: translateX(-100%);
+        &.open{
+            transform: translateX(0);
+        }
+    }
+    .cd-horizontal-timeline {
+        .events {
+            .range-container{
+                padding-right: 68px;
+                padding-left: 0;
+                &:before{
+                    right: 5px;
+                    left: inherit;
+                }
+            }
+        }
+        
+    }
+    .full-map-details{
+        left: 0;
+        right: inherit;
+    }
+    .grey-patern{
+        &.about-patern {
+            img{
+                transform: translateX(30%);
+            }
+        }
+    }
+    .fixed-bottom {
+        .accordion-body {
+            .progressbar {
+                li{
+                    float: right;
+                    &:after{
+                        right: -43%;
+                        left: inherit;
+                    }
+                }
+            }
+        }
+    }
+    .swiper-franction {
+        .swiper-button-next, .swiper-button-prev{
+            transform: rotate(180deg);
+        }
+        .swiper-pagination-current{
+            padding-left: 20px;
+            padding-right: 0;
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 1441px){
 }
@@ -1066,7 +1359,7 @@ input, textarea, select, option{
         height: 120vh;
     }
     .mySwiper4{
-        height: 520px !important;
+        //height: 520px !important;
     }
     .logo-shape{
         left: 57.3%;top: 54.5%;
@@ -1098,9 +1391,9 @@ input, textarea, select, option{
     .swiper-mobile{
         display: block;
     }
-    .swiper-container-vertical > .swiper-pagination-bullets {
+    /* .swiper-container-vertical > .swiper-pagination-bullets {
         right: 5%;
-    }
+    } */
     .video-modal {
         .modal-dialog{
             max-width: 100vw;
@@ -1109,6 +1402,18 @@ input, textarea, select, option{
     main {
         .state-content {
             left: 15px;
+        }
+        .initial-state {
+            .img-wrapper{
+                overflow: hidden;
+                img{
+                    width: auto !important;
+                    right: 0;
+                    left: inherit;
+                }
+                /* .main-page-img{
+                } */
+            }
         }
     }
     .first-fold {
@@ -1121,6 +1426,18 @@ input, textarea, select, option{
         width: calc(100vw + 12px);
         background: white;
         height: calc(100vh + 12px);
+        display: block !important;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .2s cubic-bezier(0.77, 0, 0.175, 1);
+        -webkit-transition: all .2s cubic-bezier(0.77, 0, 0.175, 1);
+        -moz-transition: all .2s cubic-bezier(0.77, 0, 0.175, 1);
+        -o-transition: all .2s cubic-bezier(0.77, 0, 0.175, 1);
+        &.show{
+            right: -28px;
+            opacity: 1;
+            visibility: visible;
+        }
     }
     header{
         &.open{
@@ -1133,6 +1450,8 @@ input, textarea, select, option{
             .nav-link {
                 color: $navy !important;
                 text-align: center;
+                font-size: 1rem;
+                padding: .7rem 0;
                 &.black{
                     color: $black !important;
                 }
@@ -1153,10 +1472,11 @@ input, textarea, select, option{
     }
     .partners-tabs{
         .bgGrey{
-            overflow-x: scroll;
+            //overflow-x: scroll;
+            //overflow-y: hidden;
         }
         .nav-tabs{
-            width: 700px;
+            //width: 700px;
         }
 
     }
@@ -1171,7 +1491,7 @@ input, textarea, select, option{
     .home-page {
         main {
             .state-content{
-                top: 40%;
+                top: 30%;
             }
         }
         header{
@@ -1182,7 +1502,7 @@ input, textarea, select, option{
     }
     .home-swiper-mobile{
         .swiper-pagination{
-            bottom: 28%;
+            bottom: 40%;
             text-align: left;
             padding: 0 15px ;
             .swiper-pagination-bullet{
@@ -1200,14 +1520,18 @@ input, textarea, select, option{
     }
     .tags-listing{
         overflow-x: scroll;
+        overflow-y: hidden;
         ul{
             width: 1400px;
         }
     }
     .filters-tabs{
-        overflow-x: scroll;
-        .filters{
-            width: 810px !important;
+        .filters-wrapper{
+            overflow-x: scroll;
+            overflow-y: hidden;
+            .filters{
+                width: 810px !important;
+            }
         }
     }
     .navbar-stay{
@@ -1227,7 +1551,7 @@ input, textarea, select, option{
     }
     .search {
         overflow-y: scroll;
-        transform: translateX(0);
+        transform: translateX(0) !important;
         opacity: 0;
         visibility: hidden;
         &.open{
@@ -1240,13 +1564,70 @@ input, textarea, select, option{
     }
     .cd-horizontal-timeline{
         .w-70{
-            width: calc(100% - 24px) !important;
+            width: calc(100% - 60px) !important;
         }
         .events{
             width: 1200px !important;
         }
         .events-wrapper{
             overflow-x: scroll;
+            overflow-y: hidden;
+        }
+    }
+    .btn{
+        .s12{
+            width: 12px;
+            height: 12px;
+        }
+    }
+    .map-img{
+        transform: scale(1.5);
+    }
+    .share-grey{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+
+    
+
+
+
+
+
+
+    .ar{
+        .navbar-stay{
+            left: 60px;
+            right: inherit;
+        }
+        .navbar-collapse-menu{
+            left: -28px;
+            right: inherit;
+        }
+        /* .swiper-container-vertical > .swiper-pagination-bullets {
+            left: 5%;
+            right: inherit;
+        } */
+        .home-swiper-mobile {
+            .swiper-pagination{
+                text-align: right;
+            }
+        }
+        main {
+            .state-content{
+                right: 15px;
+                left: inherit;
+            }
+        }
+        .patern-mobile-main{
+            left: -100px;
+            right: initial;
+        }
+        .share-grey{
+            right: inherit;
+            left: 0;
         }
     }
 }
@@ -1255,7 +1636,7 @@ input, textarea, select, option{
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px){
     .mySwiper4 {
-        height: 450px !important;
+        //height: 450px !important;
     }
 }
 
@@ -1263,7 +1644,7 @@ input, textarea, select, option{
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px){
     .mySwiper4 {
-        height: 422px !important;
+        //height: 422px !important;
     }
     .scroll-to-tabs {
         transform: translateY(-74px);

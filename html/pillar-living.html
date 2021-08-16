@@ -17,22 +17,21 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.css" integrity="sha512-SZgE3m1he0aEF3tIxxnz/3mXu/u/wlMNxQSnE0Cni9j/O8Gs+TjM9tm1NX34nRQ7GiLwUEzwuE3Wv2FLz2667w==" crossorigin="anonymous" />
+
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link href="css/styles.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
 
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js" integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA==" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 
 </head>
@@ -55,7 +54,7 @@
                         <a class="nav-link fontRegular font-14 text-uppercase search-icon" href="javascript:;"><img src="images/static/search.svg" alt="" class="rect s40 w-100 h-100 object-fit-contain"></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link fontRegular font-14 text-uppercase lang black" href="#">عربي</a>
+                      <a class="nav-link fontRegular font-14 text-uppercase lang black" href="ar/pillar-living.html">عربي</a>
                     </li>
                   </ul>
                 </div>
@@ -119,7 +118,7 @@
     <div class="state p-relative initial-state">
       <div class="img-wrapper p-relative no-dark-overlay w-100 h-100">
         <img src="images/dynamic/living.png" alt="" class="w-100 h-100 object-fit-cover">
-        <img src="images/dynamic/patern-overlay.png" alt="" class="p-absolute top-left w-100 h-100 object-fit-cover">
+        <img src="images/dynamic/patern-overlay.png" alt="" class="p-absolute top-left w-100 h-100 object-fit-cover main-patern-overlay">
       </div>
       <div class="state-content p-absolute center-y w-70">
         <nav
@@ -143,7 +142,7 @@
     <section class="search">
       <div class="container-fluid">
         <div class="row">
-          <div class="bgWhite"></div>
+          <div class="bgWhite top-search"></div>
         </div>
       </div>
       <div class="container-fluid">
@@ -607,84 +606,84 @@
                       <div class="brand-logo d-none" data-partner="honda">
                         <img src="images/dynamic/honda.png" alt="honda logo">
                         <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
-                          <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">DISCOVER BRAND</p>
+                          <p class="mb-0 d-inline-block me-3 align-middle">DISCOVER BRAND</p>
                           <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
                         </button>
                       </div>
                       <div class="brand-logo d-none" data-partner="dodge">
                         <img src="images/dynamic/dodge.png" alt="dodge logo">
                         <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
-                          <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">DISCOVER BRAND</p>
+                          <p class="mb-0 d-inline-block me-3 align-middle">DISCOVER BRAND</p>
                           <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
                         </button>
                       </div>
                       <div class="brand-logo d-none" data-partner="hertz">
                         <img src="images/dynamic/hertz.png" alt="hertz logo">
                         <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
-                          <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">DISCOVER BRAND</p>
+                          <p class="mb-0 d-inline-block me-3 align-middle">DISCOVER BRAND</p>
                           <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
                         </button>
                       </div>
                       <div class="brand-logo d-none" data-partner="lexus">
                         <img src="images/dynamic/lexus.png" alt="lexus logo">
                         <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
-                          <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">DISCOVER BRAND</p>
+                          <p class="mb-0 d-inline-block me-3 align-middle">DISCOVER BRAND</p>
                           <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
                         </button>
                       </div>
                       <div class="brand-logo d-none" data-partner="nissan">
                         <img src="images/dynamic/nissan.png" alt="nissan logo">
                         <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
-                          <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">DISCOVER BRAND</p>
+                          <p class="mb-0 d-inline-block me-3 align-middle">DISCOVER BRAND</p>
                           <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
                         </button>
                       </div>
                       <div class="brand-logo d-none" data-partner="ford">
                         <img src="images/dynamic/ford.png" alt="ford logo">
                         <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
-                          <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">DISCOVER BRAND</p>
+                          <p class="mb-0 d-inline-block me-3 align-middle">DISCOVER BRAND</p>
                           <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
                         </button>
                       </div>
                       <div class="brand-logo d-none" data-partner="volvo">
                         <img src="images/dynamic/volvo.png" alt="volvo logo">
                         <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
-                          <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">DISCOVER BRAND</p>
+                          <p class="mb-0 d-inline-block me-3 align-middle">DISCOVER BRAND</p>
                           <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
                         </button>
                       </div>
                       <div class="brand-logo d-none" data-partner="suzuki">
                         <img src="images/dynamic/suzuki.png" alt="suzuki logo">
                         <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
-                          <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">DISCOVER BRAND</p>
+                          <p class="mb-0 d-inline-block me-3 align-middle">DISCOVER BRAND</p>
                           <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
                         </button>
                       </div>
                       <div class="brand-logo d-none" data-partner="automall">
                         <img src="images/dynamic/automall.png" alt="automall logo">
                         <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
-                          <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">DISCOVER BRAND</p>
+                          <p class="mb-0 d-inline-block me-3 align-middle">DISCOVER BRAND</p>
                           <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
                         </button>
                       </div>
                       <div class="brand-logo d-none" data-partner="avr">
                         <img src="images/dynamic/avr.png" alt="avr logo">
                         <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
-                          <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">DISCOVER BRAND</p>
+                          <p class="mb-0 d-inline-block me-3 align-middle">DISCOVER BRAND</p>
                           <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
                         </button>
                       </div>
                       <div class="brand-logo d-none" data-partner="body-center">
                         <img src="images/dynamic/body-center.png" alt="body-center logo">
                         <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
-                          <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">DISCOVER BRAND</p>
+                          <p class="mb-0 d-inline-block me-3 align-middle">DISCOVER BRAND</p>
                           <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
                         </button>
                       </div>
                       <div class="brand-logo d-none" data-partner="bott">
                         <img src="images/dynamic/bott.png" alt="bott logo">
                         <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
-                          <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">DISCOVER BRAND</p>
+                          <p class="mb-0 d-inline-block me-3 align-middle">DISCOVER BRAND</p>
                           <img src="images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
                         </button>
                       </div>
@@ -953,7 +952,7 @@
             <div class="row justify-content-center mb-3 mb-lg-5">
               <div class="col-auto col-lg-3">
                 <button class="btn no-bg text-uppercase black font-14 fontBold mx-auto p-3 text-start rounded-2 w-100">
-                  <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">Load more</p>
+                  <p class="mb-0 d-inline-block me-3 align-middle">Load more</p>
                   <img src="images/static/arrow-down.svg" alt="button arrow"
                     class="d-inline-block float-end align-middle rect s12">
                 </button>
@@ -996,7 +995,7 @@
                     <button
                       class="btn no-bg text-uppercase black font-14 fontBold mx-auto p-3 text-start rounded-2 w-100"
                       type="submit">
-                      <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">Sign-up</p>
+                      <p class="mb-0 d-inline-block me-3 align-middle">Sign-up</p>
                       <img src="images/static/arrow-right.svg" alt="button arrow"
                         class="d-inline-block float-end align-middle rect s12">
                     </button>
@@ -1012,7 +1011,7 @@
                 <p class="fontRegular font-32 black">Let us know</p>
                 <p class="fontBold font-42 navy">00971 4-294-9999</p>
                 <button class="btn no-bg text-uppercase black font-14 fontBold mx-auto p-3 mb-3 text-start rounded-2">
-                  <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">Tell us</p>
+                  <p class="mb-0 d-inline-block me-3 align-middle">Tell us</p>
                   <img src="images/static/arrow-right.svg" alt="button arrow"
                     class="d-inline-block float-end align-middle rect s12 rect s12">
                 </button>
@@ -1026,7 +1025,7 @@
                 <p class="fontRegular font-32 black">We’re here to answer all your questions</p>
                 <button
                   class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
-                  <p class="mb-0 d-inline-block me-3 me-md-5 align-middle">Tell us</p>
+                  <p class="mb-0 d-inline-block me-3 align-middle">Tell us</p>
                   <img src="images/static/arrow-right-white.svg" alt="button arrow"
                     class="d-inline-block float-end align-middle rect s12 rect s12">
                 </button>
