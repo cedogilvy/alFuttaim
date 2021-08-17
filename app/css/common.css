@@ -793,6 +793,9 @@ input[type="file"] {
 .swiper-button-prev:after {
   background-image: url("../images/static/arrow-left-navy.svg"); }
 
+.ar button {
+  letter-spacing: 0; }
+
 .ar .p-absolute.right {
   left: 0;
   right: inherit; }
@@ -833,6 +836,9 @@ input[type="file"] {
 
 .ar .swiper-button-prev:after {
   background-image: url("../images/static/arrow-right-navy.svg"); }
+
+.ar button {
+  letter-spacing: 0; }
 
 @media (min-width: 992px) and (max-width: 1440px) {
   .font-80 {

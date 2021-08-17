@@ -886,6 +886,9 @@ input[type="file"] {
 
 
 .ar{
+    button{
+        letter-spacing: 0;
+    }
     .p-absolute{
         &.right {
             left: 0;
@@ -939,6 +942,9 @@ input[type="file"] {
         &:after{
             background-image: url("../images/static/arrow-right-navy.svg");
         }
+    }
+    button{
+        letter-spacing: 0;
     }
 }
 
