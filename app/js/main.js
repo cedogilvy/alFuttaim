@@ -501,6 +501,19 @@ jQuery(function($){
             setLabels($('#ex2').attr("data-value").split(","));
 
         });
+
+
+
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+            // true for mobile device
+            $('.partners-logo a').click(function(){
+                console.log("scolled to")
+                var element = document.querySelector(".map-wrapper");
+                element.scrollIntoView({ behavior: 'smooth', block: 'end'});
+            });
+        }else{
+            // false for not mobile device
+        }
         
     });
     

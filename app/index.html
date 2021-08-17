@@ -1375,7 +1375,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-pagination p-absolute bottom-left w-30 px-16"></div>
+                <div class="swiper-navigation-wrapper p-absolute bottom-left w-50">
+                  <div class="swiper-button-prev p-relative d-inline-block me-3"></div>
+                  <div class="swiper-button-next p-relative d-inline-block me-3"></div>
+                  <div class="swiper-pagination w-50 px-16 p-relative d-inline-block me-3 align-middle mt-2 mt-lg-0 mb-lg-2"></div>
+                </div>
               </div>
               <div class="swiper-container mySwiper3 swiper-mobile">
                 <div class="swiper-wrapper mb-5">
@@ -1450,7 +1454,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-pagination p-absolute bottom-left w-30 px-16"></div>
+                <div class="swiper-navigation-wrapper p-absolute bottom-left w-50">
+                  <div class="swiper-button-prev p-relative d-inline-block me-3"></div>
+                  <div class="swiper-button-next p-relative d-inline-block me-3"></div>
+                  <div class="swiper-pagination w-50 px-16 p-relative d-inline-block me-3 align-middle mt-2 mt-lg-0 mb-lg-2"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -2752,7 +2760,6 @@
                       <div class="swiper-button-next"></div>
                       <div class="swiper-button-prev"></div>
                     </div>
-                    </div>
                   </div>
                   <div class="tab-pane fade" id="nav-financial" role="tabpanel" aria-labelledby="nav-financial-tab">financial services</div>
                   <div class="tab-pane fade" id="nav-estate" role="tabpanel" aria-labelledby="nav-estate-tab">real estate</div>
@@ -3190,6 +3197,10 @@
     pagination: {
       el: ".mySwiper3 .swiper-pagination",
       type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".mySwiper3 .swiper-button-next",
+      prevEl: ".mySwiper3 .swiper-button-prev",
     },
   });
   /* var swiper4 = new Swiper(".mySwiper4", {

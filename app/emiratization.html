@@ -1298,7 +1298,11 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination p-absolute bottom-left w-30 px-16 swiper-pagination-progressbar"><span class="swiper-pagination-progressbar-fill" style="transform: translate3d(0px, 0px, 0px) scaleX(0.5) scaleY(1); transition-duration: 300ms;"></span></div>
+              <div class="swiper-navigation-wrapper p-absolute bottom-left w-50">
+                <div class="swiper-button-prev p-relative d-inline-block me-3"></div>
+                <div class="swiper-button-next p-relative d-inline-block me-3"></div>
+                <div class="swiper-pagination w-50 px-16 p-relative d-inline-block me-3 align-middle mt-2 mt-lg-0 mb-lg-2"></div>
+              </div>
             <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
             <div class="swiper-container mySwiper3 swiper-mobile swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
               <div class="swiper-wrapper mb-5" id="swiper-wrapper-dc12d2a8da1382c1" aria-live="polite" style="transition-duration: 0ms;">
@@ -1388,7 +1392,11 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination p-absolute bottom-left w-30 px-16 swiper-pagination-progressbar"><span class="swiper-pagination-progressbar-fill" style="transition-duration: 300ms;"></span></div>
+              <div class="swiper-navigation-wrapper p-absolute bottom-left w-50">
+                <div class="swiper-button-prev p-relative d-inline-block me-3"></div>
+                <div class="swiper-button-next p-relative d-inline-block me-3"></div>
+                <div class="swiper-pagination w-50 px-16 p-relative d-inline-block me-3 align-middle mt-2 mt-lg-0 mb-lg-2"></div>
+              </div>
             <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
           </div>
         </div>
@@ -1946,6 +1954,10 @@
     pagination: {
       el: ".mySwiper3 .swiper-pagination",
       type: "progressbar",
+    },
+    navigation: {
+      nextEl: ".mySwiper3 .swiper-button-next",
+      prevEl: ".mySwiper3 .swiper-button-prev",
     },
   });
   /*var swiper4 = new Swiper(".mySwiper4", {

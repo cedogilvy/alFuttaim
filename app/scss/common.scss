@@ -841,7 +841,41 @@ input[type="file"] {
         background: white!important;
     }
 }
+.swiper-navigation-wrapper{
+    height: 20px;
+}
+.swiper-button-next, .swiper-button-prev{
+    width: 20px;
+    height: 20px;
+    //transform: translateY(50%);
+    left: inherit;
+    right: inherit;
+    margin-top: 0;
+    transform: translateY(-50%);
+    &:after{
+        content: '';
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
 
+}
+.swiper-button-next{
+    &:after{
+        background-image: url("../images/static/arrow-right-navy.svg");
+    }
+}
+.swiper-button-prev{
+    &:after{
+        background-image: url("../images/static/arrow-left-navy.svg");
+    }
+}
 
 
 
@@ -877,6 +911,33 @@ input[type="file"] {
                 left: 50px;
                 right: inherit;
             }
+        }
+    }
+    .swiper-button-next, .swiper-button-prev{
+        left: inherit;
+        right: inherit;
+        &:after{
+            content: '';
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    
+    }
+    .swiper-button-next{
+        &:after{
+            background-image: url("../images/static/arrow-left-navy.svg");
+        }
+    }
+    .swiper-button-prev{
+        &:after{
+            background-image: url("../images/static/arrow-right-navy.svg");
         }
     }
 }
@@ -1065,6 +1126,9 @@ input[type="file"] {
                 right: inherit;
             }
         }
+    }
+    .swiper-navigation-wrapper{
+        height: 48px;
     }
 }
 

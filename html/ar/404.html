@@ -123,7 +123,7 @@
             <div class="col-lg-10">
               <div class="row justify-content-center">
                 <div class="col-lg-6">
-                  <div class="d-inline-grid error-page align-items-center text-center">
+                  <div class="d-grid error-page align-items-center text-center">
                     <div class="py-200">
                       <p class="fontBold font-80 navy p-relative d-block lh-1 mb-0">404</p>
                       <p class="fontMedium font-32 navy p-relative d-block">Page Not Found</p>
@@ -131,7 +131,7 @@
                         We are working on it.
                       </p>
                       <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2 p-relative">
-                        <p class="mb-0 d-inline-block me-3 align-middle">Back to homepage</p>
+                        <p class="mb-0 d-inline-block me-1 me-md-3 align-middle">Back to homepage</p>
                         <img src="../images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
                       </button>
                     </div>
@@ -145,7 +145,7 @@
     </div>
   
       <!--  SUBSCRIBE SECTION  -->
-      <section class="py-80">
+      <section class="py-80 subscribe">
         <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-lg-10">
@@ -173,7 +173,7 @@
                     </div>
                     <div class="col-lg-4">
                       <button class="btn no-bg text-uppercase black font-14 fontBold mx-auto p-3 text-start rounded-2 w-100" type="submit">
-                        <p class="mb-0 d-inline-block me-3 align-middle">Sign-up</p>
+                        <p class="mb-0 d-inline-block me-1 me-md-3 align-middle">Sign-up</p>
                         <img src="../images/static/arrow-right.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12">
                       </button>
                     </div>
@@ -188,7 +188,7 @@
                   <p class="fontRegular font-32 black">Let us know</p>
                   <p class="fontBold font-42 navy">00971 4-294-9999</p>
                   <button class="btn no-bg text-uppercase black font-14 fontBold mx-auto p-3 mb-3 text-start rounded-2">
-                    <p class="mb-0 d-inline-block me-3 align-middle">Tell us</p>
+                    <p class="mb-0 d-inline-block me-1 me-md-3 align-middle">Tell us</p>
                     <img src="../images/static/arrow-right.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
                   </button>
                 </div>
@@ -200,7 +200,7 @@
                   <p class="fontBold font-18 navy text-uppercase mb-0">CONTACT US</p>
                   <p class="fontRegular font-32 black">We’re here to answer all your questions</p>
                   <button class="btn gradient-right text-uppercase white font-14 fontBold mx-auto p-3 text-start border-0 rounded-2">
-                    <p class="mb-0 d-inline-block me-3 align-middle">Tell us</p>
+                    <p class="mb-0 d-inline-block me-1 me-md-3 align-middle">Tell us</p>
                     <img src="../images/static/arrow-right-white.svg" alt="button arrow" class="d-inline-block float-end align-middle rect s12 rect s12">
                   </button>
                 </div>
@@ -274,10 +274,10 @@
                     </ul>
                     <ul class="col-6 col-md-4 col-lg-auto mb-4 mb-lg-0 mx-lg-auto align-top">
                       <li class="text-uppercase white fontMedium font-14 d-block mb-3">Connect</li>
-                      <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block"><img src="../images/static/SMW-Facebook.svg" alt="facebook" class="w-100 h-100 object-fit-contain"></a></li>
-                      <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block"><img src="../images/static/SMW-instagram.svg" alt="instagram" class="w-100 h-100 object-fit-contain"></a></li>
-                      <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block"><img src="../images/static/SMW-Linkedin.svg" alt="Linkedin" class="w-100 h-100 object-fit-contain"></a></li>
-                      <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block"><img src="../images/static/SMW-Twitter.svg" alt="Twitter23" class="w-100 h-100 object-fit-contain"></a></li>
+                      <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block" target="_blank" ><img src="../images/static/SMW-Facebook.svg" alt="facebook" class="w-100 h-100 object-fit-contain"></a></li>
+                      <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block" target="_blank" ><img src="../images/static/SMW-instagram.svg" alt="instagram" class="w-100 h-100 object-fit-contain"></a></li>
+                      <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block" target="_blank" ><img src="../images/static/SMW-Linkedin.svg" alt="Linkedin" class="w-100 h-100 object-fit-contain"></a></li>
+                      <li class="d-inline-block me-2"><a href="javascript:;" class="accordion-social d-block" target="_blank" ><img src="../images/static/SMW-Twitter.svg" alt="Twitter23" class="w-100 h-100 object-fit-contain"></a></li>
                     </ul>
                   </div>
                 </div>
@@ -477,12 +477,29 @@
       el: ".mySwiper3 .swiper-pagination",
       type: "progressbar",
     },
+    navigation: {
+      nextEl: ".mySwiper3 .swiper-button-next",
+      prevEl: ".mySwiper3 .swiper-button-prev",
+    },
   });
-  var swiper4 = new Swiper(".mySwiper4", {
+  /*var swiper4 = new Swiper(".mySwiper4", {
     direction: "vertical",
     pagination: {
       el: ".mySwiper4 .swiper-pagination",
       clickable: true,
+    },
+  }); */
+  var swiper4 = new Swiper(".mySwiper4", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      },
     },
   });
   
