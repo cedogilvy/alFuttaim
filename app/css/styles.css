@@ -306,6 +306,14 @@ Styles
   width: calc( 40% - 3px) !important;
   display: inline-block; }
 
+.w-45 {
+  width: calc( 45% - 3px) !important;
+  display: inline-block; }
+
+.w-55 {
+  width: calc( 55% - 3px) !important;
+  display: inline-block; }
+
 .w-60 {
   width: calc( 60% - 3px) !important;
   display: inline-block; }
@@ -840,6 +848,9 @@ input[type="file"] {
 .ar button {
   letter-spacing: 0; }
 
+.ar .grey-patern.story-patern {
+  transform: translateX(45%); }
+
 @media (min-width: 992px) and (max-width: 1440px) {
   .font-80 {
     font-size: 4rem; } }
@@ -958,7 +969,9 @@ input[type="file"] {
     bottom: inherit;
     right: inherit; }
   .swiper-navigation-wrapper {
-    height: 48px; } }
+    height: 48px; }
+  .ar .btn.btn-bigger.p-lg-absolute {
+    left: 0; } }
 
 @media (max-width: 575.98px) {
   .btn.btn-bigger {
@@ -1980,7 +1993,8 @@ input, textarea {
     display: none; }
   .tags-listing {
     overflow-x: scroll;
-    overflow-y: hidden; }
+    overflow-y: hidden;
+    padding-bottom: 10px; }
     .tags-listing ul {
       width: 700px; }
   .filters-tabs .filters-wrapper {

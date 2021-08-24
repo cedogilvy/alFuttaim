@@ -303,6 +303,14 @@ Styles
     width: calc( 40% - 3px) !important;
     display: inline-block;
 }
+.w-45{
+    width: calc( 45% - 3px) !important;
+    display: inline-block;
+}
+.w-55{
+    width: calc( 55% - 3px) !important;
+    display: inline-block;
+}
 .w-60{
     width: calc( 60% - 3px) !important;
     display: inline-block;
@@ -946,6 +954,12 @@ input[type="file"] {
     button{
         letter-spacing: 0;
     }
+    .grey-patern{
+        &.story-patern{
+            transform: translateX(45%);
+        }
+    }
+    
 }
 
 
@@ -1135,6 +1149,15 @@ input[type="file"] {
     }
     .swiper-navigation-wrapper{
         height: 48px;
+    }
+    .ar{
+        .btn{
+            &.btn-bigger{
+                &.p-lg-absolute {
+                    left: 0;
+                }
+            }
+        }
     }
 }
 
