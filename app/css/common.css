@@ -864,6 +864,8 @@ input[type="file"] {
     width: 100% !important; }
     .w-80.state-content, .w-70.state-content, .w-60.state-content, .w-50.state-content, .w-40.state-content, .w-30.state-content, .w-20.state-content {
       width: calc(100% - 30px) !important; }
+    .w-80.swiper-pagination, .w-70.swiper-pagination, .w-60.swiper-pagination, .w-50.swiper-pagination, .w-40.swiper-pagination, .w-30.swiper-pagination, .w-20.swiper-pagination {
+      width: 50% !important; }
   .program-swiper .w-80 {
     width: 80% !important; }
   header .w-10 {

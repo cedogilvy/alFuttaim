@@ -410,11 +410,11 @@
                       <img src="../images/dynamic/news4.jpg" alt="" class="w-100 h-100 object-fit-cover">
                       <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
                       <span class="p-absolute w-100 h-100 top-left listing-hover gradient-right">
-                        <img src="../images/dynamic/lexus.png" alt="lexus logo"
-                          class="rect s60 p-absolute top-left ms-3 mt-3">
                         <img src="../images/static/hover-patern.svg" alt="hover-patern"
                           class="hover-patern p-absolute w-50 h-70 object-fit-contain">
                       </span>
+                      <img src="../images/dynamic/lexus.png" alt="lexus logo"
+                        class="rect s60 p-absolute top-left ms-3 mt-3">
                       <span class="content-group p-absolute bottom-left px-3">
                         <p class="education text-uppercase fontBold font-14 d-inline-block mb-0">تعليم</p>
                         <span class="rect s6 bgWhite mx-2 d-inline-block rotate"></span>
@@ -434,11 +434,11 @@
                       <img src="../images/dynamic/news5.jpg" alt="" class="w-100 h-100 object-fit-cover">
                       <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
                       <span class="p-absolute w-100 h-100 top-left listing-hover gradient-right">
-                        <img src="../images/dynamic/lexus.png" alt="lexus logo"
-                          class="rect s60 p-absolute top-left ms-3 mt-3">
                         <img src="../images/static/hover-patern.svg" alt="hover-patern"
                           class="hover-patern p-absolute w-50 h-70 object-fit-contain">
                       </span>
+                      <img src="../images/dynamic/lexus.png" alt="lexus logo"
+                        class="rect s60 p-absolute top-left ms-3 mt-3">
                       <span class="content-group p-absolute bottom-left px-3">
                         <p class="retail text-uppercase fontBold font-14 d-inline-block mb-0">بيع بالتجزئة</p>
                         <span class="rect s6 bgWhite mx-2 d-inline-block rotate"></span>
@@ -457,11 +457,11 @@
                       <img src="../images/dynamic/news1.jpg" alt="" class="w-100 h-100 object-fit-cover">
                       <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
                       <span class="p-absolute w-100 h-100 top-left listing-hover gradient-right">
-                        <img src="../images/dynamic/lexus.png" alt="lexus logo"
-                          class="rect s60 p-absolute top-left ms-3 mt-3">
                         <img src="../images/static/hover-patern.svg" alt="hover-patern"
                           class="hover-patern p-absolute w-50 h-70 object-fit-contain">
                       </span>
+                      <img src="../images/dynamic/lexus.png" alt="lexus logo"
+                        class="rect s60 p-absolute top-left ms-3 mt-3">
                       <span class="content-group p-absolute bottom-left px-3">
                         <p class="retail text-uppercase fontBold font-14 d-inline-block mb-0">بيع بالتجزئة</p>
                         <span class="rect s6 bgWhite mx-2 d-inline-block rotate"></span>
@@ -481,11 +481,11 @@
                       <img src="../images/dynamic/news2.jpg" alt="" class="w-100 h-100 object-fit-cover">
                       <span class="gradient-txt p-absolute top-left w-100 h-100"></span>
                       <span class="p-absolute w-100 h-100 top-left listing-hover gradient-right">
-                        <img src="../images/dynamic/lexus.png" alt="lexus logo"
-                          class="rect s60 p-absolute top-left ms-3 mt-3">
                         <img src="../images/static/hover-patern.svg" alt="hover-patern"
                           class="hover-patern p-absolute w-50 h-70 object-fit-contain">
                       </span>
+                      <img src="../images/dynamic/lexus.png" alt="lexus logo"
+                        class="rect s60 p-absolute top-left ms-3 mt-3">
                       <span class="content-group p-absolute bottom-left px-3">
                         <p class="automotive text-uppercase fontBold font-14 d-inline-block mb-0"> السيارات </p>
                         <span class="rect s6 bgWhite mx-2 d-inline-block rotate"></span>
@@ -1643,7 +1643,18 @@
       setTimeout(function () {
         var modalSwiper = new Swiper(".modalSwiper", {
           spaceBetween: 20,
-          slidesPerView: 7,
+          slidesPerView: 3,
+          breakpoints: {
+            640: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 4,
+            },
+            1024: {
+              slidesPerView: 5,
+            },
+          },
           freeMode: true,
           watchSlidesVisibility: true,
           watchSlidesProgress: true,

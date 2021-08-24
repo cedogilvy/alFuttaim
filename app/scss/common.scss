@@ -1005,6 +1005,9 @@ input[type="file"] {
         &.state-content{
             width: calc(100% - 30px) !important;
         }
+        &.swiper-pagination{
+            width: 50% !important;
+        }
     }
     .program-swiper{
         .w-80{

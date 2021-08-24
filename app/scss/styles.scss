@@ -1311,7 +1311,7 @@ input, textarea{
     }
     .swiper-franction {
         .swiper-button-next, .swiper-button-prev{
-            transform: rotate(180deg);
+            //@error: rotate(180deg);
         }
         .swiper-pagination-current{
             padding-left: 20px;
@@ -1593,6 +1593,17 @@ input, textarea{
         top: 0;
         right: 0;
     }
+    .video-modal {
+        .modal-body {
+            height: 45vh;
+        }
+    }
+    .modalSwiper2 {
+        height: 75%;
+    }
+    .modalSwiper {
+        height: 25%;
+    }
 
 
     
@@ -1633,6 +1644,11 @@ input, textarea{
         .share-grey{
             right: inherit;
             left: 0;
+        }
+        .mySwiper4 {
+            .swiper-button-prev, .swiper-button-next {
+                transform: scaleX(-1) translateY(-50%);
+            }
         }
     }
 }

@@ -1395,7 +1395,18 @@
       setTimeout(function () {
         var modalSwiper = new Swiper(".modalSwiper", {
           spaceBetween: 20,
-          slidesPerView: 7,
+          slidesPerView: 3,
+          breakpoints: {
+            640: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 4,
+            },
+            1024: {
+              slidesPerView: 5,
+            },
+          },
           freeMode: true,
           watchSlidesVisibility: true,
           watchSlidesProgress: true,
