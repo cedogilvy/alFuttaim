@@ -165,6 +165,9 @@ Colors
 .gradient-right {
   background: linear-gradient(to right, #005093, #00A3DA); }
 
+.ar .gradient-right {
+  background: linear-gradient(to left, #005093, #00A3DA); }
+
 .gradient-buttom {
   background: linear-gradient(#005093, #00A3DA); }
 
@@ -579,13 +582,15 @@ ul {
   .listing .listing-anchor .hidden-details {
     opacity: 0;
     visibility: hidden;
-    font-size: 0; }
+    font-size: 0;
+    display: none; }
   .listing .listing-anchor:hover {
     opacity: 1; }
     .listing .listing-anchor:hover .listing-hover {
       opacity: 1;
       visibility: visible; }
     .listing .listing-anchor:hover .hidden-details {
+      display: block;
       opacity: 1;
       visibility: visible;
       font-size: 1.125rem; }
@@ -678,7 +683,7 @@ ul {
 .clipped-images img {
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   transform: translate(-50%, -50%);
-  right: -100px; }
+  right: 0; }
   .clipped-images img:first-child {
     width: 400px;
     height: 400px;
@@ -692,7 +697,10 @@ ul {
     top: calc(50% + 100px + 10px); }
   .clipped-images img:nth-child(4) {
     top: calc(50%);
-    right: -200px; }
+    right: -105px; }
+
+.ar .clipped-images img {
+  transform: translate(-50%, -50%) scaleX(-1); }
 
 input[type="file"] {
   display: none; }

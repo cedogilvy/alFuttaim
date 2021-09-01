@@ -139,6 +139,7 @@ $orange: #DAA06C;
 
 .gradient-left{background: linear-gradient(to left, $navy, $blue);}
 .gradient-right{background: linear-gradient(to right,$navy, $blue);}
+.ar .gradient-right{background: linear-gradient(to left,$navy, $blue);}
 .gradient-buttom{background: linear-gradient( $navy, $blue);}
 .gradient-top{background: linear-gradient($blue,$navy);}
 .gradient-txt{background: linear-gradient(rgba($color: $black, $alpha: 0),rgba($color: $black, $alpha: 1.0));}
@@ -602,7 +603,7 @@ ul{
             visibility: hidden;
             @extend.cubicTransition;
             font-size: 0;
-            //display: none;
+            display: none;
         }
         &:hover{
             opacity: 1;
@@ -612,7 +613,7 @@ ul{
                 //transform: translateY(0);
             }
             .hidden-details{
-                //display: block;
+                display: block;
                 opacity: 1;
                 visibility: visible;
                 font-size: 1.125rem;
@@ -730,7 +731,8 @@ $imgRatio: 500px;
     img{
         clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
         transform: translate(-50% , -50%);
-        right: -100px;
+        //right: -100px;
+        right: 0;
         &:first-child(){
             width: 400px;
             height: 400px;
@@ -748,7 +750,15 @@ $imgRatio: 500px;
         }
         &:nth-child(4){
             top: calc(50%);
-            right: -200px;
+            //right: -200px;
+            right: -105px;
+        }
+    }
+}
+.ar{
+    .clipped-images{
+        img{
+            transform: translate(-50% , -50%) scaleX(-1);
         }
     }
 }

@@ -3,6 +3,9 @@
 body{
     min-height: 100%;
 }
+html[lang="ar"]{
+    font-size: 19px;
+}
 ///////////////////////////// HEADER /////////////////////////////
 header{
     transform: translateY(0);
@@ -38,6 +41,9 @@ main{
     }
     .state-content{
         left: 10%;
+        .w-80{
+            width: calc( 75% - 3px);
+        }
     }
     .home-swiper-mobile, .mySwiper2{
         height: 120vh;
@@ -64,7 +70,7 @@ main{
             }
             &.swiper-slide-active{
                 .state-content{
-                    transform: translateY(-30%);
+                    transform: translateY(-30%) !important;
                     opacity: 1;
                     visibility: visible;
                 }
@@ -272,6 +278,8 @@ $rectRatioMin: 85px;
     .swiper-container{
         width: 100%;
         height: 100%;
+        overflow: hidden;
+        position: relative;
     }
 }
 
@@ -503,7 +511,8 @@ footer{
 }
 .modalSwiper2 {
     height: 80%;
-    width: 80%;
+    //width: 80%;
+    width: 100%;
     margin-left: 0;
 }
 .modalSwiper {
@@ -562,7 +571,7 @@ footer{
 .filter{
     color: $black !important;
     border-bottom: 3px solid transparent;
-    padding: .6rem;
+    padding: .8rem;
     &.active{
         color: $blue !important;
         border-bottom: 3px solid grey;
@@ -632,6 +641,7 @@ footer{
 .swiper-mobile{
     display: none;
 }
+
 textarea{
     min-height: 170px !important;
 }
@@ -1137,9 +1147,26 @@ input, textarea{
         }
     }
 }
+.mySwiper{
+    z-index: 100;
+}
 
-
-
+.mySwiperTwo{
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: 10px;
+        left: auto;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 10px;
+        right: auto;
+    }
+    .swiper-button-next:after {
+        background-image: url(../images/static/arrow-right-white.svg);
+    }
+    .swiper-button-prev:after {
+        background-image: url(../images/static/arrow-left-white.svg);
+    }
+}
 
 
 
@@ -1148,6 +1175,36 @@ input, textarea{
 
 
 .ar{
+    .mySwiperTwo{
+        .swiper-button-next, .swiper-rtl .swiper-button-prev {
+            left: 10px;
+            right: auto;
+        }
+        .swiper-button-prev, .swiper-rtl .swiper-button-next {
+            right: 10px;
+            left: auto;
+        }
+        .swiper-button-next:after {
+            background-image: url(../images/static/arrow-left-white.svg);
+        }
+        .swiper-button-prev:after {
+            background-image: url(../images/static/arrow-right-white.svg);
+        }
+    }
+    .hover-patern {
+        right: -16%;
+        left: inherit;
+    }
+    .mySwiper4{
+        .swiper-button-next {
+            right: calc(50% + 100px);
+            left: inherit;
+        }
+        .swiper-button-prev {
+            right: calc(50% - 100px - 27px);
+            left: inherit;
+        }
+    }
     main{
         .initial-state{
             .img-wrapper{
@@ -1604,6 +1661,20 @@ input, textarea{
     .modalSwiper {
         height: 25%;
     }
+    .video-modal {
+        .swiper-slide {
+            video{
+                height: 58%;
+            }
+        }
+    }
+    .lang{
+        padding: 1.1rem 0 !important;
+    }
+    .btn.navbar-toggler{
+        transform: translateX(1rem);
+    }
+    
 
 
     
@@ -1614,6 +1685,9 @@ input, textarea{
 
 
     .ar{
+        .btn.navbar-toggler{
+            transform: translateX(-1rem);
+        }
         .navbar-stay{
             left: 60px;
             right: inherit;
@@ -1629,6 +1703,7 @@ input, textarea{
         .home-swiper-mobile {
             .swiper-pagination{
                 text-align: right;
+                bottom: 35%;
             }
         }
         main {
