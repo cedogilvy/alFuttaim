@@ -640,6 +640,28 @@ footer{
 }
 .swiper-mobile{
     display: none;
+    &.media-page{
+        display: block;
+    }
+}
+.home-swiper-mobile{
+    &.media-page{
+        .swiper-pagination{
+            bottom: 30%;
+            left: 8%;
+            text-align: left;
+            padding: 0 15px ;
+            .swiper-pagination-bullet{
+                width: 30px;
+                height: 4px;
+                border-radius: 0;
+                background: $blue;
+                &.swiper-pagination-bullet-active{
+                    background: $navy;
+                }
+            }
+        }
+    }
 }
 
 textarea{
@@ -1391,8 +1413,21 @@ input, textarea{
 
 
 
+.letter-space{
+    letter-spacing: 3px;
+  }
+  .breadcrumb{
+      .breadcrumb-item{
+          margin-right: 10px;
+          margin-left: 10px;
+      }
+  }
 
-
+#menu-stories{
+    li{
+        margin-bottom: 10px;
+    }
+}
 
 
 
@@ -1571,6 +1606,15 @@ input, textarea{
                 border-radius: 0;
                 &.swiper-pagination-bullet-active{
                     background: $white;
+                }
+            }
+        }
+        &.media-page{
+            bottom: 30%;
+            .swiper-pagination-bullet{
+                background: $blue;
+                &.swiper-pagination-bullet-active{
+                    background: $navy;
                 }
             }
         }
