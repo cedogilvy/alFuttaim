@@ -44,7 +44,7 @@ jQuery(function($){
 
         
         var thisTag = [];
-        $('.partners-logo a').click(function(){
+        $(document).on('click', '.partners-logo a', function() {
             $('.partners-logo').removeClass("active");
             $(this).parent().addClass("active");
             thisTag = $(this).attr('data-tag');
@@ -150,9 +150,9 @@ jQuery(function($){
                 this.pause();
             })
         })
-        $(".tag").click(function(){
-            $(this).toggleClass("active");
-        })
+        // $(".tag").click(function(){
+        //     $(this).toggleClass("active");
+        // })
 
 
 
