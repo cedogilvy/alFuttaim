@@ -496,7 +496,7 @@ footer{
         }
     }
     main{
-        height: 120vh;
+        height: 120vh!important;
         .state{
             height: 120vh;
         }
@@ -1502,6 +1502,16 @@ input, textarea{
             }
         }
     }
+    .timeline-arrows-wrapper{
+        top: 26%;
+    }
+    .brand-logo img {
+        width: 200px;
+        height: 200px;
+    }
+    .cd-horizontal-timeline .events-content .event-content{
+        top: 30%;
+    }
     .first-fold {
         margin-top: 100px;
     }
@@ -1597,7 +1607,7 @@ input, textarea{
     }
     .home-swiper-mobile{
         .swiper-pagination{
-            bottom: 40%;
+            bottom: 30%;
             text-align: left;
             padding: 0 15px ;
             .swiper-pagination-bullet{
@@ -1688,6 +1698,7 @@ input, textarea{
     }
     .map-img{
         transform: scale(1.5);
+        overflow: scroll;
     }
     .share-grey{
         position: absolute;
