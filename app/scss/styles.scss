@@ -1430,10 +1430,28 @@ input, textarea{
 }
 
 
+.empty-content{
+    @extend .fontMedium, .navy, .font-22;
+    text-transform: uppercase;
+    margin-top: 50px;
+    text-align: center;
+}
 
 
+img.emoji {
+    height: 1em !important;
+    width: 1em !important;
+}
 
-
+.table-content{
+    @extend .fontRegular
+}
+.border-blue{
+    border: 1px solid black;
+    &.inside{
+        border-top: 0;
+    }
+}
 @media (min-width: 1441px){
 }
 // commun Styles between Large and Extra Large devices
@@ -1501,6 +1519,12 @@ input, textarea{
                 } */
             }
         }
+    }
+    .table-content{
+        word-wrap: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
     }
     .timeline-arrows-wrapper{
         top: 26%;

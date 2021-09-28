@@ -16,10 +16,10 @@ Fonts
   src: url("../fonts/Graphik500Medium.eot");
   src: url("../fonts/Graphik500Medium.eot") format("embedded-opentype"), url("../fonts/Graphik500Medium.woff2") format("woff2"), url("../fonts/Graphik500Medium.woff") format("woff"), url("../fonts/Graphik500Medium.ttf") format("truetype"), url("../fonts/Graphik500Medium.svg#Graphik500Medium") format("svg"); }
 
-.fontRegular, .mySwiper4 .swiper-pagination-bullet, input, textarea, input::placeholder, textarea::placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder, .subscribe input, .subscribe textarea, .subscribe select, .subscribe option, .contact-form input, .contact-form textarea, .contact-form select, .contact-form option, .subscribe input::placeholder, .subscribe textarea::placeholder, .subscribe select::placeholder, .subscribe option::placeholder, .contact-form input::placeholder, .contact-form textarea::placeholder, .contact-form select::placeholder, .contact-form option::placeholder, .subscribe input:-ms-input-placeholder, .subscribe textarea:-ms-input-placeholder, .subscribe select:-ms-input-placeholder, .subscribe option:-ms-input-placeholder, .contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder, .contact-form select:-ms-input-placeholder, .contact-form option:-ms-input-placeholder, .subscribe input::-ms-input-placeholder, .subscribe textarea::-ms-input-placeholder, .subscribe select::-ms-input-placeholder, .subscribe option::-ms-input-placeholder, .contact-form input::-ms-input-placeholder, .contact-form textarea::-ms-input-placeholder, .contact-form select::-ms-input-placeholder, .contact-form option::-ms-input-placeholder, .scroll-to-tabs .scroll-to-tabs-anchor, .swiper-franction .swiper-pagination {
+.fontRegular, .mySwiper4 .swiper-pagination-bullet, input, textarea, input::placeholder, textarea::placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder, .subscribe input, .subscribe textarea, .subscribe select, .subscribe option, .contact-form input, .contact-form textarea, .contact-form select, .contact-form option, .subscribe input::placeholder, .subscribe textarea::placeholder, .subscribe select::placeholder, .subscribe option::placeholder, .contact-form input::placeholder, .contact-form textarea::placeholder, .contact-form select::placeholder, .contact-form option::placeholder, .subscribe input:-ms-input-placeholder, .subscribe textarea:-ms-input-placeholder, .subscribe select:-ms-input-placeholder, .subscribe option:-ms-input-placeholder, .contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder, .contact-form select:-ms-input-placeholder, .contact-form option:-ms-input-placeholder, .subscribe input::-ms-input-placeholder, .subscribe textarea::-ms-input-placeholder, .subscribe select::-ms-input-placeholder, .subscribe option::-ms-input-placeholder, .contact-form input::-ms-input-placeholder, .contact-form textarea::-ms-input-placeholder, .contact-form select::-ms-input-placeholder, .contact-form option::-ms-input-placeholder, .scroll-to-tabs .scroll-to-tabs-anchor, .swiper-franction .swiper-pagination, .table-content {
   font-family: 'Graphik400Regular'; }
 
-.fontMedium, .scroll-to-tabs .scroll-to-tabs-anchor.active, .cd-horizontal-timeline .events a {
+.fontMedium, .scroll-to-tabs .scroll-to-tabs-anchor.active, .cd-horizontal-timeline .events a, .empty-content {
   font-family: 'Graphik500Medium'; }
 
 .fontBold, header .navbar-nav .nav-link.active, .swiper-franction .swiper-pagination .swiper-pagination-current {
@@ -52,7 +52,7 @@ Sizes
 .font-20 {
   font-size: 1.25rem; }
 
-.font-22 {
+.font-22, .empty-content {
   font-size: 1.375rem; }
 
 .font-24 {
@@ -103,7 +103,7 @@ Sizes
 /* -----------------------------------------------------
 Colors
 ----------------------------------------------------- */
-.navy {
+.navy, .empty-content {
   color: #005093 !important; }
 
 .blue {
@@ -511,7 +511,7 @@ Styles
   padding: 160px 0; }
 
 .py-80 {
-  padding: 80px 0; }
+  padding: 60px 0; }
 
 .px-15 {
   padding: 0 13px; }
@@ -1967,6 +1967,20 @@ input, textarea {
 #menu-stories li {
   margin-bottom: 10px; }
 
+.empty-content {
+  text-transform: uppercase;
+  margin-top: 50px;
+  text-align: center; }
+
+img.emoji {
+  height: 1em !important;
+  width: 1em !important; }
+
+.border-blue {
+  border: 1px solid black; }
+  .border-blue.inside {
+    border-top: 0; }
+
 @media (min-width: 992px) and (max-width: 1440px) {
   .mySwiper {
     height: 120vh; }
@@ -1997,6 +2011,11 @@ input, textarea {
       width: auto !important;
       right: 0;
       left: inherit; }
+  .table-content {
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto; }
   .timeline-arrows-wrapper {
     top: 26%; }
   .brand-logo img {

@@ -1229,6 +1229,14 @@
                         <p class="black fontRegular font-20">Our online learning platform offers thousands of eLearning
                           courses as well as job aids to help broaden and strengthen our people’s capability.
                           Although classroom style training is also offered, we focus more on self-paced learning which
+                          can be done on-the-job and through learning from others.Our online learning platform offers
+                          thousands of eLearning
+                          courses as well as job aids to help broaden and strengthen our people’s capability.
+                          Although classroom style training is also offered, we focus more on self-paced learning which
+                          can be done on-the-job and through learning from others.Our online learning platform offers
+                          thousands of eLearning
+                          courses as well as job aids to help broaden and strengthen our people’s capability.
+                          Although classroom style training is also offered, we focus more on self-paced learning which
                           can be done on-the-job and through learning from others.</p>
                       </div>
                       <div class="swiper-slide">
@@ -2143,6 +2151,7 @@
     },
   });
   var swiperFraction = new Swiper(".swiper-franction", {
+    autoHeight: true,
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",
@@ -2151,6 +2160,11 @@
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      768: {
+        autoHeight: false,
+      },
+    }
   });
   var timeline = new Swiper(".timeline", {
     pagination: {
