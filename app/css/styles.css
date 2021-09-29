@@ -429,7 +429,7 @@ Styles
 .object-fit-contain {
   object-fit: contain; }
 
-.cubicTransition, .listing .listing-anchor .hidden-details, main .mySwiper2, main .mySwiper2 .swiper-slide .state-content, .mySwiper .swiper-slide, .mySwiper .swiper-slide .slide-hover-content img, .mySwiper .swiper-slide .slide-hover-content p, .home-page header, .home-page .initial-state .img-wrapper, .home-page main .initial-state .state-content, .home-page .fixed-bottom .accordion, .search {
+.cubicTransition, .listing .listing-anchor .hidden-details, main .mySwiper2, main .mySwiper2 .swiper-slide .state-content, .mySwiper .swiper-slide, .mySwiper .swiper-slide .slide-hover-content img, .mySwiper .swiper-slide .slide-hover-content p, .mySwiper .swiper-slide .slide-hover-content .black-overlay, .home-page header, .home-page .initial-state .img-wrapper, .home-page main .initial-state .state-content, .home-page .fixed-bottom .accordion, .search {
   transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
   -moz-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
@@ -680,24 +680,26 @@ ul {
     transform: scale(1);
     display: block; } }
 
-.clipped-images img {
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  transform: translate(-50%, -50%);
-  right: 0; }
-  .clipped-images img:first-child {
-    width: 400px;
-    height: 400px;
-    top: 50%; }
-  .clipped-images img:nth-child(2), .clipped-images img:nth-child(3), .clipped-images img:nth-child(4) {
-    width: 200px;
-    height: 200px; }
-  .clipped-images img:nth-child(2) {
-    top: calc(50% - 100px - 10px); }
-  .clipped-images img:nth-child(3) {
-    top: calc(50% + 100px + 10px); }
-  .clipped-images img:nth-child(4) {
-    top: calc(50%);
-    right: -105px; }
+.clipped-images {
+  transform: scale(1.3) translateX(15%); }
+  .clipped-images img {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform: translate(-50%, -50%);
+    right: 0; }
+    .clipped-images img:first-child {
+      width: 400px;
+      height: 400px;
+      top: 50%; }
+    .clipped-images img:nth-child(2), .clipped-images img:nth-child(3), .clipped-images img:nth-child(4) {
+      width: 200px;
+      height: 200px; }
+    .clipped-images img:nth-child(2) {
+      top: calc(50% - 100px - 10px); }
+    .clipped-images img:nth-child(3) {
+      top: calc(50% + 100px + 10px); }
+    .clipped-images img:nth-child(4) {
+      top: calc(50%);
+      right: -105px; }
 
 .ar .clipped-images img {
   transform: translate(-50%, -50%) scaleX(-1); }
@@ -859,9 +861,17 @@ input[type="file"] {
 .ar .grey-patern.story-patern {
   transform: translateX(45%); }
 
+@media (min-width: 1441px) {
+  .clipped-images {
+    transform: scale(1.5); } }
+
 @media (min-width: 992px) and (max-width: 1440px) {
   .font-80 {
     font-size: 4rem; } }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .clipped-images {
+    transform: translateX(40%); } }
 
 @media (min-width: 100px) and (max-width: 1000px) {
   .py-200 {
@@ -1162,10 +1172,19 @@ $rectRatioMin: 105px; */
       transform: scale(1.4); }
     .mySwiper .swiper-slide .slide-hover-content p {
       color: #FFFFFF; }
-    .mySwiper .swiper-slide .slide-hover-content img, .mySwiper .swiper-slide .slide-hover-content p {
+    .mySwiper .swiper-slide .slide-hover-content .black-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      border: 1px solid white;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      transform: rotate(45deg);
+      display: block; }
+    .mySwiper .swiper-slide .slide-hover-content img, .mySwiper .swiper-slide .slide-hover-content p, .mySwiper .swiper-slide .slide-hover-content .black-overlay {
       opacity: 0;
       visibility: hidden; }
-    .mySwiper .swiper-slide:hover .slide-hover-content img, .mySwiper .swiper-slide:hover .slide-hover-content p {
+    .mySwiper .swiper-slide:hover .slide-hover-content img, .mySwiper .swiper-slide:hover .slide-hover-content p, .mySwiper .swiper-slide:hover .slide-hover-content .black-overlay {
       opacity: 1;
       visibility: visible; }
     .mySwiper .swiper-slide.active:before {
@@ -1235,10 +1254,10 @@ $rectRatioMin: 105px; */
   top: inherit; }
 
 .mySwiper4 .swiper-button-next {
-  left: calc(50% + 100px); }
+  left: calc(50% + 130px); }
 
 .mySwiper4 .swiper-button-prev {
-  left: calc(50% - 100px - 27px); }
+  left: calc(50% - 130px - 27px); }
 
 /* .swiper-container-vertical>.swiper-pagination-bullets{
     right: 9%;
@@ -1530,6 +1549,15 @@ input, textarea {
 .program-swiper .swiper-button-next {
   right: 10px;
   left: auto; }
+
+.timeline-overlay-black {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, black 100%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 10;
+  left: 0; }
 
 .cd-horizontal-timeline {
   opacity: 0;
@@ -1981,6 +2009,21 @@ img.emoji {
   .border-blue.inside {
     border-top: 0; }
 
+.inherit-height {
+  height: inherit; }
+
+.brand-logo img {
+  width: 150px;
+  height: auto; }
+
+.white-overlay {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 250px;
+  background: linear-gradient(180deg, white 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 20; }
+
 @media (min-width: 992px) and (max-width: 1440px) {
   .mySwiper {
     height: 120vh; }
@@ -2018,9 +2061,6 @@ img.emoji {
     hyphens: auto; }
   .timeline-arrows-wrapper {
     top: 26%; }
-  .brand-logo img {
-    width: 200px;
-    height: 200px; }
   .cd-horizontal-timeline .events-content .event-content {
     top: 30%; }
   .first-fold {
@@ -2143,9 +2183,6 @@ img.emoji {
   .btn .s12 {
     width: 12px;
     height: 12px; }
-  .map-img {
-    transform: scale(1.5);
-    overflow: scroll; }
   .share-grey {
     position: absolute;
     top: 0;
@@ -2192,7 +2229,9 @@ img.emoji {
 
 @media (max-width: 575.98px) {
   .scroll-to-tabs {
-    transform: translateY(-74px); } }
+    transform: translateY(-74px); }
+  main .initial-state .img-wrapper .main-patern-overlay {
+    transform: translateX(170vw); } }
 
 @-webkit-keyframes cd-enter-right {
   0% {

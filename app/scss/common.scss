@@ -728,6 +728,7 @@ ul{
 }
 $imgRatio: 500px;
 .clipped-images{
+    transform: scale(1.3) translateX(15%);
     img{
         clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
         transform: translate(-50% , -50%);
@@ -984,6 +985,8 @@ input[type="file"] {
 
 
 @media (min-width: 1441px){
+    .clipped-images{
+        transform: scale(1.5);}
 }
 // commun Styles between Large and Extra Large devices
 @media (min-width: 992px) and (max-width: 1440px){
@@ -992,11 +995,16 @@ input[type="file"] {
 
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) and (max-width: 1440px){}
+@media (min-width: 1200px) and (max-width: 1440px){
+    
+}
 
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px){
+    .clipped-images{
+        transform:  translateX(40%);
+    }
 }
 
 

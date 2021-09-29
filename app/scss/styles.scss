@@ -237,14 +237,25 @@ $rectRatioMin: 85px;
                 color: $white;
                 @extend.cubicTransition;
             }
-            img, p{
+            .black-overlay{
+                @extend.cubicTransition;
+                background-color: rgba(0,0,0,0.5);
+                border: 1px solid white;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                transform: rotate(45deg);
+                display: block;
+            }
+            img, p,.black-overlay{
                 opacity: 0;
                 visibility: hidden;
             }
         }
         &:hover{
             .slide-hover-content{
-                img,p{
+                img,p,.black-overlay{
                     opacity: 1;
                     visibility: visible;
                 }
@@ -363,14 +374,14 @@ $rectRatioMin: 85px;
         top: inherit;
     }
     .swiper-button-next{
-        left: calc(50% + 100px);
+        left: calc(50% + 130px);
         &:after{
             //width: 15px;
             //height: 25px;
         }
     }
     .swiper-button-prev{
-        left: calc(50% - 100px - 27px);
+        left: calc(50% - 130px - 27px);
     }
 }
 /* .swiper-container-vertical>.swiper-pagination-bullets{
@@ -789,6 +800,15 @@ input, textarea{
 
 
 ///////////////////////////// TIMELINE COMPONENT /////////////////////////////
+.timeline-overlay-black{
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 10;
+    left: 0;
+}
 .cd-horizontal-timeline {
     opacity: 0;
     height: 776px;
@@ -1452,6 +1472,21 @@ img.emoji {
         border-top: 0;
     }
 }
+.inherit-height{
+    height: inherit;
+}
+.brand-logo img {
+    width: 150px;
+    height: auto;
+}
+.white-overlay{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 250px;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    z-index: 20;
+}
 @media (min-width: 1441px){
 }
 // commun Styles between Large and Extra Large devices
@@ -1510,6 +1545,7 @@ img.emoji {
         .initial-state {
             .img-wrapper{
                 overflow: hidden;
+                
                 img{
                     width: auto !important;
                     right: 0;
@@ -1529,10 +1565,7 @@ img.emoji {
     .timeline-arrows-wrapper{
         top: 26%;
     }
-    .brand-logo img {
-        width: 200px;
-        height: 200px;
-    }
+
     .cd-horizontal-timeline .events-content .event-content{
         top: 30%;
     }
@@ -1721,8 +1754,8 @@ img.emoji {
         }
     }
     .map-img{
-        transform: scale(1.5);
-        overflow: scroll;
+        // transform: scale(1.5);
+        // overflow: scroll;
     }
     .share-grey{
         position: absolute;
@@ -1754,10 +1787,6 @@ img.emoji {
         transform: translateX(1rem);
     }
     
-
-
-    
-
 
 
 
@@ -1823,6 +1852,15 @@ img.emoji {
     }
     .scroll-to-tabs {
         transform: translateY(-74px);
+    }
+    main {
+        .initial-state {
+            .img-wrapper{
+                .main-patern-overlay{
+                    transform: translateX(170vw);
+                }
+            }
+        }
     }
 }
 
