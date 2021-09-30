@@ -1487,6 +1487,11 @@ img.emoji {
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
     z-index: 20;
 }
+.brand-logo-1{
+    width: 250px;
+    height: auto;
+    text-align: left;
+}
 @media (min-width: 1441px){
 }
 // commun Styles between Large and Extra Large devices
@@ -1529,6 +1534,11 @@ img.emoji {
     }
     .swiper-mobile{
         display: block;
+    }
+    .leadership-swiper{
+        .swiper-slide{
+            height: 500px;
+        }
     }
     /* .swiper-container-vertical > .swiper-pagination-bullets {
         right: 5%;
@@ -1788,7 +1798,14 @@ img.emoji {
     }
     
 
-
+.full-white-overlay{
+    background: rgba(255,255,255,0.7);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
 
