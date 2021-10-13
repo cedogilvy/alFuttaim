@@ -378,6 +378,8 @@ Styles
   .p-absolute.center-y {
     top: 50%;
     transform: translateY(-50%); }
+  .p-absolute.swiper-logo {
+    transform: translateY(-55%) scale(0.7); }
   .p-absolute.center-x {
     left: 50%;
     transform: translateX(-50%); }

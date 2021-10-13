@@ -382,6 +382,9 @@ Styles
         top: 50%;
         transform: translateY(-50%);
     }
+    &.swiper-logo{
+        transform: translateY(-55%) scale(0.7);
+    }
     &.center-x{
         left: 50%;
         transform: translateX(-50%);
