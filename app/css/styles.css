@@ -106,7 +106,7 @@ Colors
 .navy, .empty-content {
   color: #005093 !important; }
 
-.blue {
+.blue, .cd-horizontal-timeline .events .range-container.active .selected {
   color: #00A3DA !important; }
 
 .green {
@@ -1575,12 +1575,13 @@ input, textarea {
     /* show the timeline after events position has been set (using JavaScript) */
     opacity: 1; }
   .cd-horizontal-timeline .timeline {
-    height: 12%;
+    height: 14%;
     z-index: 10; }
   .cd-horizontal-timeline .events-wrapper {
     position: relative;
     height: 100%;
-    overflow: hidden;
+    overflow-x: scroll;
+    overflow-y: hidden;
     /* &::after, &::before {
             content: '';
             position: absolute;
@@ -1607,10 +1608,15 @@ input, textarea {
     position: relative;
     top: 18px;
     height: calc(100% - 18px); }
+    .cd-horizontal-timeline .events ul {
+      white-space: nowrap; }
+      .cd-horizontal-timeline .events ul.px-5 {
+        overflow-x: scroll;
+        padding-bottom: 24px; }
     .cd-horizontal-timeline .events:before {
       content: '';
       position: absolute;
-      top: -1px;
+      top: 18px;
       left: 0;
       width: 100%;
       height: 2px;
@@ -1657,12 +1663,12 @@ input, textarea {
         border-color: #FFFFFF; }
     .cd-horizontal-timeline .events li {
       display: inline-block;
-      padding: 0 20px;
+      padding: 18px 34px 0 34px;
       position: relative; }
     .cd-horizontal-timeline .events .range-container {
       cursor: pointer;
       padding: 12px 0;
-      padding-left: 68px;
+      padding-left: 82px;
       width: auto;
       position: relative; }
       .cd-horizontal-timeline .events .range-container li {
@@ -1686,6 +1692,9 @@ input, textarea {
           visibility: visible;
           width: auto;
           padding: 0 20px; }
+      .cd-horizontal-timeline .events .range-container.active .selected:after {
+        background-color: #00A3DA;
+        border-color: #00A3DA; }
   .cd-horizontal-timeline .filling-line {
     /* this is used to create the green line filling the timeline */
     position: absolute;
@@ -1962,7 +1971,7 @@ input, textarea {
     .ar .search.open {
       transform: translateX(0); }
   .ar .cd-horizontal-timeline .events .range-container {
-    padding-right: 68px;
+    padding-right: 82px;
     padding-left: 0; }
     .ar .cd-horizontal-timeline .events .range-container:before {
       right: 5px;

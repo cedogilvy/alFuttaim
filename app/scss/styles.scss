@@ -826,7 +826,7 @@ input, textarea{
         opacity: 1;
     }
     .timeline {
-        height: 12%;
+        height: 14%;
         z-index: 10;
         //position: relative;
         //height: 100%;
@@ -838,7 +838,8 @@ input, textarea{
         position: relative;
         height: 100%;
         //margin: 0 40px;
-        overflow: hidden;
+        overflow-x: scroll;
+        overflow-y: hidden;
         /* &::after, &::before {
             content: '';
             position: absolute;
@@ -874,10 +875,18 @@ input, textarea{
         position: relative;
         top: 18px;
         height: calc(100% - 18px);
+        ul {
+            white-space: nowrap;
+
+            &.px-5 {
+                overflow-x: scroll;
+                padding-bottom: 24px;
+            }
+        }
         &:before{
             content: '';
             position: absolute;
-            top: -1px;
+            top: 18px;
             left: 0;
             width: 100%;
             height: 2px;
@@ -936,14 +945,14 @@ input, textarea{
         }
         li{
             display: inline-block;
-            padding: 0 20px;
+            padding: 18px 34px 0 34px;
             position: relative;
             //height: 100%;
         }
         .range-container{
             cursor: pointer;    
             padding: 12px 0;
-            padding-left: 68px;
+            padding-left: 82px;
             width: auto;
             position: relative;
             li{
@@ -970,6 +979,15 @@ input, textarea{
                     visibility: visible;
                     width: auto;
                     padding: 0 20px;
+                }
+            }
+            &.active{
+                .selected{
+                    @extend.blue;
+                    &:after{
+                        background-color: #00A3DA;
+                        border-color: #00A3DA;
+                    }
                 }
             }
         }
@@ -1374,7 +1392,7 @@ input, textarea{
     .cd-horizontal-timeline {
         .events {
             .range-container{
-                padding-right: 68px;
+                padding-right: 82px;
                 padding-left: 0;
                 &:before{
                     right: 5px;
