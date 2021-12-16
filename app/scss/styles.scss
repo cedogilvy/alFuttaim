@@ -801,21 +801,26 @@ input, textarea{
 
 ///////////////////////////// TIMELINE COMPONENT /////////////////////////////
 .timeline-overlay-black{
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+    //background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 150px;
+    //height: 150px;
+    height: 80px;
     z-index: 10;
     left: 0;
+    background-color: rgba($color: $black, $alpha: .5);
 }
 .cd-horizontal-timeline {
+    
     opacity: 0;
     height: 776px;
     //margin: 2em auto;
     -webkit-transition: opacity 0.2s;
     -moz-transition: opacity 0.2s;
     transition: opacity 0.2s;
+    border-radius: 0 0 6px 6px;
+    overflow: hidden;
     &::before {
         /* never visible - this is used in jQuery to check the current MQ */
         content: 'mobile';
@@ -826,7 +831,7 @@ input, textarea{
         opacity: 1;
     }
     .timeline {
-        height: 14%;
+        height: 13%;
         z-index: 10;
         //position: relative;
         //height: 100%;
@@ -873,14 +878,17 @@ input, textarea{
         //@at-root: transform 0.4s;
         width: 100% !important;
         position: relative;
-        top: 18px;
-        height: calc(100% - 18px);
+        height: 100%;
+        //top: 18px;
+        //height: calc(100% - 18px);
+        padding-left: 8px;
         ul {
             white-space: nowrap;
 
             &.px-5 {
                 overflow-x: scroll;
-                padding-bottom: 24px;
+                height: 100%;
+                //padding-bottom: 24px;
             }
         }
         &:before{
@@ -907,9 +915,9 @@ input, textarea{
             transform: translateZ(0);
             position: relative;
             left: 0 !important;
-            @extend.fontMedium;
+            @extend.fontRegular;
             @extend.font-16;
-            opacity: 0.5;
+            opacity: 0.75;
             &::after {
                 /* this is used to create the event spot */
                 content: '';
@@ -921,10 +929,12 @@ input, textarea{
                 -ms-transform: rotate(45deg) translateX(-50%);
                 -o-transform: rotate(45deg) translateX(-50%);
                 transform: rotate(45deg) translateX(-50%);
-                top: -17px;
+                top: -32px;
                 height: 8px;
                 width: 8px;
-                background-color: rgba($color: $white, $alpha: .5);
+                //background-color: rgba($color: $white, $alpha: .5);
+                background-color: $black;
+                border: 1px solid $white;
                 -webkit-transition: background-color 0.3s, border-color 0.3s;
                 -moz-transition: background-color 0.3s, border-color 0.3s;
                 transition: background-color 0.3s, border-color 0.3s;
@@ -942,33 +952,38 @@ input, textarea{
                     border-color: $white;
                 }
             }
+            &:hover{
+                opacity: 1;
+            }
         }
         li{
             display: inline-block;
-            padding: 18px 34px 0 34px;
+            padding: 26px 24px 0 24px;
             position: relative;
             //height: 100%;
         }
         .range-container{
             cursor: pointer;    
-            padding: 12px 0;
+            padding: 20px 0 0;
             padding-left: 82px;
             width: auto;
             position: relative;
+            //@extend.cubicTransition;
             li{
                 opacity: 0;
                 visibility: hidden;
                 width: 0;
                 padding: 0;
-                //@extend.cubicTransition;
+                transform: translateX(-10px);
+                @extend.cubicTransition;
             }
             &:before{
                 content: '';
                 position: absolute;
-                top: -11px;
+                top: -15px;
                 left: 5px;
-                width: 24px;
-                height: 24px;
+                width: 16px;
+                height: 16px;
                 background-color: $white;
                 transform: rotate(45deg);
             }
@@ -978,7 +993,9 @@ input, textarea{
                     opacity: 1;
                     visibility: visible;
                     width: auto;
-                    padding: 0 20px;
+                    padding: 0 10px;
+                    transform: translateX(0px);
+                    @extend.cubicTransition;
                 }
             }
             &.active{
@@ -1143,6 +1160,19 @@ input, textarea{
         }
     }
 }
+/* always show scrollbars */
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: $white;
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
 .no-touch {
     .cd-horizontal-timeline {
         .events {

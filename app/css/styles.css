@@ -16,10 +16,10 @@ Fonts
   src: url("../fonts/Graphik500Medium.eot");
   src: url("../fonts/Graphik500Medium.eot") format("embedded-opentype"), url("../fonts/Graphik500Medium.woff2") format("woff2"), url("../fonts/Graphik500Medium.woff") format("woff"), url("../fonts/Graphik500Medium.ttf") format("truetype"), url("../fonts/Graphik500Medium.svg#Graphik500Medium") format("svg"); }
 
-.fontRegular, .mySwiper4 .swiper-pagination-bullet, input, textarea, input::placeholder, textarea::placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder, .subscribe input, .subscribe textarea, .subscribe select, .subscribe option, .contact-form input, .contact-form textarea, .contact-form select, .contact-form option, .subscribe input::placeholder, .subscribe textarea::placeholder, .subscribe select::placeholder, .subscribe option::placeholder, .contact-form input::placeholder, .contact-form textarea::placeholder, .contact-form select::placeholder, .contact-form option::placeholder, .subscribe input:-ms-input-placeholder, .subscribe textarea:-ms-input-placeholder, .subscribe select:-ms-input-placeholder, .subscribe option:-ms-input-placeholder, .contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder, .contact-form select:-ms-input-placeholder, .contact-form option:-ms-input-placeholder, .subscribe input::-ms-input-placeholder, .subscribe textarea::-ms-input-placeholder, .subscribe select::-ms-input-placeholder, .subscribe option::-ms-input-placeholder, .contact-form input::-ms-input-placeholder, .contact-form textarea::-ms-input-placeholder, .contact-form select::-ms-input-placeholder, .contact-form option::-ms-input-placeholder, .scroll-to-tabs .scroll-to-tabs-anchor, .swiper-franction .swiper-pagination, .table-content {
+.fontRegular, .mySwiper4 .swiper-pagination-bullet, input, textarea, input::placeholder, textarea::placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder, .subscribe input, .subscribe textarea, .subscribe select, .subscribe option, .contact-form input, .contact-form textarea, .contact-form select, .contact-form option, .subscribe input::placeholder, .subscribe textarea::placeholder, .subscribe select::placeholder, .subscribe option::placeholder, .contact-form input::placeholder, .contact-form textarea::placeholder, .contact-form select::placeholder, .contact-form option::placeholder, .subscribe input:-ms-input-placeholder, .subscribe textarea:-ms-input-placeholder, .subscribe select:-ms-input-placeholder, .subscribe option:-ms-input-placeholder, .contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder, .contact-form select:-ms-input-placeholder, .contact-form option:-ms-input-placeholder, .subscribe input::-ms-input-placeholder, .subscribe textarea::-ms-input-placeholder, .subscribe select::-ms-input-placeholder, .subscribe option::-ms-input-placeholder, .contact-form input::-ms-input-placeholder, .contact-form textarea::-ms-input-placeholder, .contact-form select::-ms-input-placeholder, .contact-form option::-ms-input-placeholder, .scroll-to-tabs .scroll-to-tabs-anchor, .swiper-franction .swiper-pagination, .cd-horizontal-timeline .events a, .table-content {
   font-family: 'Graphik400Regular'; }
 
-.fontMedium, .scroll-to-tabs .scroll-to-tabs-anchor.active, .cd-horizontal-timeline .events a, .empty-content {
+.fontMedium, .scroll-to-tabs .scroll-to-tabs-anchor.active, .empty-content {
   font-family: 'Graphik500Medium'; }
 
 .fontBold, header .navbar-nav .nav-link.active, .swiper-franction .swiper-pagination .swiper-pagination-current {
@@ -349,10 +349,10 @@ Styles
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .img-wrapper.no-dark-overlay::after {
-  background-color: rgba(255, 255, 255, 0.3); }
+  background-color: rgba(255, 255, 255, 0.5); }
 
 .p-relative {
   position: relative; }
@@ -431,7 +431,7 @@ Styles
 .object-fit-contain {
   object-fit: contain; }
 
-.cubicTransition, .listing .listing-anchor .hidden-details, main .mySwiper2, main .mySwiper2 .swiper-slide .state-content, .mySwiper .swiper-slide, .mySwiper .swiper-slide .slide-hover-content img, .mySwiper .swiper-slide .slide-hover-content p, .mySwiper .swiper-slide .slide-hover-content .black-overlay, .home-page header, .home-page .initial-state .img-wrapper, .home-page main .initial-state .state-content, .home-page .fixed-bottom .accordion, .search {
+.cubicTransition, .listing .listing-anchor .hidden-details, main .mySwiper2, main .mySwiper2 .swiper-slide .state-content, .mySwiper .swiper-slide, .mySwiper .swiper-slide .slide-hover-content img, .mySwiper .swiper-slide .slide-hover-content p, .mySwiper .swiper-slide .slide-hover-content .black-overlay, .home-page header, .home-page .initial-state .img-wrapper, .home-page main .initial-state .state-content, .home-page .fixed-bottom .accordion, .search, .cd-horizontal-timeline .events .range-container li, .cd-horizontal-timeline .events .range-container:hover li, .cd-horizontal-timeline .events .range-container.active li {
   transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
   -webkit-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
   -moz-transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
@@ -1553,20 +1553,22 @@ input, textarea {
   left: auto; }
 
 .timeline-overlay-black {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, black 100%);
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 150px;
+  height: 80px;
   z-index: 10;
-  left: 0; }
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .cd-horizontal-timeline {
   opacity: 0;
   height: 776px;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
-  transition: opacity 0.2s; }
+  transition: opacity 0.2s;
+  border-radius: 0 0 6px 6px;
+  overflow: hidden; }
   .cd-horizontal-timeline::before {
     /* never visible - this is used in jQuery to check the current MQ */
     content: 'mobile';
@@ -1575,7 +1577,7 @@ input, textarea {
     /* show the timeline after events position has been set (using JavaScript) */
     opacity: 1; }
   .cd-horizontal-timeline .timeline {
-    height: 14%;
+    height: 13%;
     z-index: 10; }
   .cd-horizontal-timeline .events-wrapper {
     position: relative;
@@ -1606,13 +1608,13 @@ input, textarea {
     /* width will be set using JavaScript */
     width: 100% !important;
     position: relative;
-    top: 18px;
-    height: calc(100% - 18px); }
+    height: 100%;
+    padding-left: 8px; }
     .cd-horizontal-timeline .events ul {
       white-space: nowrap; }
       .cd-horizontal-timeline .events ul.px-5 {
         overflow-x: scroll;
-        padding-bottom: 24px; }
+        height: 100%; }
     .cd-horizontal-timeline .events:before {
       content: '';
       position: absolute;
@@ -1634,7 +1636,7 @@ input, textarea {
       transform: translateZ(0);
       position: relative;
       left: 0 !important;
-      opacity: 0.5; }
+      opacity: 0.75; }
       .cd-horizontal-timeline .events a::after {
         /* this is used to create the event spot */
         content: '';
@@ -1646,10 +1648,11 @@ input, textarea {
         -ms-transform: rotate(45deg) translateX(-50%);
         -o-transform: rotate(45deg) translateX(-50%);
         transform: rotate(45deg) translateX(-50%);
-        top: -17px;
+        top: -32px;
         height: 8px;
         width: 8px;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: #000000;
+        border: 1px solid #FFFFFF;
         -webkit-transition: background-color 0.3s, border-color 0.3s;
         -moz-transition: background-color 0.3s, border-color 0.3s;
         transition: background-color 0.3s, border-color 0.3s; }
@@ -1661,13 +1664,15 @@ input, textarea {
           border-color: #FFFFFF; }
       .cd-horizontal-timeline .events a.older-event::after {
         border-color: #FFFFFF; }
+      .cd-horizontal-timeline .events a:hover {
+        opacity: 1; }
     .cd-horizontal-timeline .events li {
       display: inline-block;
-      padding: 18px 34px 0 34px;
+      padding: 26px 24px 0 24px;
       position: relative; }
     .cd-horizontal-timeline .events .range-container {
       cursor: pointer;
-      padding: 12px 0;
+      padding: 20px 0 0;
       padding-left: 82px;
       width: auto;
       position: relative; }
@@ -1675,14 +1680,15 @@ input, textarea {
         opacity: 0;
         visibility: hidden;
         width: 0;
-        padding: 0; }
+        padding: 0;
+        transform: translateX(-10px); }
       .cd-horizontal-timeline .events .range-container:before {
         content: '';
         position: absolute;
-        top: -11px;
+        top: -15px;
         left: 5px;
-        width: 24px;
-        height: 24px;
+        width: 16px;
+        height: 16px;
         background-color: #FFFFFF;
         transform: rotate(45deg); }
       .cd-horizontal-timeline .events .range-container:hover, .cd-horizontal-timeline .events .range-container.active {
@@ -1691,7 +1697,8 @@ input, textarea {
           opacity: 1;
           visibility: visible;
           width: auto;
-          padding: 0 20px; }
+          padding: 0 10px;
+          transform: translateX(0px); }
       .cd-horizontal-timeline .events .range-container.active .selected:after {
         background-color: #00A3DA;
         border-color: #00A3DA; }
@@ -1826,6 +1833,16 @@ input, textarea {
     cursor: not-allowed; }
     .cd-timeline-navigation a.inactive::after {
       background-position: 0 -16px; }
+
+/* always show scrollbars */
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  height: 8px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
 
 .no-touch .cd-horizontal-timeline .events a:hover::after {
   background-color: #FFFFFF;
