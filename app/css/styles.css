@@ -2068,6 +2068,8 @@ img.emoji {
     content: 'desktop'; } }
 
 @media (min-width: 100px) and (max-width: 1000px) {
+  .btn {
+    width: 100%; }
   .swiper-desktop {
     display: none; }
   .swiper-mobile {
