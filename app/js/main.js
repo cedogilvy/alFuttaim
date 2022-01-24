@@ -41,15 +41,12 @@ jQuery(function ($) {
             $(".home-page .mySwiper .swiper-slide").addClass("loaded");
         }, 2000);
 
-
-
         var thisTag = [];
         $(document).on('click', '.partners-logo a', function () {
             $('.partners-logo').removeClass("active");
             $(this).parent().addClass("active");
             thisTag = $(this).attr('data-tag');
             thispartner = $(this).attr('data-partner');
-            console.log(thispartner);
             var arrayInterTags = thisTag.split(",");
             $('.map-pins-list a').each(function () {
                 $(this).removeClass("active");
@@ -79,13 +76,19 @@ jQuery(function ($) {
             $("body").toggleClass("overflow-hidden");
         })
 
+        var thisID = null
         /////////////////// SCROLL TO SECTION ///////////////////
         $(".scroll-to-tabs-anchor").on('click', function (event) {
             $(".scroll-to-tabs-anchor").each(function () {
                 $(this).removeClass("active");
             })
             $(this).addClass("active");
-            if (this.hash !== "") {
+            thisID = $(this).attr("data-href");
+
+            $('html, body').animate({
+                scrollTop: $(thisID).offset().top - 100
+            }, 100);
+            /* if (this.hash !== "") {
                 event.preventDefault();
                 var hash = this.hash;
                 $('html, body').animate({
@@ -93,7 +96,7 @@ jQuery(function ($) {
                 }, 800, function () {
                     window.location.hash = hash;
                 });
-            }
+            } */
         });
 
 
@@ -474,9 +477,6 @@ jQuery(function ($) {
         })
 
 
-
-
-
         /////////////////// RANGE SLIDER ///////////////////
 
         $(".fixed-bottom .accordion").click(function () {
@@ -506,13 +506,22 @@ jQuery(function ($) {
 
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             // true for mobile device
-            $('.partners-logo a').click(function () {
+            /* $('.partners-logo a').click(function () {
                 console.log("scolled to")
                 var element = document.querySelector(".map-wrapper");
                 element.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            }); */
+
+            $(".partners-logo a").on('click', function() {
+                $('html, body').animate({
+                    scrollTop: $(".brand-logos").offset().top - 100
+                }, 100);
             });
         } else {
             // false for not mobile device
+            $('.map-pins-list a').click(function(){
+                $('[data-toggle="tooltip"]').tooltip("hide");
+            })
         }
 
     });

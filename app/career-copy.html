@@ -1109,17 +1109,17 @@
         </div>
         <ul class="d-flex">
           <li class="flex-fill">
-            <a href="#why-work"
+            <a data-href="#why-work" href="javascript:;"
               class="text-decoration-none text-uppercase text-center w-100 font-14 d-block py-3 scroll-to-tabs-anchor">WHY
               WORK AT AL-FUTTAIM</a>
           </li>
           <li class="flex-fill">
-            <a href="#career-dev"
+            <a data-href="#career-dev" href="javascript:;"
               class="text-decoration-none text-uppercase text-center w-100 font-14 d-block py-3 scroll-to-tabs-anchor">CAREER
               DEVELOPMENT</a>
           </li>
           <li class="flex-fill">
-            <a href="#career-stories"
+            <a data-href="#career-stories" href="javascript:;"
               class="text-decoration-none text-uppercase text-center w-100 font-14 d-block py-3 scroll-to-tabs-anchor">CAREER
               STORIES</a>
           </li>
@@ -2213,39 +2213,57 @@
   var topElt, scrollTop, heightElt, height, heightDiff, relTop, relDiff, relId;
   topElt = $(".scroll-to-container").offset().top - 50;
   heightElt = $(".scroll-to-container").height();
-  //scrollProgress = $(".scroll-to-tabs .progress .progress-bar");
   height = topElt + heightElt;
-  console.log(topElt);
-  window.onscroll = function () {
-    scrollTop = $(this).scrollTop();
-    heightDiff = scrollTop - topElt;
-    if (scrollTop > topElt && scrollTop < height) {
-      //myScrollFunction();
-      //console.log("reached");
-      $(".scroll-to-tabs").addClass("bgWhite");
-      //var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-      //var height = document.documentElement.scrollHeight - heightElt;
-      var scrolled = (heightDiff / heightElt) * 100 + 20;
-      //console.log(scrollTop, heightElt, scrolled);
-      document.getElementById("myProgressBar").style.width = scrolled + "%";
-      //document.getElementById("myProgressBar").innerHTML= Math.round(scrolled) + "%";
-    }
-    else {
-      $(".scroll-to-tabs").removeClass("bgWhite");
-      $(".scroll-to-tabs-anchor").removeClass("active");
-    }
-    $(".related-tabs").each(function () {
-      relTop = $(this).offset().top + 80;
-      relDiff = relTop + $(this).height() - 80;
-      if (scrollTop > relTop && scrollTop < relDiff) {
-        //$(this).addClass("active");
-        relId = $(this).attr("id");
-        $(".scroll-to-tabs-anchor").removeClass("active");
-        $('.scroll-to-tabs-anchor[href="#' + relId + '"]').addClass("active");
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    window.onscroll = function () {
+      scrollTop = $(this).scrollTop();
+      heightDiff = scrollTop - topElt;
+      document.getElementById("myProgressBar").style.width = "0%";
+      if (scrollTop > topElt && scrollTop < height) {
+        $(".scroll-to-tabs").addClass("bgWhite");
+        var scrolled = (heightDiff / heightElt) * 100;
+        document.getElementById("myProgressBar").style.width = scrolled + "%";
       }
-    })
-    //document.getElementById("myProgressBar").style.width = "0%";
-  };
+      else {
+        $(".scroll-to-tabs").removeClass("bgWhite");
+        $(".scroll-to-tabs-anchor").removeClass("active");
+      }
+      $(".related-tabs").each(function () {
+        relTop = $(this).offset().top + 80;
+        relDiff = relTop + $(this).height() - 80;
+        if (scrollTop > relTop && scrollTop < relDiff) {
+          relId = $(this).attr("id");
+          $(".scroll-to-tabs-anchor").removeClass("active");
+          $('.scroll-to-tabs-anchor[data-href="#' + relId + '"]').addClass("active");
+        }
+      })
+    };
+  }
+  else{
+    window.onscroll = function () {
+      scrollTop = $(this).scrollTop();
+      heightDiff = scrollTop - topElt;
+      document.getElementById("myProgressBar").style.width = "0%";
+      if (scrollTop > topElt && scrollTop < height) {
+        $(".scroll-to-tabs").addClass("bgWhite");
+        var scrolled = (heightDiff / heightElt) * 100 + 20;
+        document.getElementById("myProgressBar").style.width = scrolled + "%";
+      }
+      else {
+        $(".scroll-to-tabs").removeClass("bgWhite");
+        $(".scroll-to-tabs-anchor").removeClass("active");
+      }
+      $(".related-tabs").each(function () {
+        relTop = $(this).offset().top + 80;
+        relDiff = relTop + $(this).height() - 80;
+        if (scrollTop > relTop && scrollTop < relDiff) {
+          relId = $(this).attr("id");
+          $(".scroll-to-tabs-anchor").removeClass("active");
+          $('.scroll-to-tabs-anchor[data-href="#' + relId + '"]').addClass("active");
+        }
+      })
+    };
+  }
 </script>
 
 </html>
