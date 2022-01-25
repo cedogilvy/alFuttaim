@@ -700,6 +700,12 @@ input, textarea{
     }
 }
 .subscribe, .contact-form{
+    input{
+        min-height: 50px;
+    }
+    select{
+        margin-bottom: 0;
+    }
     input, textarea, select, option{
         color: #B0C0C5 !important;
         @extend.fontRegular;
@@ -1607,21 +1613,32 @@ img.emoji {
         .state-content {
             left: 15px;
         }
+        height: auto!important;
         .initial-state {
+            height: auto;
+            .state-content{
+                position: relative;
+                top: 0;
+                transform: none;
+            }
             .img-wrapper{
                 overflow: hidden;
-                
                 img{
+                    &.main-page-img{
+                        position: relative;
+                    }
                     //width: auto !important;
                     right: 0;
                     left: inherit;
-                    object-fit: contain !important;
+                    // object-fit: contain!important;
+                    // height: auto!important;
                 }
                 /* .main-page-img{
                 } */
             }
         }
     }
+
     .table-content{
         word-wrap: break-word;
         -webkit-hyphens: auto;
@@ -1932,10 +1949,8 @@ img.emoji {
             //height: 55vh;
             .img-wrapper{
                 .main-patern-overlay{
-                    //transform: translateX(170vw);
-                    transform: translateX(40vw);
-                    width: 140% !important;
-                    //height: 200% !important;
+                    // transform: translateX(40vw);
+                    // width: 140% !important;
                 }
             }
         }
