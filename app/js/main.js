@@ -476,6 +476,14 @@ jQuery(function ($) {
             }
         })
 
+        $(".year-wrapper").click(function () {
+            $(".year-wrapper").each(function () {
+                $(this).find(".range-container").removeClass("active");
+            })
+            $(this).find(".range-container").addClass("active");
+        })
+
+
 
         /////////////////// RANGE SLIDER ///////////////////
 
@@ -512,14 +520,14 @@ jQuery(function ($) {
                 element.scrollIntoView({ behavior: 'smooth', block: 'end' });
             }); */
 
-            $(".partners-logo a").on('click', function() {
+            $(".partners-logo a").on('click', function () {
                 $('html, body').animate({
                     scrollTop: $(".brand-logos").offset().top - 100
                 }, 100);
             });
         } else {
             // false for not mobile device
-            $('.map-pins-list a').click(function(){
+            $('.map-pins-list a').click(function () {
                 $('[data-toggle="tooltip"]').tooltip("hide");
             })
         }
