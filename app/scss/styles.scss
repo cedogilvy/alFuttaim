@@ -1883,8 +1883,15 @@ img.emoji {
     height: 100%;
 }
 
-
-
+.cta-buttons .btn{
+    width: 60%!important;
+}
+main .initial-state .state-content.loaded {
+    transform: translateY(-10%) translateX(0)!important;
+}
+main .initial-state .state-content{
+    top: 10%!important;
+}
     .ar{
         .btn.navbar-toggler{
             transform: translateX(-1rem);
